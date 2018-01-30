@@ -1,29 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './ButtonContainer.css';
 
-const ButtonContainer = (props) => {
-
-  const people = () => {
-    console.log('peeps')
-  }
-
-  const planet = () => {
-    console.log('planet')
-  }
-
-  const vehicle = () => {
-    console.log('ride')
-  }
+const ButtonContainer = ({people, planet, vehicle}) => {
 
   return (
     <section className="btn-container">
-      <button onClick={this.people}>
+      <button onClick={ () => people()}>
         People
       </button>
-      <button onClick={this.planet}>
+      <button onClick={ () => planet()}>
         Planet
       </button>      
-      <button onClick={this.vehicle}>
+      <button onClick={ () => vehicle()}>
         Vehicle
       </button>
     </section>
