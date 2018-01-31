@@ -12,15 +12,46 @@ class App extends Component {
     this.state = {
       peopleData: [],
       planetData: [],
-      vehicleData: []
+      vehicleData: [],
+      movieData: []
     }
+  }
+
+  componentDidMount() {
+ this.getMovieData();
+  }
+
+  getMovieData = async () => {
+      const scrolls =  await api.getMovieData();
+      const title = scrolls.results[6].title
+      const releaseDate = scrolls.results[6].release_date
+      const openingCrawl = scrolls.results[6].opening_crawl
+      const cleanData = {title, releaseDate, openingCrawl}
+
+      // const cleanData = await helper.scrollCleaner(scrolls.results)
+      this.setState ({
+        movieData: cleanData
+      })
+    // })
   }
 
   getData = (source) => {
     api.getData(source)
-    .then(response => console.log(response))
-    //instead of console.log going to this.cleanData(response) in helper
-    //where it will return clean data then set state
+    .then(response => {
+      if(source === 'people') {
+        this.setState ({
+          peopleData: [response]
+        })
+      } else if(source === 'planets') {
+        this.setState ({
+          planetData: [response]
+        })
+      } else if(source === 'vehicles') {
+        this.setState ({
+          vehicleData: [response]
+        })
+      }
+    })
   }
 
   favorites = () => {
@@ -28,25 +59,25 @@ class App extends Component {
   }
 
   handleClick = (source) => {
-    if(source === 'people') {
-      // console.log('peeps')
-    this.getData('people');
-    } else if (source === 'planet') {
-      console.log('planet')
-    } else if (source === 'vehicle') {
-      console.log('ride')
+    if(source === 'people' && this.state.peopleData.length === 0) {
+      this.getData('people');
+    } else if (source === 'planets' && this.state.planetData.length === 0) {
+      this.getData('planets');
+    } else if (source === 'vehicles' && this.state.vehicleData.length === 0) {
+      this.getData('vehicles');
     }
 
   }
 
   render() {
+    console.log(this.state)
     return (
       <div className="App">
-        <ScrollContainer className="scroll-container"/>
         <Nav 
           className="App-header" 
           favorites={this.favorites}
         />
+        <ScrollContainer className="scroll-container"/>
         <ButtonContainer 
           className="Btn-container" 
           handleClick={this.handleClick} 
