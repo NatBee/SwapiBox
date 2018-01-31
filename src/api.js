@@ -6,6 +6,9 @@ let apiGet = (url) => {
 }
 
 export default {
+  getMovieData() {
+    return apiGet(`${root}/films/`)
+  },
   getData(source) {
     return apiGet(`${root}/${source}/`)
   }

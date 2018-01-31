@@ -12,8 +12,27 @@ class App extends Component {
     this.state = {
       peopleData: [],
       planetData: [],
-      vehicleData: []
+      vehicleData: [],
+      movieData: []
     }
+  }
+
+  componentDidMount() {
+ this.getMovieData();
+  }
+
+  getMovieData = async () => {
+      const scrolls =  await api.getMovieData();
+      const title = scrolls.results[6].title
+      const releaseDate = scrolls.results[6].release_date
+      const openingCrawl = scrolls.results[6].opening_crawl
+      const cleanData = {title, releaseDate, openingCrawl}
+
+      // const cleanData = await helper.scrollCleaner(scrolls.results)
+      this.setState ({
+        movieData: cleanData
+      })
+    // })
   }
 
   getData = (source) => {
@@ -51,6 +70,7 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.state)
     return (
       <div className="App">
         <Nav 
