@@ -7,6 +7,6 @@ let apiGet = (url) => {
 
 export default {
   getData(source) {
-    return apiGet(`${root}/${source}`)
+    return apiGet(`${root}/${source}/`)
   }
 }

@@ -18,9 +18,21 @@ class App extends Component {
 
   getData = (source) => {
     api.getData(source)
-    .then(response => console.log(response))
-    //instead of console.log going to this.cleanData(response) in helper
-    //where it will return clean data then set state
+    .then(response => {
+      if(source === 'people') {
+        this.setState ({
+          peopleData: [response]
+        })
+      } else if(source === 'planets') {
+        this.setState ({
+          planetData: [response]
+        })
+      } else if(source === 'vehicles') {
+        this.setState ({
+          vehicleData: [response]
+        })
+      }
+    })
   }
 
   favorites = () => {
@@ -28,13 +40,12 @@ class App extends Component {
   }
 
   handleClick = (source) => {
-    if(source === 'people') {
-      // console.log('peeps')
-    this.getData('people');
-    } else if (source === 'planet') {
-      console.log('planet')
-    } else if (source === 'vehicle') {
-      console.log('ride')
+    if(source === 'people' && this.state.peopleData.length === 0) {
+      this.getData('people');
+    } else if (source === 'planets' && this.state.planetData.length === 0) {
+      this.getData('planets');
+    } else if (source === 'vehicles' && this.state.vehicleData.length === 0) {
+      this.getData('vehicles');
     }
 
   }
@@ -42,11 +53,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <ScrollContainer className="scroll-container"/>
         <Nav 
           className="App-header" 
           favorites={this.favorites}
         />
+        <ScrollContainer className="scroll-container"/>
         <ButtonContainer 
           className="Btn-container" 
           handleClick={this.handleClick} 
