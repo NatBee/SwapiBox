@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Header from '../Header/Header.js';
+import Nav from '../Nav/Nav.js';
 import ButtonContainer from '../ButtonContainer/ButtonContainer.js';
+import ScrollContainer from '../ScrollContainer/ScrollContainer.js';
 import CardContainer from '../CardContainer/CardContainer.js';
 import api from '../api.js';
 import './App.css';
@@ -15,34 +16,40 @@ class App extends Component {
     }
   }
 
+  getData = (source) => {
+    api.getData(source)
+    .then(response => console.log(response))
+    //instead of console.log going to this.cleanData(response) in helper
+    //where it will return clean data then set state
+  }
+
   favorites = () => {
     console.log('hey there')
   }
 
-  people = () => {
-    console.log('peeps')
-  }
+  handleClick = (source) => {
+    if(source === 'people') {
+      // console.log('peeps')
+    this.getData('people');
+    } else if (source === 'planet') {
+      console.log('planet')
+    } else if (source === 'vehicle') {
+      console.log('ride')
+    }
 
-  planet = () => {
-    console.log('planet')
-  }
-
-  vehicle = () => {
-    console.log('ride')
   }
 
   render() {
     return (
       <div className="App">
-        <Header 
+        <ScrollContainer className="scroll-container"/>
+        <Nav 
           className="App-header" 
           favorites={this.favorites}
         />
         <ButtonContainer 
           className="Btn-container" 
-          people={this.people} 
-          planet={this.planet} 
-          vehicle={this.vehicle}
+          handleClick={this.handleClick} 
         />
         <CardContainer 
         className="card-container"

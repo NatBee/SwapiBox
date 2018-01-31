@@ -1,19 +1,13 @@
 import React from 'react';
 import './ButtonContainer.css';
 
-const ButtonContainer = ({people, planet, vehicle}) => {
+const ButtonContainer = ({handleClick}) => {
 
   return (
     <section className="btn-container">
-      <button onClick={ () => people()}>
-        People
-      </button>
-      <button onClick={ () => planet()}>
-        Planet
-      </button>      
-      <button onClick={ () => vehicle()}>
-        Vehicle
-      </button>
+      <button className="people" onClick={ () => handleClick('people')}>People</button>
+      <button className="planet" onClick={ () => handleClick('planet')}>Planet</button>      
+      <button className="vehicle" onClick={ () => handleClick('vehicle')}>Vehicle</button>
     </section>
   )
 }
