@@ -1,8 +1,8 @@
 import React from 'react';
-import logo from '../logo.svg';
-import './Header.css';
+import logo from '../images/Star-Wars-Logo.png';
+import './Nav.css';
 
-const Header = ({favorites}) => {
+const Nav = ({favorites}) => {
 
 
   return (
@@ -10,10 +10,10 @@ const Header = ({favorites}) => {
       <img src={logo} className="App-logo" alt="logo" />
       <h1 className="App-title">Lego Star Wars</h1>
       <button className="favorites" onClick={ () => favorites()}>
-      View Favorites
+      View Favorites 3
       </button>
     </div>
   )
-}
+} 
 
-export default Header;
+export default Nav;

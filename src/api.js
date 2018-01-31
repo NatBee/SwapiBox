@@ -1,8 +1,12 @@
-// const root = 'https://swapi.co/api/';
+const root = 'https://swapi.co/api';
 
-// // apiGet = (source) => {
-// //   return fetch(root${source})
-// //   .then( response => response.json() ) 
-// // }
+let apiGet = (url) => {
+  return fetch(url)
+  .then( response => response.json() ) 
+}
 
-// export default apiGet
+export default {
+  getData(source) {
+    return apiGet(`${root}/${source}`)
+  }
+}
