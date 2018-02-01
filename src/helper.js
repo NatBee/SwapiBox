@@ -20,7 +20,8 @@ class CleanData {
       const homeWorldResponse = await homeWorld.json();
       const homeWorldObj = {  ...person,
                               homeworld: homeWorldResponse.name, 
-                              population: homeWorldResponse.population
+                              population: homeWorldResponse.population, 
+                              favorite: false
                             };
       
       return homeWorldObj; 
@@ -43,12 +44,45 @@ class CleanData {
     return Promise.all(speciesData);
   }
 
+//call planets
+//clean planets
+//clean residents
+//return cleaned residents to clean planets
+//return updated object
   getPlanetsData = async () => {
     const planetsData = await fetch(`https://swapi.co/api/planets/`);
     const response = await planetsData.json();
-
-    return response;
+    const cleanedPlanets = await this.cleanPlanets(response.results);
+    // const cleanedResidents = await this.cleanResidents(cleanedPlanets)
+    return Promise.all(cleanedPlanets);
   }
+
+  cleanPlanets = async (info) => {
+    const planetsData = await info.map(async (planet) => {
+      const cleanResident = await this.cleanResidents(planet.residents)
+      const planetObj = await { name: planet.name, 
+                          climate: planet.climate, 
+                          population: planet.population, 
+                          terrain: planet.terrain, 
+                          residents: cleanResident, 
+                          favorite: false};
+      return planetObj;
+    })
+
+    return Promise.all(planetsData);
+  }
+
+  cleanResidents = async (info) => {
+    const resident = await info.map(async (person) => {
+      const residentData = await fetch(person);
+      const residentResponse = await residentData.json();
+      const residentName = await residentResponse.name
+
+      return residentName;
+    })  
+
+    return Promise.all(resident);
+  } 
 
   getVehiclesData = async () => {
     const vehiclesData = await fetch(`https://swapi.co/api/vehicles/`);
