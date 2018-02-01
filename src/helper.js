@@ -1,7 +1,4 @@
 class CleanData {
-  constructor(props) {
-
-  }
 
   getMovieData = async () => {
     const response = await fetch(`https://swapi.co/api/films/`)
