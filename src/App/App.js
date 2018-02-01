@@ -3,7 +3,7 @@ import Nav from '../Nav/Nav.js';
 import ButtonContainer from '../ButtonContainer/ButtonContainer.js';
 import ScrollContainer from '../ScrollContainer/ScrollContainer.js';
 import CardContainer from '../CardContainer/CardContainer.js';
-import api from '../api.js';
+import DataCleaner from '../helper.js'
 import './App.css';
 
 class App extends Component {
@@ -15,43 +15,46 @@ class App extends Component {
       vehicleData: [],
       movieData: []
     }
+
+    this.cleaner = new DataCleaner()
   }
 
   componentDidMount() {
- this.getMovieData();
+    this.getMovieData();
   }
 
   getMovieData = async () => {
-      const scrolls =  await api.getMovieData();
-      const title = scrolls.results[6].title
-      const releaseDate = scrolls.results[6].release_date
-      const openingCrawl = scrolls.results[6].opening_crawl
-      const cleanData = {title, releaseDate, openingCrawl}
+    const randomNumber = Math.floor(Math.random() * Math.floor(6));
+    const scrolls =  await this.cleaner.getMovieData();
+    const title = scrolls.results[randomNumber].title
+    const releaseDate = scrolls.results[randomNumber].release_date
+    const openingCrawl = scrolls.results[randomNumber].opening_crawl
+    const cleanData = {title, releaseDate, openingCrawl}
 
-      // const cleanData = await helper.scrollCleaner(scrolls.results)
-      this.setState ({
-        movieData: cleanData
-      })
-    // })
+    this.setState ({
+      movieData: cleanData
+    })
   }
 
-  getData = (source) => {
-    api.getData(source)
-    .then(response => {
+  getData = async (source) => {
+    const sourceData = await this.cleaner.getData(source)
+    console.log(sourceData)
+
       if(source === 'people') {
+        const peopleArr = await this.cleaner.peopleDetails(sourceData)
         this.setState ({
-          peopleData: [response]
+          peopleData: peopleArr
         })
       } else if(source === 'planets') {
         this.setState ({
-          planetData: [response]
+          planetData: this.cleaner.planetDetails(sourceData)
         })
       } else if(source === 'vehicles') {
         this.setState ({
-          vehicleData: [response]
+          vehicleData: this.cleaner.vehicleDetails(sourceData)
         })
       }
-    })
+    
   }
 
   favorites = () => {
@@ -70,7 +73,7 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state)
+    // console.log(DataCleaner)
     return (
       <div className="App">
         <Nav 
