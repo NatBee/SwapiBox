@@ -78,9 +78,18 @@ class CleanData {
   getVehiclesData = async () => {
     const vehiclesData = await fetch(`https://swapi.co/api/vehicles/`);
     const response = await vehiclesData.json();
-    
-    return response;
+    const cleanVehicleData = await response.results.map( async (vehicle) => {
+      const vehicleObj = await {  name: vehicle.name,
+                            model: vehicle.model,
+                            class: vehicle.vehicle_class,
+                            passengers: vehicle.passengers
+                          };
+      return vehicleObj;
+    } )
+  
+    return Promise.all(cleanVehicleData); 
   }
+
 }
 
 export default CleanData;
