@@ -5,29 +5,25 @@ class CleanData {
     return response.json() 
   }
 
-  getPeopleData = async () => {
+ getPeopleData = async () => {
     const peopleData = await fetch(`https://swapi.co/api/people/`);
     const response = await peopleData.json()
     const homeWorld = await this.peopleHomeWorldData(response.results);
-    const species = await this.peopleSpeciesData(response.results);
-    const people = {...homeWorld, ...species};
-    //the spread operator isn't working and only ...species is updating
-    console.log(homeWorld)
-    console.log(species)
-    console.log(people)
-
-    return people;
+    const species = await this.peopleSpeciesData(homeWorld);
+ 
+    return species;
   }
 
   peopleHomeWorldData = async (info) => {
     const homeWorldData = await info.map(async (person) => {
       const homeWorld = await fetch(person.homeworld);
       const homeWorldResponse = await homeWorld.json();
-      const homeWorldArray = {  ...person,
-                                homeworld: homeWorldResponse.name, 
-                                population: homeWorldResponse.population
-                              };
-      return homeWorldArray; 
+      const homeWorldObj = {  ...person,
+                              homeworld: homeWorldResponse.name, 
+                              population: homeWorldResponse.population
+                            };
+      
+      return homeWorldObj; 
     }) 
 
     return Promise.all(homeWorldData);
@@ -40,6 +36,7 @@ class CleanData {
       const speciesArray = {  ...person,
                               species: speciesResponse.name
                             };
+      
       return speciesArray;
     }) 
 
