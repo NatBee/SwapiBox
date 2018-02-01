@@ -32,7 +32,7 @@ class App extends Component {
     const cleanData = {title, releaseDate, openingCrawl}
 
     this.setState ({
-      movieData: cleanData
+      movieData: [cleanData]
     })
   }
 
