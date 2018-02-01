@@ -36,44 +36,38 @@ class App extends Component {
     })
   }
 
-  getData = async (source) => {
-    const sourceData = await this.cleaner.getData(source)
-    console.log(sourceData)
+  handleClickPeople = async () => {
+    if(this.state.peopleData.length === 0) {
+      const people = await this.cleaner.getPeopleData();
+      this.setState ({
+        peopleData: people
+      });
+    }
+  }
 
-      if(source === 'people') {
-        const peopleArr = await this.cleaner.peopleDetails(sourceData)
-        this.setState ({
-          peopleData: peopleArr
-        })
-      } else if(source === 'planets') {
-        this.setState ({
-          planetData: this.cleaner.planetDetails(sourceData)
-        })
-      } else if(source === 'vehicles') {
-        this.setState ({
-          vehicleData: this.cleaner.vehicleDetails(sourceData)
-        })
-      }
-    
+  handleClickPlanets = async () => {
+    if(this.state.planetData.length === 0) {
+      const planet = await this.cleaner.getPlanetsData();
+      this.setState ({
+        planetData: planet
+      });
+    }
+  }
+
+  handleClickVehicles = async () => {
+    if(this.state.vehicleData.length === 0) {
+      const vehicle = await this.cleaner.getVehiclesData();
+      this.setState ({
+        vehicleData: vehicle
+      });
+    }
   }
 
   favorites = () => {
     console.log('hey there')
   }
 
-  handleClick = (source) => {
-    if(source === 'people' && this.state.peopleData.length === 0) {
-      this.getData('people');
-    } else if (source === 'planets' && this.state.planetData.length === 0) {
-      this.getData('planets');
-    } else if (source === 'vehicles' && this.state.vehicleData.length === 0) {
-      this.getData('vehicles');
-    }
-
-  }
-
   render() {
-    // console.log(DataCleaner)
     return (
       <div className="App">
         <Nav 
@@ -83,7 +77,9 @@ class App extends Component {
         <ScrollContainer className="scroll-container"/>
         <ButtonContainer 
           className="Btn-container" 
-          handleClick={this.handleClick} 
+          handleClickPeople={this.handleClickPeople}
+          handleClickPlanets={this.handleClickPlanets}
+          handleClickVehicles={this.handleClickVehicles}
         />
         <CardContainer 
         className="card-container"
