@@ -2,7 +2,6 @@ import React from 'react';
 import './Card.css';
 
 const Card = ({data}) => {
-  // const name = data.name
 
   return (
     <article className='card'>
