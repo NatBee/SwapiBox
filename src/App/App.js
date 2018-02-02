@@ -13,7 +13,8 @@ class App extends Component {
       peopleData: [],
       planetData: [],
       vehicleData: [],
-      movieData: []
+      movieData: [],
+      source: ''
     }
 
     this.cleaner = new DataCleaner()
@@ -40,9 +41,13 @@ class App extends Component {
     if(this.state.peopleData.length === 0) {
       const people = await this.cleaner.getPeopleData();
       this.setState ({
-        peopleData: people
+        peopleData: people,
+        source: 'people'
       });
-      
+    } else {
+      this.setState ({
+        source: 'people'
+      });
     }
   }
 
@@ -50,7 +55,12 @@ class App extends Component {
     if(this.state.planetData.length === 0) {
       const planet = await this.cleaner.getPlanetsData();
       this.setState ({
-        planetData: planet
+        planetData: planet,
+        source: 'planets'
+      });
+    } else {
+      this.setState ({
+        source: 'planets'
       });
     }
   }
@@ -59,7 +69,12 @@ class App extends Component {
     if(this.state.vehicleData.length === 0) {
       const vehicle = await this.cleaner.getVehiclesData();
       this.setState ({
-        vehicleData: vehicle
+        vehicleData: vehicle,
+        source: 'vehicles'
+      });
+    } else {
+      this.setState ({
+        source: 'vehicles'
       });
     }
   }
@@ -86,6 +101,7 @@ class App extends Component {
           peopleData={this.state.peopleData}
           planetData={this.state.planetData}
           vehicleData={this.state.vehicleData}
+          source={this.state.source}
         />
       </div>
     );
