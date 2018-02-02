@@ -42,6 +42,7 @@ class App extends Component {
       this.setState ({
         peopleData: people
       });
+      
     }
   }
 
@@ -82,7 +83,9 @@ class App extends Component {
           handleClickVehicles={this.handleClickVehicles}
         />
         <CardContainer 
-        className="card-container"
+          peopleData={this.state.peopleData}
+          planetData={this.state.planetData}
+          vehicleData={this.state.vehicleData}
         />
       </div>
     );
