@@ -1,12 +1,20 @@
 import React from 'react';
+import Card from '../Card/Card.js'
 import './CardContainer.css';
 
-const CardContainer = (props) => {
+const CardContainer = ({peopleData, planetData, vehicleData}) => {
+  
+  const newCard = peopleData.map(people => <Card data={ people } />)
 
   return (
-    <section className="card-container">
-      <h3>Card Container</h3>
-    </section>
+    <article className="card-container">
+      <h3>
+        Card Container
+      </h3>
+      <section className='card-wrap'>
+        {newCard}
+      </section>
+    </article>
   )
 }
 
