@@ -85,15 +85,15 @@ describe('fetch peopleData', () => {
 })
 
 describe('fetch planetdata', () => {
-  let mockPeopleData;
+  let mockPlanetData;
 
   beforeEach(() => {
-    mockPeopleData = mockData.planetData;
+    mockPlanetData = mockData.planetData;
 
     window.fetch = jest.fn().mockImplementation(() => {
       return Promise.resolve({
         status: 200,
-        json: () => Promise.resolve( {results: mockPeopleData} )
+        json: () => Promise.resolve( {results: mockPlanetData} )
       })
     })
   })
@@ -106,7 +106,7 @@ describe('fetch planetdata', () => {
   });
 
   it('should return a planet data object', async () => {
-    expect(await Helper.getPlanetsData()).toEqual(mockPeopleData)
+    expect(await Helper.getPlanetsData()).toEqual(mockPlanetData)
   })
 
   it('should return an error message if fetch fails', async () => {
@@ -124,15 +124,15 @@ describe('fetch planetdata', () => {
 })
 
 describe('fetch vehicledata', () => {
-  let mockPeopleData;
+  let mockVehicleData;
 
   beforeEach(() => {
-    mockPeopleData = mockData.vehicleData;
+    mockVehicleData = mockData.vehicleData;
 
     window.fetch = jest.fn().mockImplementation(() => {
       return Promise.resolve({
         status: 200,
-        json: () => Promise.resolve( {results: mockPeopleData} )
+        json: () => Promise.resolve( {results: mockVehicleData} )
       })
     })
   })
@@ -145,7 +145,7 @@ describe('fetch vehicledata', () => {
   });
 
   it('should return a planet data object', async () => {
-    expect(await Helper.getVehiclesData()).toEqual(mockPeopleData)
+    expect(await Helper.getVehiclesData()).toEqual(mockVehicleData)
   })
 
   it('should return an error message if fetch fails', async () => {
