@@ -64,11 +64,11 @@ class CleanData {
     const planetsData = await info.map(async (planet) => {
       const cleanResident = await this.cleanResidents(planet.residents);
       const planetObj = await { name: planet.name, 
-                          climate: planet.climate, 
-                          population: planet.population, 
-                          terrain: planet.terrain, 
-                          residents: cleanResident
-                        };
+                                climate: planet.climate, 
+                                population: planet.population, 
+                                terrain: planet.terrain, 
+                                residents: cleanResident
+                              };
       return planetObj;
     })
 
@@ -93,10 +93,10 @@ class CleanData {
     const response = await vehiclesData.json();
     const cleanVehicleData = await response.results.map( async (vehicle) => {
       const vehicleObj = await {  name: vehicle.name,
-                            model: vehicle.model,
-                            class: vehicle.vehicle_class,
-                            passengers: vehicle.passengers
-                          };
+                                  model: vehicle.model,
+                                  class: vehicle.vehicle_class,
+                                  passengers: vehicle.passengers
+                                };
 
       return vehicleObj;
     } )

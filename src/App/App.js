@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Nav from '../Nav/Nav.js';
 import ButtonContainer from '../ButtonContainer/ButtonContainer.js';
 import ScrollContainer from '../ScrollContainer/ScrollContainer.js';
 import CardContainer from '../CardContainer/CardContainer.js';
@@ -23,6 +22,7 @@ class App extends Component {
 
   componentDidMount() {
     this.getMovieData();
+    this.retrieveFavorites();
   }
 
   getMovieData = async () => {
@@ -33,9 +33,7 @@ class App extends Component {
     const openingCrawl = scrolls.results[randomNumber].opening_crawl
     const cleanData = {title, releaseDate, openingCrawl}
 
-    this.setState ({
-      movieData: [cleanData]
-    })
+    this.setState ({ movieData: [cleanData] })
   }
 
   handleClickPeople = async () => {
@@ -46,9 +44,7 @@ class App extends Component {
         source: 'people'
       });
     } else {
-      this.setState ({
-        source: 'people'
-      });
+      this.setState ({ source: 'people' });
     }
   }
 
@@ -60,9 +56,7 @@ class App extends Component {
         source: 'planets'
       });
     } else {
-      this.setState ({
-        source: 'planets'
-      });
+      this.setState ({ source: 'planets' });
     }
   }
 
@@ -74,41 +68,50 @@ class App extends Component {
         source: 'vehicles'
       });
     } else {
-      this.setState ({
-        source: 'vehicles'
-      });
+      this.setState ({ source: 'vehicles' });
     }
   }
 
-  favorites = () => {
+  handleClickFavorites = () => {
     console.log('hey there')
   }
 
-  handleClick = (data) => {
-    const favoritesArray = this.state.favorites;
+  handleClick = async (data) => {
+    const favoritesArray = await this.state.favorites;
     
     if(!favoritesArray.includes(data)) {
-      this.setState ({
-        favorites: [...favoritesArray, data]
-      })
+      this.setState ({ favorites: [...favoritesArray, data] })
     } else {
       const removeFavorite = favoritesArray.filter(favorite => {
         return favorite !== data
       })
-      this.setState ({
-        favorites: removeFavorite
-      })
+      this.setState ({ favorites: removeFavorite })
     }
+
+    await this.storeFavorites();
   } 
+
+  storeFavorites = () => {
+    const favorites = this.state.favorites;
+    const stringifiedArray = JSON.stringify(favorites);
+    localStorage.setItem('favorites', stringifiedArray);
+  }
+
+  retrieveFavorites = () => {
+    const getFavorites = localStorage.getItem('favorites');
+    const parsedFavorites = JSON.parse(getFavorites);
+    this.setState ({ favorites: parsedFavorites});
+  }
 
   render() {
     return (
       <div className="App">
-        <Nav 
+        <ScrollContainer 
+          className="scroll-container"
           className="App-header" 
-          favorites={this.favorites}
+          handleClickFavorites={this.handleClickFavorites}
+          favorites={this.state.favorites}
         />
-        <ScrollContainer className="scroll-container"/>
         <ButtonContainer 
           className="Btn-container" 
           handleClickPeople={this.handleClickPeople}
