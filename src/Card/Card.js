@@ -7,9 +7,14 @@ const Card = ({data, source, handleClick}) => {
   const cardDisplayValues = Object.values(data).map( (value, index) => <h3 className="value" key={index}>{value}</h3>);                          
 
   return (
-    <article className='card' onClick={() => handleClick(data)}>
-      <h3>{cardDisplayKey}</h3>
-      <h3>{cardDisplayValues}</h3>
+    <article className='card'>
+      <button onClick={() => handleClick(data)}>Favorite</button>
+      <h3>
+        {cardDisplayKey}
+      </h3>
+      <h3>
+        {cardDisplayValues}
+      </h3>
     </article>
   );
 }
