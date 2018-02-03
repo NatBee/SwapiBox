@@ -32,8 +32,7 @@ class CleanData {
       const homeWorldObj = await {  name: name,
                                     homeworld: homeWorldResponse.name, 
                                     population: homeWorldResponse.population, 
-                                    species: species,
-                                    favorite: false
+                                    species: species
                                   };
 
       return homeWorldObj; 
@@ -68,8 +67,7 @@ class CleanData {
                           climate: planet.climate, 
                           population: planet.population, 
                           terrain: planet.terrain, 
-                          residents: cleanResident, 
-                          favorite: false
+                          residents: cleanResident
                         };
       return planetObj;
     })
@@ -97,8 +95,7 @@ class CleanData {
       const vehicleObj = await {  name: vehicle.name,
                             model: vehicle.model,
                             class: vehicle.vehicle_class,
-                            passengers: vehicle.passengers,
-                            favorite: false
+                            passengers: vehicle.passengers
                           };
 
       return vehicleObj;
