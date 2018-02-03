@@ -1,0 +1,654 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScrollContainer should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ScrollContainer
+    favorites={
+        Array [
+            Object {
+              "climate": "temperate, arid",
+              "name": "Geonosis",
+              "population": "100000000000",
+              "residents": Array [
+                undefined,
+              ],
+              "terrain": "rock, desert, mountain, barren",
+            },
+          ]
+    }
+    movieData={
+        Array [
+            Object {
+              "openingCrawl": "War! The Republic is crumbling
+        under attacks by the ruthless
+        Sith Lord, Count Dooku.
+        There are heroes on both sides.
+        Evil is everywhere.
+        
+        In a stunning move, the
+        fiendish droid leader, General
+        Grievous, has swept into the
+        Republic capital and kidnapped
+        Chancellor Palpatine, leader of
+        the Galactic Senate.
+        
+        As the Separatist Droid Army
+        attempts to flee the besieged
+        capital with their valuable
+        hostage, two Jedi Knights lead a
+        desperate mission to rescue the
+        captive Chancellor....",
+              "releaseDate": "2005-05-19",
+              "title": "Revenge of the Sith",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <section
+          className="scroll-container"
+>
+          <section>
+                    <p
+                              className="opening-crawl"
+                    >
+                              War! The Republic is crumbling
+                              under attacks by the ruthless
+                              Sith Lord, Count Dooku.
+                              There are heroes on both sides.
+                              Evil is everywhere.
+                              
+                              In a stunning move, the
+                              fiendish droid leader, General
+                              Grievous, has swept into the
+                              Republic capital and kidnapped
+                              Chancellor Palpatine, leader of
+                              the Galactic Senate.
+                              
+                              As the Separatist Droid Army
+                              attempts to flee the besieged
+                              capital with their valuable
+                              hostage, two Jedi Knights lead a
+                              desperate mission to rescue the
+                              captive Chancellor....
+                    </p>
+                    <p
+                              className="title"
+                    >
+                              Revenge of the Sith
+                    </p>
+                    <p
+                              className="release-date"
+                    >
+                              2005-05-19
+                    </p>
+          </section>
+</section>,
+        <img
+          alt="logo"
+          className="App-logo"
+          src="Star-Wars-Logo.png"
+/>,
+        <h1
+          className="App-title"
+>
+          Lego Star Wars
+</h1>,
+        <button
+          className="favorites"
+          onClick={[Function]}
+>
+          View Favorites
+          <div>
+                    1
+          </div>
+</button>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <section>
+              <p
+                            className="opening-crawl"
+              >
+                            War! The Republic is crumbling
+                            under attacks by the ruthless
+                            Sith Lord, Count Dooku.
+                            There are heroes on both sides.
+                            Evil is everywhere.
+                            
+                            In a stunning move, the
+                            fiendish droid leader, General
+                            Grievous, has swept into the
+                            Republic capital and kidnapped
+                            Chancellor Palpatine, leader of
+                            the Galactic Senate.
+                            
+                            As the Separatist Droid Army
+                            attempts to flee the besieged
+                            capital with their valuable
+                            hostage, two Jedi Knights lead a
+                            desperate mission to rescue the
+                            captive Chancellor....
+              </p>
+              <p
+                            className="title"
+              >
+                            Revenge of the Sith
+              </p>
+              <p
+                            className="release-date"
+              >
+                            2005-05-19
+              </p>
+</section>,
+          ],
+          "className": "scroll-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p
+                  className="opening-crawl"
+>
+                  War! The Republic is crumbling
+                  under attacks by the ruthless
+                  Sith Lord, Count Dooku.
+                  There are heroes on both sides.
+                  Evil is everywhere.
+                  
+                  In a stunning move, the
+                  fiendish droid leader, General
+                  Grievous, has swept into the
+                  Republic capital and kidnapped
+                  Chancellor Palpatine, leader of
+                  the Galactic Senate.
+                  
+                  As the Separatist Droid Army
+                  attempts to flee the besieged
+                  capital with their valuable
+                  hostage, two Jedi Knights lead a
+                  desperate mission to rescue the
+                  captive Chancellor....
+</p>,
+                <p
+                  className="title"
+>
+                  Revenge of the Sith
+</p>,
+                <p
+                  className="release-date"
+>
+                  2005-05-19
+</p>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "War! The Republic is crumbling
+under attacks by the ruthless
+Sith Lord, Count Dooku.
+There are heroes on both sides.
+Evil is everywhere.
+
+In a stunning move, the
+fiendish droid leader, General
+Grievous, has swept into the
+Republic capital and kidnapped
+Chancellor Palpatine, leader of
+the Galactic Senate.
+
+As the Separatist Droid Army
+attempts to flee the besieged
+capital with their valuable
+hostage, two Jedi Knights lead a
+desperate mission to rescue the
+captive Chancellor....",
+                  "className": "opening-crawl",
+                },
+                "ref": null,
+                "rendered": "War! The Republic is crumbling
+under attacks by the ruthless
+Sith Lord, Count Dooku.
+There are heroes on both sides.
+Evil is everywhere.
+
+In a stunning move, the
+fiendish droid leader, General
+Grievous, has swept into the
+Republic capital and kidnapped
+Chancellor Palpatine, leader of
+the Galactic Senate.
+
+As the Separatist Droid Army
+attempts to flee the besieged
+capital with their valuable
+hostage, two Jedi Knights lead a
+desperate mission to rescue the
+captive Chancellor....",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Revenge of the Sith",
+                  "className": "title",
+                },
+                "ref": null,
+                "rendered": "Revenge of the Sith",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "2005-05-19",
+                  "className": "release-date",
+                },
+                "ref": null,
+                "rendered": "2005-05-19",
+                "type": "p",
+              },
+            ],
+            "type": "section",
+          },
+        ],
+        "type": "section",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "logo",
+          "className": "App-logo",
+          "src": "Star-Wars-Logo.png",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Lego Star Wars",
+          "className": "App-title",
+        },
+        "ref": null,
+        "rendered": "Lego Star Wars",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "View Favorites",
+            <div>
+              1
+</div>,
+          ],
+          "className": "favorites",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          "View Favorites",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": 1,
+            },
+            "ref": null,
+            "rendered": 1,
+            "type": "div",
+          },
+        ],
+        "type": "button",
+      },
+    ],
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <section
+            className="scroll-container"
+>
+            <section>
+                        <p
+                                    className="opening-crawl"
+                        >
+                                    War! The Republic is crumbling
+                                    under attacks by the ruthless
+                                    Sith Lord, Count Dooku.
+                                    There are heroes on both sides.
+                                    Evil is everywhere.
+                                    
+                                    In a stunning move, the
+                                    fiendish droid leader, General
+                                    Grievous, has swept into the
+                                    Republic capital and kidnapped
+                                    Chancellor Palpatine, leader of
+                                    the Galactic Senate.
+                                    
+                                    As the Separatist Droid Army
+                                    attempts to flee the besieged
+                                    capital with their valuable
+                                    hostage, two Jedi Knights lead a
+                                    desperate mission to rescue the
+                                    captive Chancellor....
+                        </p>
+                        <p
+                                    className="title"
+                        >
+                                    Revenge of the Sith
+                        </p>
+                        <p
+                                    className="release-date"
+                        >
+                                    2005-05-19
+                        </p>
+            </section>
+</section>,
+          <img
+            alt="logo"
+            className="App-logo"
+            src="Star-Wars-Logo.png"
+/>,
+          <h1
+            className="App-title"
+>
+            Lego Star Wars
+</h1>,
+          <button
+            className="favorites"
+            onClick={[Function]}
+>
+            View Favorites
+            <div>
+                        1
+            </div>
+</button>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <section>
+                <p
+                                className="opening-crawl"
+                >
+                                War! The Republic is crumbling
+                                under attacks by the ruthless
+                                Sith Lord, Count Dooku.
+                                There are heroes on both sides.
+                                Evil is everywhere.
+                                
+                                In a stunning move, the
+                                fiendish droid leader, General
+                                Grievous, has swept into the
+                                Republic capital and kidnapped
+                                Chancellor Palpatine, leader of
+                                the Galactic Senate.
+                                
+                                As the Separatist Droid Army
+                                attempts to flee the besieged
+                                capital with their valuable
+                                hostage, two Jedi Knights lead a
+                                desperate mission to rescue the
+                                captive Chancellor....
+                </p>
+                <p
+                                className="title"
+                >
+                                Revenge of the Sith
+                </p>
+                <p
+                                className="release-date"
+                >
+                                2005-05-19
+                </p>
+</section>,
+            ],
+            "className": "scroll-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p
+                    className="opening-crawl"
+>
+                    War! The Republic is crumbling
+                    under attacks by the ruthless
+                    Sith Lord, Count Dooku.
+                    There are heroes on both sides.
+                    Evil is everywhere.
+                    
+                    In a stunning move, the
+                    fiendish droid leader, General
+                    Grievous, has swept into the
+                    Republic capital and kidnapped
+                    Chancellor Palpatine, leader of
+                    the Galactic Senate.
+                    
+                    As the Separatist Droid Army
+                    attempts to flee the besieged
+                    capital with their valuable
+                    hostage, two Jedi Knights lead a
+                    desperate mission to rescue the
+                    captive Chancellor....
+</p>,
+                  <p
+                    className="title"
+>
+                    Revenge of the Sith
+</p>,
+                  <p
+                    className="release-date"
+>
+                    2005-05-19
+</p>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "War! The Republic is crumbling
+under attacks by the ruthless
+Sith Lord, Count Dooku.
+There are heroes on both sides.
+Evil is everywhere.
+
+In a stunning move, the
+fiendish droid leader, General
+Grievous, has swept into the
+Republic capital and kidnapped
+Chancellor Palpatine, leader of
+the Galactic Senate.
+
+As the Separatist Droid Army
+attempts to flee the besieged
+capital with their valuable
+hostage, two Jedi Knights lead a
+desperate mission to rescue the
+captive Chancellor....",
+                    "className": "opening-crawl",
+                  },
+                  "ref": null,
+                  "rendered": "War! The Republic is crumbling
+under attacks by the ruthless
+Sith Lord, Count Dooku.
+There are heroes on both sides.
+Evil is everywhere.
+
+In a stunning move, the
+fiendish droid leader, General
+Grievous, has swept into the
+Republic capital and kidnapped
+Chancellor Palpatine, leader of
+the Galactic Senate.
+
+As the Separatist Droid Army
+attempts to flee the besieged
+capital with their valuable
+hostage, two Jedi Knights lead a
+desperate mission to rescue the
+captive Chancellor....",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Revenge of the Sith",
+                    "className": "title",
+                  },
+                  "ref": null,
+                  "rendered": "Revenge of the Sith",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "2005-05-19",
+                    "className": "release-date",
+                  },
+                  "ref": null,
+                  "rendered": "2005-05-19",
+                  "type": "p",
+                },
+              ],
+              "type": "section",
+            },
+          ],
+          "type": "section",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "logo",
+            "className": "App-logo",
+            "src": "Star-Wars-Logo.png",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Lego Star Wars",
+            "className": "App-title",
+          },
+          "ref": null,
+          "rendered": "Lego Star Wars",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "View Favorites",
+              <div>
+                1
+</div>,
+            ],
+            "className": "favorites",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "View Favorites",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 1,
+              },
+              "ref": null,
+              "rendered": 1,
+              "type": "div",
+            },
+          ],
+          "type": "button",
+        },
+      ],
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

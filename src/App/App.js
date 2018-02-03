@@ -73,7 +73,7 @@ class App extends Component {
   }
 
   handleClickFavorites = () => {
-    console.log('hey there')
+    this.setState({ source: 'favorites' });
   }
 
   handleClick = async (data) => {
@@ -107,9 +107,9 @@ class App extends Component {
     return (
       <div className="App">
         <ScrollContainer 
-          className="scroll-container"
-          className="App-header" 
+          className="scroll-container" 
           handleClickFavorites={this.handleClickFavorites}
+          movieData={this.state.movieData}
           favorites={this.state.favorites}
         />
         <ButtonContainer 
@@ -122,6 +122,7 @@ class App extends Component {
           peopleData={this.state.peopleData}
           planetData={this.state.planetData}
           vehicleData={this.state.vehicleData}
+          favorites={this.state.favorites}
           source={this.state.source}
           handleClick={this.handleClick}
         />

@@ -3,14 +3,28 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ScrollContainer from './ScrollContainer.js';
 import { shallow } from 'enzyme';
-import mockData from '../..mockData.js'
+import mockData from '../mockData.js'
 
-it('should match the snapshot', () => {
-  const renderedComponent = shallow(<ScrollContainer />)
-  expect(renderedComponent).toMatchSnapShot()
-})
+describe('ScrollContainer', () => {
+  let mockFavorites;
+  let mockMovie;
+  let renderedComponent;
 
-it('should have 1 .card tag', () => {
-  const renderedComponent = shallow(<ScrollContainer scrollText={mockData}/>)
-  expect(renderedComponent.find(.card).length).toEqual(1)
+  beforeAll(() => {
+    mockFavorites = mockData.favorites;
+    mockMovie = mockData.movieData;
+    renderedComponent = shallow(<ScrollContainer 
+                                  favorites={mockFavorites} 
+                                  movieData={mockMovie} 
+                                />)
+  })
+
+  it('should match the snapshot', () => {
+    expect(renderedComponent).toMatchSnapshot()
+  })
+
+  it('should have 1 .opening-crawl tag', () => {
+    expect(renderedComponent.find(".opening-crawl").length).toEqual(1);
+  })
+
 })
