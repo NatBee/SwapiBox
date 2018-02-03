@@ -1,8 +1,13 @@
 class CleanData {
 
   getMovieData = async () => {
-    const response = await fetch(`https://swapi.co/api/films/`);
-    return response.json(); 
+    try {
+      const response = await fetch(`https://swapi.co/api/films/`);
+    
+      return await response.json(); 
+    } catch(err) {
+      return 'Error! Fetching films failed!'
+    }
   }
 
  getPeopleData = async () => {
@@ -26,6 +31,7 @@ class CleanData {
                                     species: species,
                                     favorite: false
                                   };
+
       return homeWorldObj; 
     }) 
 
@@ -84,6 +90,7 @@ class CleanData {
                             class: vehicle.vehicle_class,
                             passengers: vehicle.passengers
                           };
+
       return vehicleObj;
     } )
   
