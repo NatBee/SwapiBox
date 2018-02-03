@@ -1,14 +1,14 @@
 import React from 'react';
 import './Card.css';
 
-const Card = ({data, source}) => {
+const Card = ({data, source, handleClick}) => {
 
-  const cardDisplayKey = Object.keys(data).map(key => <h3 className="key">{key}</h3>);   
-  const cardDisplayValues = Object.values(data).map(value => <h3 className="value">{value}</h3>);                          
+  const cardDisplayKey = Object.keys(data).map((title, index) => <h3 className="title" key={index}>{title}</h3>);   
+  const cardDisplayValues = Object.values(data).map( (value, index) => <h3 className="value" key={index}>{value}</h3>);                          
 
   return (
-    <article className='card'>
-      <h3>{cardDisplayKey} :</h3>
+    <article className='card' onClick={() => handleClick(data)}>
+      <h3>{cardDisplayKey}</h3>
       <h3>{cardDisplayValues}</h3>
     </article>
   );

@@ -14,7 +14,8 @@ class App extends Component {
       planetData: [],
       vehicleData: [],
       movieData: [],
-      source: ''
+      source: '',
+      favorites: []
     }
 
     this.cleaner = new DataCleaner()
@@ -83,6 +84,23 @@ class App extends Component {
     console.log('hey there')
   }
 
+  handleClick = (data) => {
+    const favoritesArray = this.state.favorites;
+    
+    if(!favoritesArray.includes(data)) {
+      this.setState ({
+        favorites: [...favoritesArray, data]
+      })
+    } else {
+      const removeFavorite = favoritesArray.filter(favorite => {
+        return favorite !== data
+      })
+      this.setState ({
+        favorites: removeFavorite
+      })
+    }
+  } 
+
   render() {
     return (
       <div className="App">
@@ -102,6 +120,7 @@ class App extends Component {
           planetData={this.state.planetData}
           vehicleData={this.state.vehicleData}
           source={this.state.source}
+          handleClick={this.handleClick}
         />
       </div>
     );
