@@ -2,25 +2,67 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import CardContainer from './CardContainer.js';
-import { shallow } from 'enzyme';
-import mockData from '../..mockData.js'
+import { shallow, mount } from 'enzyme';
+import mockData from '../mockData.js'
 
-it('should match the snapshot', () => {
-  const renderedComponent = shallow(<CardContainer />)
-  expect(renderedComponent).toMatchSnapShot()
-})
+describe('CardContainer', () => {
+  let renderedComponent;
+  let source;
+  const mockPeople = mockData.peopleData;
+  const mockPlanets = mockData.planetData;
+  const mockvehicles = mockData.vehicleData;
+  const mockFavorites = mockData.favorites;
 
-it('should render expected number of cards for people', () => {
-  const renderedComponent = shallow(<CardContainer />)
-  expect(renderedComponent.find(.card).length).toEqual(10)
-})
+  it('should match the snapshot', () => {
+    source = 'people';
+    renderedComponent = mount(<CardContainer 
+                                  peopleData={mockPeople}
+                                  planetData={mockPlanets} 
+                                  vehicleData={mockvehicles} 
+                                  favorites={mockFavorites}
+                                  source={source}
+                                />);
 
-it('should render expected number of cards for planets', () => {
-  const renderedComponent = shallow(<CardContainer />)
-  expect(renderedComponent.find(.card).length).toEqual(10)
-})
+    expect(renderedComponent).toMatchSnapshot();
+  })
 
-it('should render expected number of cards for vehicles', () => {
-  const renderedComponent = shallow(<CardContainer />)
-  expect(renderedComponent.find(.card).length).toEqual(10)
+  it('should render expected number of cards for people', () => {
+    source = 'people';
+    renderedComponent = mount(<CardContainer 
+                                  peopleData={mockPeople}
+                                  source={source}
+                                />);
+
+    expect(renderedComponent.find('.card').length).toEqual(1);
+  })
+
+  it('should render expected number of cards for planets', () => {
+    source = 'planets';
+    renderedComponent = mount(<CardContainer 
+                                  planetData={mockPlanets} 
+                                  source={source}
+                                />);
+
+    expect(renderedComponent.find('.card').length).toEqual(1);
+  })
+
+  it('should render expected number of cards for vehicles', () => {
+    source = 'vehicles';
+    renderedComponent = mount(<CardContainer 
+                                  vehicleData={mockvehicles} 
+                                  source={source}
+                                />);
+
+    expect(renderedComponent.find('.card').length).toEqual(1);
+  })
+
+  it('should render expected number of cards for favorites', () => {
+    source = 'favorites';
+    renderedComponent = mount(<CardContainer  
+                                  favorites={mockFavorites}
+                                  source={source}
+                                />);
+
+    expect(renderedComponent.find('.card').length).toEqual(1);
+  })
 })

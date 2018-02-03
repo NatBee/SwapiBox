@@ -1,6 +1,10 @@
 import React from 'react';
 import Card from '../Card/Card.js'
 import './CardContainer.css';
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+configure({ adapter: new Adapter() });
 
 const CardContainer = ({peopleData, planetData, vehicleData, favorites, source, handleClick}) => {
   // put in condition for source value to set newCard for correct data set
