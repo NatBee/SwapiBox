@@ -2,7 +2,7 @@ import React from 'react';
 import Card from '../Card/Card.js'
 import './CardContainer.css';
 
-const CardContainer = ({peopleData, planetData, vehicleData, source, handleClick}) => {
+const CardContainer = ({peopleData, planetData, vehicleData, favorites, source, handleClick}) => {
   // put in condition for source value to set newCard for correct data set
   let newCard;
   if(source === 'people') {
@@ -11,6 +11,10 @@ const CardContainer = ({peopleData, planetData, vehicleData, source, handleClick
     newCard = planetData.map(planet => <Card data={ planet } source={source} handleClick={handleClick}/>)
   } else if(source === 'vehicles') {
     newCard = vehicleData.map(vehicle => <Card data={ vehicle } source={source} handleClick={handleClick}/>)
+  } else if(source === 'favorites' && favorites.length !== 0) {
+    newCard = favorites.map(favorite => <Card data={ favorite } source={source} handleClick={handleClick}/>)
+  } else if(source === 'favorites' && favorites.length === 0) {
+    return 'There are no favorites selected!'
   }
 
   return (

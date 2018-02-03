@@ -1,2 +1,5 @@
 .scroll-container {
-  background-color: green; }
+  background-color: green;
+  height: 150px;
+  padding: 20px;
+  color: white; }

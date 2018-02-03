@@ -8,7 +8,9 @@ const Card = ({data, source, handleClick}) => {
 
   return (
     <article className='card'>
-      <button onClick={() => handleClick(data)}>Favorite</button>
+      <button onClick={() => handleClick(data)}>
+        Favorite
+      </button>
       <h3>
         {cardDisplayKey}
       </h3>
