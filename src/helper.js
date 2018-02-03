@@ -10,12 +10,16 @@ class CleanData {
     }
   }
 
- getPeopleData = async () => {
-    const peopleData = await fetch(`https://swapi.co/api/people/`);
-    const response = await peopleData.json();
-    const homeWorld = await this.peopleHomeWorldData(response.results);
- 
-    return homeWorld;
+  getPeopleData = async () => {
+    try {
+      const peopleData = await fetch(`https://swapi.co/api/people/`);
+      const response = await peopleData.json();
+      const homeWorld = await this.peopleHomeWorldData(response.results);
+   
+      return homeWorld;
+    } catch(err) {
+      return 'Error! Fetching people failed!'
+    }
   }
 
   peopleHomeWorldData = async (info) => {
@@ -46,11 +50,15 @@ class CleanData {
   }
 
   getPlanetsData = async () => {
-    const planetsData = await fetch(`https://swapi.co/api/planets/`);
-    const response = await planetsData.json();
-    const cleanedPlanets = await this.cleanPlanets(response.results);
+    try {
+      const planetsData = await fetch(`https://swapi.co/api/planets/`);
+      const response = await planetsData.json();
+      const cleanedPlanets = await this.cleanPlanets(response.results);
 
-    return Promise.all(cleanedPlanets);
+      return Promise.all(cleanedPlanets);      
+    } catch(err) {
+      return 'Error! Fetching planets failed!'
+    }
   }
 
   cleanPlanets = async (info) => {
@@ -82,6 +90,7 @@ class CleanData {
   } 
 
   getVehiclesData = async () => {
+    try {
     const vehiclesData = await fetch(`https://swapi.co/api/vehicles/`);
     const response = await vehiclesData.json();
     const cleanVehicleData = await response.results.map( async (vehicle) => {
@@ -95,6 +104,9 @@ class CleanData {
     } )
   
     return Promise.all(cleanVehicleData); 
+    } catch(err) {
+      return 'Error! Fetching vehicles failed!'
+    }
   }
 
 }

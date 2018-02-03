@@ -2,9 +2,9 @@ const mockData = {
   "peopleData": [
     {
     "name": "Beru Whitesun lars",
-    "homeworld": "Tatooine",
-    "population": "200000",
-    "species": "Human",
+    "homeworld": undefined,
+    "population": undefined,
+    "species": undefined,
     "favorite": false
     }
   ],
@@ -15,7 +15,7 @@ const mockData = {
       "population": "100000000000",
       "terrain": "rock, desert, mountain, barren",
       "residents": [
-        "Poggle the Lesser"
+        undefined
       ],
       "favorite": false
     }
@@ -24,7 +24,7 @@ const mockData = {
     {
       "name": "Sail barge",
       "model": "Modified Luxury Sail Barge",
-      "class": "sail barge",
+      "class": undefined,
       "passengers": "500"
     }
    ],
