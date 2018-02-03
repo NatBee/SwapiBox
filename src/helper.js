@@ -82,7 +82,8 @@ class CleanData {
       const vehicleObj = await {  name: vehicle.name,
                             model: vehicle.model,
                             class: vehicle.vehicle_class,
-                            passengers: vehicle.passengers
+                            passengers: vehicle.passengers,
+                            favorite: false
                           };
       return vehicleObj;
     } )

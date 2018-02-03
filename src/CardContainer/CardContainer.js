@@ -6,11 +6,11 @@ const CardContainer = ({peopleData, planetData, vehicleData, source}) => {
   // put in condition for source value to set newCard for correct data set
   let newCard;
   if(source === 'people') {
-    newCard = peopleData.map(people => <Card data={ people } />)
+    newCard = peopleData.map(people => <Card data={ people } source={source} />)
   } else if(source === 'planets') {
-    newCard = planetData.map(planet => <Card data={ planet } />)
+    newCard = planetData.map(planet => <Card data={ planet } source={source} />)
   } else if(source === 'vehicles') {
-    newCard = vehicleData.map(vehicle => <Card data={ vehicle } />)
+    newCard = vehicleData.map(vehicle => <Card data={ vehicle } source={source} />)
   }
 
   return (
