@@ -1,0 +1,1253 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardContainer should match the snapshot 1`] = `
+ReactWrapper {
+  "length": 1,
+  Symbol(enzyme.__unrendered__): <CardContainer
+    favorites={
+        Array [
+            Object {
+              "climate": "temperate, arid",
+              "name": "Geonosis",
+              "population": "100000000000",
+              "residents": Array [
+                undefined,
+              ],
+              "terrain": "rock, desert, mountain, barren",
+            },
+          ]
+    }
+    peopleData={
+        Array [
+            Object {
+              "homeworld": undefined,
+              "name": "Beru Whitesun lars",
+              "population": undefined,
+              "species": undefined,
+            },
+          ]
+    }
+    planetData={
+        Array [
+            Object {
+              "climate": "temperate, arid",
+              "name": "Geonosis",
+              "population": "100000000000",
+              "residents": Array [
+                undefined,
+              ],
+              "terrain": "rock, desert, mountain, barren",
+            },
+          ]
+    }
+    source="people"
+    vehicleData={
+        Array [
+            Object {
+              "class": undefined,
+              "model": "Modified Luxury Sail Barge",
+              "name": "Sail barge",
+              "passengers": "500",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "favorites": Array [
+        Object {
+          "climate": "temperate, arid",
+          "name": "Geonosis",
+          "population": "100000000000",
+          "residents": Array [
+            undefined,
+          ],
+          "terrain": "rock, desert, mountain, barren",
+        },
+      ],
+      "peopleData": Array [
+        Object {
+          "homeworld": undefined,
+          "name": "Beru Whitesun lars",
+          "population": undefined,
+          "species": undefined,
+        },
+      ],
+      "planetData": Array [
+        Object {
+          "climate": "temperate, arid",
+          "name": "Geonosis",
+          "population": "100000000000",
+          "residents": Array [
+            undefined,
+          ],
+          "terrain": "rock, desert, mountain, barren",
+        },
+      ],
+      "source": "people",
+      "vehicleData": Array [
+        Object {
+          "class": undefined,
+          "model": "Modified Luxury Sail Barge",
+          "name": "Sail barge",
+          "passengers": "500",
+        },
+      ],
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": <article
+        class="card-container"
+>
+        <h3>
+                Card Container
+        </h3>
+        <section
+                class="card-wrap"
+        >
+                <article
+                        class="card"
+                >
+                        <button>
+                                Favorite
+                        </button>
+                        <h3>
+                                <h3
+                                        class="title"
+                                >
+                                        name
+                                </h3>
+                                <h3
+                                        class="title"
+                                >
+                                        homeworld
+                                </h3>
+                                <h3
+                                        class="title"
+                                >
+                                        population
+                                </h3>
+                                <h3
+                                        class="title"
+                                >
+                                        species
+                                </h3>
+                        </h3>
+                        <h3>
+                                <h3
+                                        class="value"
+                                >
+                                        Beru Whitesun lars
+                                </h3>
+                                <h3
+                                        class="value"
+                                />
+                                <h3
+                                        class="value"
+                                />
+                                <h3
+                                        class="value"
+                                />
+                        </h3>
+                </article>
+        </section>
+</article>,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h3>
+            Card Container
+</h3>,
+          <section
+            className="card-wrap"
+>
+            <Card
+                        data={
+                                    Object {
+                                                "homeworld": undefined,
+                                                "name": "Beru Whitesun lars",
+                                                "population": undefined,
+                                                "species": undefined,
+                                              }
+                        }
+                        handleClick={undefined}
+            />
+</section>,
+        ],
+        "className": "card-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": <h3>
+            Card Container
+</h3>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Card Container",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Card Container",
+          ],
+          "type": "h3",
+        },
+        Object {
+          "instance": <section
+            class="card-wrap"
+>
+            <article
+                        class="card"
+            >
+                        <button>
+                                    Favorite
+                        </button>
+                        <h3>
+                                    <h3
+                                                class="title"
+                                    >
+                                                name
+                                    </h3>
+                                    <h3
+                                                class="title"
+                                    >
+                                                homeworld
+                                    </h3>
+                                    <h3
+                                                class="title"
+                                    >
+                                                population
+                                    </h3>
+                                    <h3
+                                                class="title"
+                                    >
+                                                species
+                                    </h3>
+                        </h3>
+                        <h3>
+                                    <h3
+                                                class="value"
+                                    >
+                                                Beru Whitesun lars
+                                    </h3>
+                                    <h3
+                                                class="value"
+                                    />
+                                    <h3
+                                                class="value"
+                                    />
+                                    <h3
+                                                class="value"
+                                    />
+                        </h3>
+            </article>
+</section>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Card
+                data={
+                                Object {
+                                                "homeworld": undefined,
+                                                "name": "Beru Whitesun lars",
+                                                "population": undefined,
+                                                "species": undefined,
+                                              }
+                }
+                handleClick={undefined}
+/>,
+            ],
+            "className": "card-wrap",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "data": Object {
+                  "homeworld": undefined,
+                  "name": "Beru Whitesun lars",
+                  "population": undefined,
+                  "species": undefined,
+                },
+                "handleClick": undefined,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": <article
+                  class="card"
+>
+                  <button>
+                                    Favorite
+                  </button>
+                  <h3>
+                                    <h3
+                                                      class="title"
+                                    >
+                                                      name
+                                    </h3>
+                                    <h3
+                                                      class="title"
+                                    >
+                                                      homeworld
+                                    </h3>
+                                    <h3
+                                                      class="title"
+                                    >
+                                                      population
+                                    </h3>
+                                    <h3
+                                                      class="title"
+                                    >
+                                                      species
+                                    </h3>
+                  </h3>
+                  <h3>
+                                    <h3
+                                                      class="value"
+                                    >
+                                                      Beru Whitesun lars
+                                    </h3>
+                                    <h3
+                                                      class="value"
+                                    />
+                                    <h3
+                                                      class="value"
+                                    />
+                                    <h3
+                                                      class="value"
+                                    />
+                  </h3>
+</article>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <button
+                      onClick={[Function]}
+>
+                      Favorite
+</button>,
+                    <h3>
+                      <h3
+                                            className="title"
+                      >
+                                            name
+                      </h3>
+                      <h3
+                                            className="title"
+                      >
+                                            homeworld
+                      </h3>
+                      <h3
+                                            className="title"
+                      >
+                                            population
+                      </h3>
+                      <h3
+                                            className="title"
+                      >
+                                            species
+                      </h3>
+</h3>,
+                    <h3>
+                      <h3
+                                            className="value"
+                      >
+                                            Beru Whitesun lars
+                      </h3>
+                      <h3
+                                            className="value"
+                      />
+                      <h3
+                                            className="value"
+                      />
+                      <h3
+                                            className="value"
+                      />
+</h3>,
+                  ],
+                  "className": "card",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": <button>
+                      Favorite
+</button>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Favorite",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Favorite",
+                    ],
+                    "type": "button",
+                  },
+                  Object {
+                    "instance": <h3>
+                      <h3
+                                            class="title"
+                      >
+                                            name
+                      </h3>
+                      <h3
+                                            class="title"
+                      >
+                                            homeworld
+                      </h3>
+                      <h3
+                                            class="title"
+                      >
+                                            population
+                      </h3>
+                      <h3
+                                            class="title"
+                      >
+                                            species
+                      </h3>
+</h3>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <h3
+                          className="title"
+>
+                          name
+</h3>,
+                        <h3
+                          className="title"
+>
+                          homeworld
+</h3>,
+                        <h3
+                          className="title"
+>
+                          population
+</h3>,
+                        <h3
+                          className="title"
+>
+                          species
+</h3>,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": <h3
+                          class="title"
+>
+                          name
+</h3>,
+                        "key": "0",
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "name",
+                          "className": "title",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "name",
+                        ],
+                        "type": "h3",
+                      },
+                      Object {
+                        "instance": <h3
+                          class="title"
+>
+                          homeworld
+</h3>,
+                        "key": "1",
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "homeworld",
+                          "className": "title",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "homeworld",
+                        ],
+                        "type": "h3",
+                      },
+                      Object {
+                        "instance": <h3
+                          class="title"
+>
+                          population
+</h3>,
+                        "key": "2",
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "population",
+                          "className": "title",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "population",
+                        ],
+                        "type": "h3",
+                      },
+                      Object {
+                        "instance": <h3
+                          class="title"
+>
+                          species
+</h3>,
+                        "key": "3",
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "species",
+                          "className": "title",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "species",
+                        ],
+                        "type": "h3",
+                      },
+                    ],
+                    "type": "h3",
+                  },
+                  Object {
+                    "instance": <h3>
+                      <h3
+                                            class="value"
+                      >
+                                            Beru Whitesun lars
+                      </h3>
+                      <h3
+                                            class="value"
+                      />
+                      <h3
+                                            class="value"
+                      />
+                      <h3
+                                            class="value"
+                      />
+</h3>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <h3
+                          className="value"
+>
+                          Beru Whitesun lars
+</h3>,
+                        <h3
+                          className="value"
+/>,
+                        <h3
+                          className="value"
+/>,
+                        <h3
+                          className="value"
+/>,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": <h3
+                          class="value"
+>
+                          Beru Whitesun lars
+</h3>,
+                        "key": "0",
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Beru Whitesun lars",
+                          "className": "value",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Beru Whitesun lars",
+                        ],
+                        "type": "h3",
+                      },
+                      Object {
+                        "instance": <h3
+                          class="value"
+/>,
+                        "key": "1",
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": undefined,
+                          "className": "value",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          undefined,
+                        ],
+                        "type": "h3",
+                      },
+                      Object {
+                        "instance": <h3
+                          class="value"
+/>,
+                        "key": "2",
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": undefined,
+                          "className": "value",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          undefined,
+                        ],
+                        "type": "h3",
+                      },
+                      Object {
+                        "instance": <h3
+                          class="value"
+/>,
+                        "key": "3",
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": undefined,
+                          "className": "value",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          undefined,
+                        ],
+                        "type": "h3",
+                      },
+                    ],
+                    "type": "h3",
+                  },
+                ],
+                "type": "article",
+              },
+              "type": [Function],
+            },
+          ],
+          "type": "section",
+        },
+      ],
+      "type": "article",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "favorites": Array [
+          Object {
+            "climate": "temperate, arid",
+            "name": "Geonosis",
+            "population": "100000000000",
+            "residents": Array [
+              undefined,
+            ],
+            "terrain": "rock, desert, mountain, barren",
+          },
+        ],
+        "peopleData": Array [
+          Object {
+            "homeworld": undefined,
+            "name": "Beru Whitesun lars",
+            "population": undefined,
+            "species": undefined,
+          },
+        ],
+        "planetData": Array [
+          Object {
+            "climate": "temperate, arid",
+            "name": "Geonosis",
+            "population": "100000000000",
+            "residents": Array [
+              undefined,
+            ],
+            "terrain": "rock, desert, mountain, barren",
+          },
+        ],
+        "source": "people",
+        "vehicleData": Array [
+          Object {
+            "class": undefined,
+            "model": "Modified Luxury Sail Barge",
+            "name": "Sail barge",
+            "passengers": "500",
+          },
+        ],
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": <article
+          class="card-container"
+>
+          <h3>
+                    Card Container
+          </h3>
+          <section
+                    class="card-wrap"
+          >
+                    <article
+                              class="card"
+                    >
+                              <button>
+                                        Favorite
+                              </button>
+                              <h3>
+                                        <h3
+                                                  class="title"
+                                        >
+                                                  name
+                                        </h3>
+                                        <h3
+                                                  class="title"
+                                        >
+                                                  homeworld
+                                        </h3>
+                                        <h3
+                                                  class="title"
+                                        >
+                                                  population
+                                        </h3>
+                                        <h3
+                                                  class="title"
+                                        >
+                                                  species
+                                        </h3>
+                              </h3>
+                              <h3>
+                                        <h3
+                                                  class="value"
+                                        >
+                                                  Beru Whitesun lars
+                                        </h3>
+                                        <h3
+                                                  class="value"
+                                        />
+                                        <h3
+                                                  class="value"
+                                        />
+                                        <h3
+                                                  class="value"
+                                        />
+                              </h3>
+                    </article>
+          </section>
+</article>,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h3>
+              Card Container
+</h3>,
+            <section
+              className="card-wrap"
+>
+              <Card
+                            data={
+                                          Object {
+                                                        "homeworld": undefined,
+                                                        "name": "Beru Whitesun lars",
+                                                        "population": undefined,
+                                                        "species": undefined,
+                                                      }
+                            }
+                            handleClick={undefined}
+              />
+</section>,
+          ],
+          "className": "card-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": <h3>
+              Card Container
+</h3>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Card Container",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Card Container",
+            ],
+            "type": "h3",
+          },
+          Object {
+            "instance": <section
+              class="card-wrap"
+>
+              <article
+                            class="card"
+              >
+                            <button>
+                                          Favorite
+                            </button>
+                            <h3>
+                                          <h3
+                                                        class="title"
+                                          >
+                                                        name
+                                          </h3>
+                                          <h3
+                                                        class="title"
+                                          >
+                                                        homeworld
+                                          </h3>
+                                          <h3
+                                                        class="title"
+                                          >
+                                                        population
+                                          </h3>
+                                          <h3
+                                                        class="title"
+                                          >
+                                                        species
+                                          </h3>
+                            </h3>
+                            <h3>
+                                          <h3
+                                                        class="value"
+                                          >
+                                                        Beru Whitesun lars
+                                          </h3>
+                                          <h3
+                                                        class="value"
+                                          />
+                                          <h3
+                                                        class="value"
+                                          />
+                                          <h3
+                                                        class="value"
+                                          />
+                            </h3>
+              </article>
+</section>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Card
+                  data={
+                                    Object {
+                                                      "homeworld": undefined,
+                                                      "name": "Beru Whitesun lars",
+                                                      "population": undefined,
+                                                      "species": undefined,
+                                                    }
+                  }
+                  handleClick={undefined}
+/>,
+              ],
+              "className": "card-wrap",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "data": Object {
+                    "homeworld": undefined,
+                    "name": "Beru Whitesun lars",
+                    "population": undefined,
+                    "species": undefined,
+                  },
+                  "handleClick": undefined,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": <article
+                    class="card"
+>
+                    <button>
+                                        Favorite
+                    </button>
+                    <h3>
+                                        <h3
+                                                            class="title"
+                                        >
+                                                            name
+                                        </h3>
+                                        <h3
+                                                            class="title"
+                                        >
+                                                            homeworld
+                                        </h3>
+                                        <h3
+                                                            class="title"
+                                        >
+                                                            population
+                                        </h3>
+                                        <h3
+                                                            class="title"
+                                        >
+                                                            species
+                                        </h3>
+                    </h3>
+                    <h3>
+                                        <h3
+                                                            class="value"
+                                        >
+                                                            Beru Whitesun lars
+                                        </h3>
+                                        <h3
+                                                            class="value"
+                                        />
+                                        <h3
+                                                            class="value"
+                                        />
+                                        <h3
+                                                            class="value"
+                                        />
+                    </h3>
+</article>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <button
+                        onClick={[Function]}
+>
+                        Favorite
+</button>,
+                      <h3>
+                        <h3
+                                                className="title"
+                        >
+                                                name
+                        </h3>
+                        <h3
+                                                className="title"
+                        >
+                                                homeworld
+                        </h3>
+                        <h3
+                                                className="title"
+                        >
+                                                population
+                        </h3>
+                        <h3
+                                                className="title"
+                        >
+                                                species
+                        </h3>
+</h3>,
+                      <h3>
+                        <h3
+                                                className="value"
+                        >
+                                                Beru Whitesun lars
+                        </h3>
+                        <h3
+                                                className="value"
+                        />
+                        <h3
+                                                className="value"
+                        />
+                        <h3
+                                                className="value"
+                        />
+</h3>,
+                    ],
+                    "className": "card",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": <button>
+                        Favorite
+</button>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Favorite",
+                        "onClick": [Function],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Favorite",
+                      ],
+                      "type": "button",
+                    },
+                    Object {
+                      "instance": <h3>
+                        <h3
+                                                class="title"
+                        >
+                                                name
+                        </h3>
+                        <h3
+                                                class="title"
+                        >
+                                                homeworld
+                        </h3>
+                        <h3
+                                                class="title"
+                        >
+                                                population
+                        </h3>
+                        <h3
+                                                class="title"
+                        >
+                                                species
+                        </h3>
+</h3>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <h3
+                            className="title"
+>
+                            name
+</h3>,
+                          <h3
+                            className="title"
+>
+                            homeworld
+</h3>,
+                          <h3
+                            className="title"
+>
+                            population
+</h3>,
+                          <h3
+                            className="title"
+>
+                            species
+</h3>,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": <h3
+                            class="title"
+>
+                            name
+</h3>,
+                          "key": "0",
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "name",
+                            "className": "title",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            "name",
+                          ],
+                          "type": "h3",
+                        },
+                        Object {
+                          "instance": <h3
+                            class="title"
+>
+                            homeworld
+</h3>,
+                          "key": "1",
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "homeworld",
+                            "className": "title",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            "homeworld",
+                          ],
+                          "type": "h3",
+                        },
+                        Object {
+                          "instance": <h3
+                            class="title"
+>
+                            population
+</h3>,
+                          "key": "2",
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "population",
+                            "className": "title",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            "population",
+                          ],
+                          "type": "h3",
+                        },
+                        Object {
+                          "instance": <h3
+                            class="title"
+>
+                            species
+</h3>,
+                          "key": "3",
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "species",
+                            "className": "title",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            "species",
+                          ],
+                          "type": "h3",
+                        },
+                      ],
+                      "type": "h3",
+                    },
+                    Object {
+                      "instance": <h3>
+                        <h3
+                                                class="value"
+                        >
+                                                Beru Whitesun lars
+                        </h3>
+                        <h3
+                                                class="value"
+                        />
+                        <h3
+                                                class="value"
+                        />
+                        <h3
+                                                class="value"
+                        />
+</h3>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <h3
+                            className="value"
+>
+                            Beru Whitesun lars
+</h3>,
+                          <h3
+                            className="value"
+/>,
+                          <h3
+                            className="value"
+/>,
+                          <h3
+                            className="value"
+/>,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": <h3
+                            class="value"
+>
+                            Beru Whitesun lars
+</h3>,
+                          "key": "0",
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Beru Whitesun lars",
+                            "className": "value",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            "Beru Whitesun lars",
+                          ],
+                          "type": "h3",
+                        },
+                        Object {
+                          "instance": <h3
+                            class="value"
+/>,
+                          "key": "1",
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": undefined,
+                            "className": "value",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            undefined,
+                          ],
+                          "type": "h3",
+                        },
+                        Object {
+                          "instance": <h3
+                            class="value"
+/>,
+                          "key": "2",
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": undefined,
+                            "className": "value",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            undefined,
+                          ],
+                          "type": "h3",
+                        },
+                        Object {
+                          "instance": <h3
+                            class="value"
+/>,
+                          "key": "3",
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": undefined,
+                            "className": "value",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            undefined,
+                          ],
+                          "type": "h3",
+                        },
+                      ],
+                      "type": "h3",
+                    },
+                  ],
+                  "type": "article",
+                },
+                "type": [Function],
+              },
+            ],
+            "type": "section",
+          },
+        ],
+        "type": "article",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

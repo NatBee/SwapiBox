@@ -21,16 +21,20 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.getMovieData();
-    this.retrieveFavorites();
+    this.randomNumber();
+    this.retrieveFavorites() || this.setState({ favorites: [] });
   }
 
-  getMovieData = async () => {
+  randomNumber = () => {
     const randomNumber = Math.floor(Math.random() * Math.floor(6));
+    this.getMovieData(randomNumber)
+  }
+
+  getMovieData = async (number) => {
     const scrolls =  await this.cleaner.getMovieData();
-    const title = scrolls.results[randomNumber].title
-    const releaseDate = scrolls.results[randomNumber].release_date
-    const openingCrawl = scrolls.results[randomNumber].opening_crawl
+    const title = scrolls.results[number].title
+    const releaseDate = scrolls.results[number].release_date
+    const openingCrawl = scrolls.results[number].opening_crawl
     const cleanData = {title, releaseDate, openingCrawl}
 
     this.setState ({ movieData: [cleanData] })
@@ -78,7 +82,7 @@ class App extends Component {
 
   handleClick = async (data) => {
     const favoritesArray = await this.state.favorites;
-    
+    console.log(data)
     if(!favoritesArray.includes(data)) {
       this.setState ({ favorites: [...favoritesArray, data] })
     } else {
