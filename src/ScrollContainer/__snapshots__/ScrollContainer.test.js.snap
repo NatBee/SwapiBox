@@ -204,7 +204,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <div
-          class="fade"
+          className="fade"
 />,
         <section
           className="scroll-container"
@@ -347,7 +347,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "class": "fade",
+          "className": "fade",
         },
         "ref": null,
         "rendered": null,
@@ -990,7 +990,7 @@ captive Chancellor....",
       "props": Object {
         "children": Array [
           <div
-            class="fade"
+            className="fade"
 />,
           <section
             className="scroll-container"
@@ -1133,7 +1133,7 @@ captive Chancellor....",
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "class": "fade",
+            "className": "fade",
           },
           "ref": null,
           "rendered": null,
