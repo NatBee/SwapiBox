@@ -18,14 +18,20 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <ScrollContainer
-          className="scroll-container"
-          favorites={Array []}
-          handleClickFavorites={[Function]}
-          movieData={Array []}
+        <img
+          alt="logo"
+          className="App-logo"
+          src="Star-Wars-Logo.png"
 />,
+        <h1
+          className="App-title"
+>
+          SwapiBox
+</h1>,
         <ButtonContainer
           className="Btn-container"
+          favorites={Array []}
+          handleClickFavorites={[Function]}
           handleClickPeople={[Function]}
           handleClickPlanets={[Function]}
           handleClickVehicles={[Function]}
@@ -38,6 +44,10 @@ ShallowWrapper {
           source=""
           vehicleData={Array []}
 />,
+        <ScrollContainer
+          className="scroll-container"
+          movieData={Array []}
+/>,
       ],
       "className": "App",
     },
@@ -46,16 +56,27 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "host",
         "props": Object {
-          "className": "scroll-container",
-          "favorites": Array [],
-          "handleClickFavorites": [Function],
-          "movieData": Array [],
+          "alt": "logo",
+          "className": "App-logo",
+          "src": "Star-Wars-Logo.png",
         },
         "ref": null,
         "rendered": null,
-        "type": [Function],
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "SwapiBox",
+          "className": "App-title",
+        },
+        "ref": null,
+        "rendered": "SwapiBox",
+        "type": "h1",
       },
       Object {
         "instance": null,
@@ -63,6 +84,8 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "className": "Btn-container",
+          "favorites": Array [],
+          "handleClickFavorites": [Function],
           "handleClickPeople": [Function],
           "handleClickPlanets": [Function],
           "handleClickVehicles": [Function],
@@ -87,6 +110,18 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "className": "scroll-container",
+          "movieData": Array [],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
     ],
     "type": "div",
   },
@@ -97,14 +132,20 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <ScrollContainer
-            className="scroll-container"
-            favorites={Array []}
-            handleClickFavorites={[Function]}
-            movieData={Array []}
+          <img
+            alt="logo"
+            className="App-logo"
+            src="Star-Wars-Logo.png"
 />,
+          <h1
+            className="App-title"
+>
+            SwapiBox
+</h1>,
           <ButtonContainer
             className="Btn-container"
+            favorites={Array []}
+            handleClickFavorites={[Function]}
             handleClickPeople={[Function]}
             handleClickPlanets={[Function]}
             handleClickVehicles={[Function]}
@@ -117,6 +158,10 @@ ShallowWrapper {
             source=""
             vehicleData={Array []}
 />,
+          <ScrollContainer
+            className="scroll-container"
+            movieData={Array []}
+/>,
         ],
         "className": "App",
       },
@@ -125,16 +170,27 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "host",
           "props": Object {
-            "className": "scroll-container",
-            "favorites": Array [],
-            "handleClickFavorites": [Function],
-            "movieData": Array [],
+            "alt": "logo",
+            "className": "App-logo",
+            "src": "Star-Wars-Logo.png",
           },
           "ref": null,
           "rendered": null,
-          "type": [Function],
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "SwapiBox",
+            "className": "App-title",
+          },
+          "ref": null,
+          "rendered": "SwapiBox",
+          "type": "h1",
         },
         Object {
           "instance": null,
@@ -142,6 +198,8 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "className": "Btn-container",
+            "favorites": Array [],
+            "handleClickFavorites": [Function],
             "handleClickPeople": [Function],
             "handleClickPlanets": [Function],
             "handleClickVehicles": [Function],
@@ -161,6 +219,18 @@ ShallowWrapper {
             "planetData": Array [],
             "source": "",
             "vehicleData": Array [],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "className": "scroll-container",
+            "movieData": Array [],
           },
           "ref": null,
           "rendered": null,

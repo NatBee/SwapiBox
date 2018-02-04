@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import { shallow } from 'enzyme';
-import mockData from '../mockData.js'
+import mockData from '../mockData.js';
 /* eslint-disable */ 
 global.localStorage = {
   getItem(keyword) {
@@ -66,6 +66,23 @@ describe('App tests', () => {
     expect(renderedComponent.state('peopleData').length).toEqual(1);
   })
 
+  it('when People button is clicked, it should render fetched cards', async () => {
+    window.fetch = jest.fn().mockImplementation(() => {
+      return Promise.resolve({
+        status: 200,
+        json: () => Promise.resolve( {results: mockPeople} )
+      })
+    })
+
+    expect(renderedComponent.state('peopleData').length).toEqual(0);
+    expect(renderedComponent.state('source')).toEqual('');
+
+    await renderedComponent.instance().handleClickPeople();
+
+    await expect(renderedComponent.state('peopleData').length).toEqual(1);
+    await expect(renderedComponent.state('source')).toEqual('people');
+  })
+
   it('should gather clean data from planet data set', () => {
     window.fetch = jest.fn().mockImplementation(() => {
       return Promise.resolve({
@@ -80,6 +97,23 @@ describe('App tests', () => {
     renderedComponent.update();
 
     expect(renderedComponent.state('planetData').length).toEqual(1);
+  })
+
+   it('when Planets button is clicked, it should render fetched cards', async () => {
+    window.fetch = jest.fn().mockImplementation(() => {
+      return Promise.resolve({
+        status: 200,
+        json: () => Promise.resolve( {results: mockPlanets} )
+      })
+    })
+
+    expect(renderedComponent.state('planetData').length).toEqual(0);
+    expect(renderedComponent.state('source')).toEqual('');
+
+    await renderedComponent.instance().handleClickPlanets();
+
+    await expect(renderedComponent.state('planetData').length).toEqual(1);
+    await expect(renderedComponent.state('source')).toEqual('planets');
   })
 
   it('should gather clean data from vehicle data set', () => {
@@ -98,6 +132,23 @@ describe('App tests', () => {
     expect(renderedComponent.state('vehicleData').length).toEqual(1);
   })
 
+  it('when Vehicles button is clicked, it should render fetched cards', async () => {
+    window.fetch = jest.fn().mockImplementation(() => {
+      return Promise.resolve({
+        status: 200,
+        json: () => Promise.resolve( {results: mockVehicles} )
+      })
+    })
+
+    expect(renderedComponent.state('vehicleData').length).toEqual(0);
+    expect(renderedComponent.state('source')).toEqual('');
+
+    await renderedComponent.instance().handleClickVehicles();
+
+    await expect(renderedComponent.state('vehicleData').length).toEqual(1);
+    await expect(renderedComponent.state('source')).toEqual('vehicles');
+  })
+
   it('should store favorites', () => {
     renderedComponent.setState({favorites: mockFavorites});
     renderedComponent.update();
@@ -105,63 +156,31 @@ describe('App tests', () => {
     expect(renderedComponent.state('favorites').length).toEqual(1);
   })
 
-  //I think the above tests are not necessary
-
   it('should add a card to favorites', async () => {
+    window.fetch = jest.fn().mockImplementation(() => {
+      return Promise.resolve({
+        status: 200,
+        json: () => Promise.resolve( {results: mockFavorites} )
+      })
+    })
 
     expect(renderedComponent.state('favorites').length).toEqual(0);
-    
-    await renderedComponent.instance().handleClickFavorites(mockFavorites[0]);
+    await renderedComponent.instance().handleClick([{
+      "favorite": true,
+      "name": "Sail barge",
+      "model": "Modified Luxury Sail Barge",
+      "class": undefined,
+      "passengers": "500"
+    }]);
     
     await expect(renderedComponent.state('favorites').length).toEqual(1);
   })
 
-  it('should update favorites state on reload if there are stored favorites', () => {
-    const storedFavorites = 1;
-
-    expect(renderedComponent.state('favorites').length).toEqual(storedFavorites)
-  })
-
-  it('when Favorites button is clicked, it should render the number of favorited cards', async () => {
-    expect(renderedComponent.state('favorites').length).toEqual(0);
-    console.log(renderedComponent.state())
-
+  it('should update source to favorites when click favorites button', async () => {
+    expect(renderedComponent.state('source')).toEqual('');
+    
     await renderedComponent.instance().handleClickFavorites();
 
-    console.log(renderedComponent.state())
-    await expect(renderedComponent.state('favorites').length).toEqual(10);
+    await expect(renderedComponent.state('source')).toEqual('favorites');
   })
-
-  it('when People button is clicked, it should render 10 cards with .people className', async () => {
-    expect(renderedComponent.state('peopleData').length).toEqual(0);
-
-    console.log(renderedComponent.state())
-    await renderedComponent.instance().handleClickPeople();
-
-    console.log(renderedComponent.state())
-    await expect(renderedComponent.state('peopleData').length).toEqual(10);
- 
-  })
-
-  it('when Planets button is clicked, it should render 10 cards with .planets className', async () => {
-    expect(renderedComponent.state('planetData').length).toEqual(0);
-
-    console.log(renderedComponent.state())
-    await renderedComponent.instance().handleClickPlanets();
-
-    console.log(renderedComponent.state())
-    await expect(renderedComponent.state('planetData').length).toEqual(10);
-  })
-
-  it('when Vehicles button is clicked, it should render 10 cards with .vehicles className', async () => {
-    expect(renderedComponent.state('vehicleData').length).toEqual(0);
-    console.log(renderedComponent.state())
-
-    await renderedComponent.instance().handleClickVehicles();
-
-    console.log(renderedComponent.state())
-    await expect(renderedComponent.state('vehicleData').length).toEqual(10);
-  })
-
-
 })

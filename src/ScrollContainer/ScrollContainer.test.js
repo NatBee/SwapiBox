@@ -12,7 +12,7 @@ describe('ScrollContainer', () => {
 
   beforeAll(() => {
     mockFavorites = mockData.favorites;
-    mockMovie = mockData.movieData;
+    mockMovie = mockData.movieData2;
     renderedComponent = shallow(<ScrollContainer 
                                   favorites={mockFavorites} 
                                   movieData={mockMovie} 
