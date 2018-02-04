@@ -20,7 +20,7 @@ const CardContainer = ({peopleData, planetData, vehicleData, favorites, source, 
 
   return (
     <article className="card-container">
-      <h3>
+      <h3 className='card-header'>
         Card Container
       </h3>
       <section className='card-wrap'>

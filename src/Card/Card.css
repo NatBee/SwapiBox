@@ -1,2 +1,39 @@
 .card {
-  border: 2px solid black; }
+  border: 2px solid #F7F4DB;
+  background-color: #CDB578;
+  width: 300px;
+  justify-content: space-evenly;
+  border-radius: 15px;
+  text-align: center;
+  margin: 10px;
+  font-family: 'Acme', sans-serif; }
+
+.card p {
+  background-color: #E6D7B2;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  margin: 0; }
+
+.card-display {
+  display: flex;
+  font-size: .7em;
+  margin: 0;
+  padding: 0px 50px; }
+
+.fa-sun {
+  background-color: #E6D7B2;
+  color: #9A946A;
+  font-size: xx-large; }
+
+.fa-sun:hover {
+  color: #856B27; }
+
+.title {
+  text-align: left; }
+
+.value {
+  padding: 0px 0px 0px 7px;
+  text-align: right; }
+
+.favorite {
+  display: none; }

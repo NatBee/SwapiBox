@@ -8,15 +8,17 @@ const Card = ({data, handleClick}) => {
 
   return (
     <article className='card'>
-      <button onClick={() => handleClick(data)}>
-        Favorite
-      </button>
-      <h3>
-        {cardDisplayKey}
-      </h3>
-      <h3>
-        {cardDisplayValues}
-      </h3>
+      <p onClick={() => handleClick(data)}>
+        <i class="fas fa-sun"></i>
+      </p>
+      <section className='card-display'>
+        <h3 className='title'>
+          {cardDisplayKey}
+        </h3>
+        <h3 className='value'>
+          {cardDisplayValues}
+        </h3>
+      </section>
     </article>
   );
 }
