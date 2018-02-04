@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Card.css';
 
 const Card = ({data, handleClick}) => {
@@ -21,6 +22,10 @@ const Card = ({data, handleClick}) => {
       </section>
     </article>
   );
+}
+
+Card.propTypes = {
+  data: PropTypes.array
 }
 
 export default Card;

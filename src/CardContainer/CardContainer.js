@@ -1,10 +1,9 @@
 import React from 'react';
-import Card from '../Card/Card.js'
+import Card from '../Card/Card.js';
+import PropTypes from 'prop-types';
 import './CardContainer.css';
 
 const CardContainer = ({peopleData, planetData, vehicleData, favorites, source, handleClick}) => {
-  // put in condition for source value to set newCard for correct data set
-  let spliceData;
   let newCard;
   if(source === 'people') {
     newCard = peopleData.map(people => <Card data={ people } handleClick={handleClick}/>)
@@ -28,6 +27,15 @@ const CardContainer = ({peopleData, planetData, vehicleData, favorites, source, 
       </section>
     </article>
   )
+}
+
+CardContainer.propTypes = {
+  peopleData: PropTypes.array,
+  planetData: PropTypes.array,
+  vehicleData: PropTypes.array,
+  favorites: PropTypes.array,
+  source: PropTypes.string,
+  handleClick: PropTypes.func
 }
 
 export default CardContainer
