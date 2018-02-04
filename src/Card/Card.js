@@ -2,9 +2,9 @@ import React from 'react';
 import './Card.css';
 
 const Card = ({data, handleClick}) => {
-
-  const cardDisplayKey = Object.keys(data).map((title, index) => <h3 className="title" key={index}>{title}</h3>);   
-  const cardDisplayValues = Object.values(data).map( (value, index) => <h3 className="value" key={index}>{value}</h3>);                          
+  
+  const cardDisplayKey = Object.keys(data).map((title, index) => <h3 className={`title ${title}`} key={index}>{title}</h3>);   
+  const cardDisplayValues = Object.values(data).map( (value, index) => <h3 className={`value ${value}`} key={index}>{value}</h3>);                          
 
   return (
     <article className='card'>

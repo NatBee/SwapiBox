@@ -22,7 +22,7 @@ class App extends Component {
 
   componentDidMount() {
     this.randomNumber();
-    this.retrieveFavorites() || this.setState({ favorites: [] });
+    this.retrieveFavorites();
   }
 
   randomNumber = () => {
@@ -82,10 +82,11 @@ class App extends Component {
 
   handleClick = async (data) => {
     const favoritesArray = await this.state.favorites;
-    console.log(data)
     if(!favoritesArray.includes(data)) {
+      data.favorite = true;
       this.setState ({ favorites: [...favoritesArray, data] })
     } else {
+      data.favorite = false;
       const removeFavorite = favoritesArray.filter(favorite => {
         return favorite !== data
       })
@@ -104,7 +105,9 @@ class App extends Component {
   retrieveFavorites = () => {
     const getFavorites = localStorage.getItem('favorites');
     const parsedFavorites = JSON.parse(getFavorites);
-    this.setState ({ favorites: parsedFavorites});
+    parsedFavorites.length > 0 
+    ? this.setState ({ favorites: parsedFavorites }) 
+    : this.setState ({ favorites: [] }) 
   }
 
   render() {
