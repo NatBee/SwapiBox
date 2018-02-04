@@ -106,7 +106,7 @@ class App extends Component {
   retrieveFavorites = () => {
     const getFavorites = localStorage.getItem('favorites');
     const parsedFavorites = JSON.parse(getFavorites);
-    parsedFavorites.length > 0 
+    getFavorites
     ? this.setState ({ favorites: parsedFavorites }) 
     : this.setState ({ favorites: [] }) 
   }

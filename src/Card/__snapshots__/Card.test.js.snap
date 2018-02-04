@@ -8,6 +8,7 @@ ShallowWrapper {
     data={
         Array [
             Object {
+              "favorite": false,
               "homeworld": undefined,
               "name": "Beru Whitesun lars",
               "population": undefined,
@@ -55,6 +56,7 @@ ShallowWrapper {
                               className="value [object Object]"
                     >
                               Object {
+                                        "favorite": false,
                                         "homeworld": undefined,
                                         "name": "Beru Whitesun lars",
                                         "population": undefined,
@@ -114,6 +116,7 @@ ShallowWrapper {
                             className="value [object Object]"
               >
                             Object {
+                                          "favorite": false,
                                           "homeworld": undefined,
                                           "name": "Beru Whitesun lars",
                                           "population": undefined,
@@ -167,6 +170,7 @@ ShallowWrapper {
                   className="value [object Object]"
 >
                   Object {
+                                    "favorite": false,
                                     "homeworld": undefined,
                                     "name": "Beru Whitesun lars",
                                     "population": undefined,
@@ -184,6 +188,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Object {
+                    "favorite": false,
                     "homeworld": undefined,
                     "name": "Beru Whitesun lars",
                     "population": undefined,
@@ -193,6 +198,7 @@ ShallowWrapper {
                 },
                 "ref": null,
                 "rendered": Object {
+                  "favorite": false,
                   "homeworld": undefined,
                   "name": "Beru Whitesun lars",
                   "population": undefined,
@@ -242,6 +248,7 @@ ShallowWrapper {
                                     className="value [object Object]"
                         >
                                     Object {
+                                                "favorite": false,
                                                 "homeworld": undefined,
                                                 "name": "Beru Whitesun lars",
                                                 "population": undefined,
@@ -301,6 +308,7 @@ ShallowWrapper {
                                 className="value [object Object]"
                 >
                                 Object {
+                                                "favorite": false,
                                                 "homeworld": undefined,
                                                 "name": "Beru Whitesun lars",
                                                 "population": undefined,
@@ -354,6 +362,7 @@ ShallowWrapper {
                     className="value [object Object]"
 >
                     Object {
+                                        "favorite": false,
                                         "homeworld": undefined,
                                         "name": "Beru Whitesun lars",
                                         "population": undefined,
@@ -371,6 +380,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": Object {
+                      "favorite": false,
                       "homeworld": undefined,
                       "name": "Beru Whitesun lars",
                       "population": undefined,
@@ -380,6 +390,7 @@ ShallowWrapper {
                   },
                   "ref": null,
                   "rendered": Object {
+                    "favorite": false,
                     "homeworld": undefined,
                     "name": "Beru Whitesun lars",
                     "population": undefined,

@@ -8,6 +8,7 @@ ReactWrapper {
         Array [
             Object {
               "climate": "temperate, arid",
+              "favorite": true,
               "name": "Geonosis",
               "population": "100000000000",
               "residents": Array [
@@ -20,6 +21,7 @@ ReactWrapper {
     peopleData={
         Array [
             Object {
+              "favorite": false,
               "homeworld": undefined,
               "name": "Beru Whitesun lars",
               "population": undefined,
@@ -31,6 +33,7 @@ ReactWrapper {
         Array [
             Object {
               "climate": "temperate, arid",
+              "favorite": false,
               "name": "Geonosis",
               "population": "100000000000",
               "residents": Array [
@@ -45,6 +48,7 @@ ReactWrapper {
         Array [
             Object {
               "class": undefined,
+              "favorite": false,
               "model": "Modified Luxury Sail Barge",
               "name": "Sail barge",
               "passengers": "500",
@@ -68,6 +72,7 @@ ReactWrapper {
       "favorites": Array [
         Object {
           "climate": "temperate, arid",
+          "favorite": true,
           "name": "Geonosis",
           "population": "100000000000",
           "residents": Array [
@@ -78,6 +83,7 @@ ReactWrapper {
       ],
       "peopleData": Array [
         Object {
+          "favorite": false,
           "homeworld": undefined,
           "name": "Beru Whitesun lars",
           "population": undefined,
@@ -87,6 +93,7 @@ ReactWrapper {
       "planetData": Array [
         Object {
           "climate": "temperate, arid",
+          "favorite": false,
           "name": "Geonosis",
           "population": "100000000000",
           "residents": Array [
@@ -99,6 +106,7 @@ ReactWrapper {
       "vehicleData": Array [
         Object {
           "class": undefined,
+          "favorite": false,
           "model": "Modified Luxury Sail Barge",
           "name": "Sail barge",
           "passengers": "500",
@@ -133,6 +141,11 @@ ReactWrapper {
                                         class="title"
                                 >
                                         <h3
+                                                class="title favorite"
+                                        >
+                                                favorite
+                                        </h3>
+                                        <h3
                                                 class="title name"
                                         >
                                                 name
@@ -156,6 +169,9 @@ ReactWrapper {
                                 <h3
                                         class="value"
                                 >
+                                        <h3
+                                                class="value false"
+                                        />
                                         <h3
                                                 class="value Beru Whitesun lars"
                                         >
@@ -190,6 +206,7 @@ ReactWrapper {
             <Card
                         data={
                                     Object {
+                                                "favorite": false,
                                                 "homeworld": undefined,
                                                 "name": "Beru Whitesun lars",
                                                 "population": undefined,
@@ -241,6 +258,11 @@ ReactWrapper {
                                                 class="title"
                                     >
                                                 <h3
+                                                            class="title favorite"
+                                                >
+                                                            favorite
+                                                </h3>
+                                                <h3
                                                             class="title name"
                                                 >
                                                             name
@@ -264,6 +286,9 @@ ReactWrapper {
                                     <h3
                                                 class="value"
                                     >
+                                                <h3
+                                                            class="value false"
+                                                />
                                                 <h3
                                                             class="value Beru Whitesun lars"
                                                 >
@@ -289,6 +314,7 @@ ReactWrapper {
               <Card
                 data={
                                 Object {
+                                                "favorite": false,
                                                 "homeworld": undefined,
                                                 "name": "Beru Whitesun lars",
                                                 "population": undefined,
@@ -308,6 +334,7 @@ ReactWrapper {
               "nodeType": "function",
               "props": Object {
                 "data": Object {
+                  "favorite": false,
                   "homeworld": undefined,
                   "name": "Beru Whitesun lars",
                   "population": undefined,
@@ -332,6 +359,11 @@ ReactWrapper {
                                                       class="title"
                                     >
                                                       <h3
+                                                                        class="title favorite"
+                                                      >
+                                                                        favorite
+                                                      </h3>
+                                                      <h3
                                                                         class="title name"
                                                       >
                                                                         name
@@ -355,6 +387,9 @@ ReactWrapper {
                                     <h3
                                                       class="value"
                                     >
+                                                      <h3
+                                                                        class="value false"
+                                                      />
                                                       <h3
                                                                         class="value Beru Whitesun lars"
                                                       >
@@ -390,6 +425,11 @@ ReactWrapper {
                                             className="title"
                       >
                                             <h3
+                                                                  className="title favorite"
+                                            >
+                                                                  favorite
+                                            </h3>
+                                            <h3
                                                                   className="title name"
                                             >
                                                                   name
@@ -413,6 +453,9 @@ ReactWrapper {
                       <h3
                                             className="value"
                       >
+                                            <h3
+                                                                  className="value false"
+                                            />
                                             <h3
                                                                   className="value Beru Whitesun lars"
                                             >
@@ -476,6 +519,11 @@ ReactWrapper {
                                             class="title"
                       >
                                             <h3
+                                                                  class="title favorite"
+                                            >
+                                                                  favorite
+                                            </h3>
+                                            <h3
                                                                   class="title name"
                                             >
                                                                   name
@@ -500,6 +548,9 @@ ReactWrapper {
                                             class="value"
                       >
                                             <h3
+                                                                  class="value false"
+                                            />
+                                            <h3
                                                                   class="value Beru Whitesun lars"
                                             >
                                                                   Beru Whitesun lars
@@ -522,6 +573,11 @@ ReactWrapper {
                         <h3
                           className="title"
 >
+                          <h3
+                                                    className="title favorite"
+                          >
+                                                    favorite
+                          </h3>
                           <h3
                                                     className="title name"
                           >
@@ -547,6 +603,9 @@ ReactWrapper {
                           className="value"
 >
                           <h3
+                                                    className="value false"
+                          />
+                          <h3
                                                     className="value Beru Whitesun lars"
                           >
                                                     Beru Whitesun lars
@@ -570,6 +629,11 @@ ReactWrapper {
                         "instance": <h3
                           class="title"
 >
+                          <h3
+                                                    class="title favorite"
+                          >
+                                                    favorite
+                          </h3>
                           <h3
                                                     class="title name"
                           >
@@ -595,6 +659,11 @@ ReactWrapper {
                         "nodeType": "host",
                         "props": Object {
                           "children": Array [
+                            <h3
+                              className="title favorite"
+>
+                              favorite
+</h3>,
                             <h3
                               className="title name"
 >
@@ -622,11 +691,29 @@ ReactWrapper {
                         "rendered": Array [
                           Object {
                             "instance": <h3
+                              class="title favorite"
+>
+                              favorite
+</h3>,
+                            "key": "0",
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "favorite",
+                              "className": "title favorite",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              "favorite",
+                            ],
+                            "type": "h3",
+                          },
+                          Object {
+                            "instance": <h3
                               class="title name"
 >
                               name
 </h3>,
-                            "key": "0",
+                            "key": "1",
                             "nodeType": "host",
                             "props": Object {
                               "children": "name",
@@ -644,7 +731,7 @@ ReactWrapper {
 >
                               homeworld
 </h3>,
-                            "key": "1",
+                            "key": "2",
                             "nodeType": "host",
                             "props": Object {
                               "children": "homeworld",
@@ -662,7 +749,7 @@ ReactWrapper {
 >
                               population
 </h3>,
-                            "key": "2",
+                            "key": "3",
                             "nodeType": "host",
                             "props": Object {
                               "children": "population",
@@ -680,7 +767,7 @@ ReactWrapper {
 >
                               species
 </h3>,
-                            "key": "3",
+                            "key": "4",
                             "nodeType": "host",
                             "props": Object {
                               "children": "species",
@@ -700,6 +787,9 @@ ReactWrapper {
                           class="value"
 >
                           <h3
+                                                    class="value false"
+                          />
+                          <h3
                                                     class="value Beru Whitesun lars"
                           >
                                                     Beru Whitesun lars
@@ -718,6 +808,9 @@ ReactWrapper {
                         "nodeType": "host",
                         "props": Object {
                           "children": Array [
+                            <h3
+                              className="value false"
+/>,
                             <h3
                               className="value Beru Whitesun lars"
 >
@@ -739,11 +832,27 @@ ReactWrapper {
                         "rendered": Array [
                           Object {
                             "instance": <h3
+                              class="value false"
+/>,
+                            "key": "0",
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": false,
+                              "className": "value false",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              false,
+                            ],
+                            "type": "h3",
+                          },
+                          Object {
+                            "instance": <h3
                               class="value Beru Whitesun lars"
 >
                               Beru Whitesun lars
 </h3>,
-                            "key": "0",
+                            "key": "1",
                             "nodeType": "host",
                             "props": Object {
                               "children": "Beru Whitesun lars",
@@ -752,22 +861,6 @@ ReactWrapper {
                             "ref": null,
                             "rendered": Array [
                               "Beru Whitesun lars",
-                            ],
-                            "type": "h3",
-                          },
-                          Object {
-                            "instance": <h3
-                              class="value undefined"
-/>,
-                            "key": "1",
-                            "nodeType": "host",
-                            "props": Object {
-                              "children": undefined,
-                              "className": "value undefined",
-                            },
-                            "ref": null,
-                            "rendered": Array [
-                              undefined,
                             ],
                             "type": "h3",
                           },
@@ -792,6 +885,22 @@ ReactWrapper {
                               class="value undefined"
 />,
                             "key": "3",
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": undefined,
+                              "className": "value undefined",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              undefined,
+                            ],
+                            "type": "h3",
+                          },
+                          Object {
+                            "instance": <h3
+                              class="value undefined"
+/>,
+                            "key": "4",
                             "nodeType": "host",
                             "props": Object {
                               "children": undefined,
@@ -831,6 +940,7 @@ ReactWrapper {
         "favorites": Array [
           Object {
             "climate": "temperate, arid",
+            "favorite": true,
             "name": "Geonosis",
             "population": "100000000000",
             "residents": Array [
@@ -841,6 +951,7 @@ ReactWrapper {
         ],
         "peopleData": Array [
           Object {
+            "favorite": false,
             "homeworld": undefined,
             "name": "Beru Whitesun lars",
             "population": undefined,
@@ -850,6 +961,7 @@ ReactWrapper {
         "planetData": Array [
           Object {
             "climate": "temperate, arid",
+            "favorite": false,
             "name": "Geonosis",
             "population": "100000000000",
             "residents": Array [
@@ -862,6 +974,7 @@ ReactWrapper {
         "vehicleData": Array [
           Object {
             "class": undefined,
+            "favorite": false,
             "model": "Modified Luxury Sail Barge",
             "name": "Sail barge",
             "passengers": "500",
@@ -896,6 +1009,11 @@ ReactWrapper {
                                                   class="title"
                                         >
                                                   <h3
+                                                            class="title favorite"
+                                                  >
+                                                            favorite
+                                                  </h3>
+                                                  <h3
                                                             class="title name"
                                                   >
                                                             name
@@ -919,6 +1037,9 @@ ReactWrapper {
                                         <h3
                                                   class="value"
                                         >
+                                                  <h3
+                                                            class="value false"
+                                                  />
                                                   <h3
                                                             class="value Beru Whitesun lars"
                                                   >
@@ -953,6 +1074,7 @@ ReactWrapper {
               <Card
                             data={
                                           Object {
+                                                        "favorite": false,
                                                         "homeworld": undefined,
                                                         "name": "Beru Whitesun lars",
                                                         "population": undefined,
@@ -1004,6 +1126,11 @@ ReactWrapper {
                                                         class="title"
                                           >
                                                         <h3
+                                                                      class="title favorite"
+                                                        >
+                                                                      favorite
+                                                        </h3>
+                                                        <h3
                                                                       class="title name"
                                                         >
                                                                       name
@@ -1027,6 +1154,9 @@ ReactWrapper {
                                           <h3
                                                         class="value"
                                           >
+                                                        <h3
+                                                                      class="value false"
+                                                        />
                                                         <h3
                                                                       class="value Beru Whitesun lars"
                                                         >
@@ -1052,6 +1182,7 @@ ReactWrapper {
                 <Card
                   data={
                                     Object {
+                                                      "favorite": false,
                                                       "homeworld": undefined,
                                                       "name": "Beru Whitesun lars",
                                                       "population": undefined,
@@ -1071,6 +1202,7 @@ ReactWrapper {
                 "nodeType": "function",
                 "props": Object {
                   "data": Object {
+                    "favorite": false,
                     "homeworld": undefined,
                     "name": "Beru Whitesun lars",
                     "population": undefined,
@@ -1095,6 +1227,11 @@ ReactWrapper {
                                                             class="title"
                                         >
                                                             <h3
+                                                                                class="title favorite"
+                                                            >
+                                                                                favorite
+                                                            </h3>
+                                                            <h3
                                                                                 class="title name"
                                                             >
                                                                                 name
@@ -1118,6 +1255,9 @@ ReactWrapper {
                                         <h3
                                                             class="value"
                                         >
+                                                            <h3
+                                                                                class="value false"
+                                                            />
                                                             <h3
                                                                                 class="value Beru Whitesun lars"
                                                             >
@@ -1153,6 +1293,11 @@ ReactWrapper {
                                                 className="title"
                         >
                                                 <h3
+                                                                        className="title favorite"
+                                                >
+                                                                        favorite
+                                                </h3>
+                                                <h3
                                                                         className="title name"
                                                 >
                                                                         name
@@ -1176,6 +1321,9 @@ ReactWrapper {
                         <h3
                                                 className="value"
                         >
+                                                <h3
+                                                                        className="value false"
+                                                />
                                                 <h3
                                                                         className="value Beru Whitesun lars"
                                                 >
@@ -1239,6 +1387,11 @@ ReactWrapper {
                                                 class="title"
                         >
                                                 <h3
+                                                                        class="title favorite"
+                                                >
+                                                                        favorite
+                                                </h3>
+                                                <h3
                                                                         class="title name"
                                                 >
                                                                         name
@@ -1263,6 +1416,9 @@ ReactWrapper {
                                                 class="value"
                         >
                                                 <h3
+                                                                        class="value false"
+                                                />
+                                                <h3
                                                                         class="value Beru Whitesun lars"
                                                 >
                                                                         Beru Whitesun lars
@@ -1285,6 +1441,11 @@ ReactWrapper {
                           <h3
                             className="title"
 >
+                            <h3
+                                                        className="title favorite"
+                            >
+                                                        favorite
+                            </h3>
                             <h3
                                                         className="title name"
                             >
@@ -1310,6 +1471,9 @@ ReactWrapper {
                             className="value"
 >
                             <h3
+                                                        className="value false"
+                            />
+                            <h3
                                                         className="value Beru Whitesun lars"
                             >
                                                         Beru Whitesun lars
@@ -1333,6 +1497,11 @@ ReactWrapper {
                           "instance": <h3
                             class="title"
 >
+                            <h3
+                                                        class="title favorite"
+                            >
+                                                        favorite
+                            </h3>
                             <h3
                                                         class="title name"
                             >
@@ -1358,6 +1527,11 @@ ReactWrapper {
                           "nodeType": "host",
                           "props": Object {
                             "children": Array [
+                              <h3
+                                className="title favorite"
+>
+                                favorite
+</h3>,
                               <h3
                                 className="title name"
 >
@@ -1385,11 +1559,29 @@ ReactWrapper {
                           "rendered": Array [
                             Object {
                               "instance": <h3
+                                class="title favorite"
+>
+                                favorite
+</h3>,
+                              "key": "0",
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": "favorite",
+                                "className": "title favorite",
+                              },
+                              "ref": null,
+                              "rendered": Array [
+                                "favorite",
+                              ],
+                              "type": "h3",
+                            },
+                            Object {
+                              "instance": <h3
                                 class="title name"
 >
                                 name
 </h3>,
-                              "key": "0",
+                              "key": "1",
                               "nodeType": "host",
                               "props": Object {
                                 "children": "name",
@@ -1407,7 +1599,7 @@ ReactWrapper {
 >
                                 homeworld
 </h3>,
-                              "key": "1",
+                              "key": "2",
                               "nodeType": "host",
                               "props": Object {
                                 "children": "homeworld",
@@ -1425,7 +1617,7 @@ ReactWrapper {
 >
                                 population
 </h3>,
-                              "key": "2",
+                              "key": "3",
                               "nodeType": "host",
                               "props": Object {
                                 "children": "population",
@@ -1443,7 +1635,7 @@ ReactWrapper {
 >
                                 species
 </h3>,
-                              "key": "3",
+                              "key": "4",
                               "nodeType": "host",
                               "props": Object {
                                 "children": "species",
@@ -1463,6 +1655,9 @@ ReactWrapper {
                             class="value"
 >
                             <h3
+                                                        class="value false"
+                            />
+                            <h3
                                                         class="value Beru Whitesun lars"
                             >
                                                         Beru Whitesun lars
@@ -1481,6 +1676,9 @@ ReactWrapper {
                           "nodeType": "host",
                           "props": Object {
                             "children": Array [
+                              <h3
+                                className="value false"
+/>,
                               <h3
                                 className="value Beru Whitesun lars"
 >
@@ -1502,11 +1700,27 @@ ReactWrapper {
                           "rendered": Array [
                             Object {
                               "instance": <h3
+                                class="value false"
+/>,
+                              "key": "0",
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": false,
+                                "className": "value false",
+                              },
+                              "ref": null,
+                              "rendered": Array [
+                                false,
+                              ],
+                              "type": "h3",
+                            },
+                            Object {
+                              "instance": <h3
                                 class="value Beru Whitesun lars"
 >
                                 Beru Whitesun lars
 </h3>,
-                              "key": "0",
+                              "key": "1",
                               "nodeType": "host",
                               "props": Object {
                                 "children": "Beru Whitesun lars",
@@ -1515,22 +1729,6 @@ ReactWrapper {
                               "ref": null,
                               "rendered": Array [
                                 "Beru Whitesun lars",
-                              ],
-                              "type": "h3",
-                            },
-                            Object {
-                              "instance": <h3
-                                class="value undefined"
-/>,
-                              "key": "1",
-                              "nodeType": "host",
-                              "props": Object {
-                                "children": undefined,
-                                "className": "value undefined",
-                              },
-                              "ref": null,
-                              "rendered": Array [
-                                undefined,
                               ],
                               "type": "h3",
                             },
@@ -1555,6 +1753,22 @@ ReactWrapper {
                                 class="value undefined"
 />,
                               "key": "3",
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": undefined,
+                                "className": "value undefined",
+                              },
+                              "ref": null,
+                              "rendered": Array [
+                                undefined,
+                              ],
+                              "type": "h3",
+                            },
+                            Object {
+                              "instance": <h3
+                                class="value undefined"
+/>,
+                              "key": "4",
                               "nodeType": "host",
                               "props": Object {
                                 "children": undefined,
