@@ -183,7 +183,6 @@ ReactWrapper {
                                               }
                         }
                         handleClick={undefined}
-                        source="people"
             />
 </section>,
         ],
@@ -270,7 +269,6 @@ ReactWrapper {
                                               }
                 }
                 handleClick={undefined}
-                source="people"
 />,
             ],
             "className": "card-wrap",
@@ -289,7 +287,6 @@ ReactWrapper {
                   "species": undefined,
                 },
                 "handleClick": undefined,
-                "source": "people",
               },
               "ref": null,
               "rendered": Object {
@@ -777,7 +774,6 @@ ReactWrapper {
                                                       }
                             }
                             handleClick={undefined}
-                            source="people"
               />
 </section>,
           ],
@@ -864,7 +860,6 @@ ReactWrapper {
                                                     }
                   }
                   handleClick={undefined}
-                  source="people"
 />,
               ],
               "className": "card-wrap",
@@ -883,7 +878,6 @@ ReactWrapper {
                     "species": undefined,
                   },
                   "handleClick": undefined,
-                  "source": "people",
                 },
                 "ref": null,
                 "rendered": Object {

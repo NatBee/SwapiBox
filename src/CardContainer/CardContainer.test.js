@@ -10,7 +10,7 @@ describe('CardContainer', () => {
   let source;
   const mockPeople = mockData.peopleData;
   const mockPlanets = mockData.planetData;
-  const mockvehicles = mockData.vehicleData;
+  const mockVehicles = mockData.vehicleData;
   const mockFavorites = mockData.favorites;
 
   it('should match the snapshot', () => {
@@ -18,7 +18,7 @@ describe('CardContainer', () => {
     renderedComponent = mount(<CardContainer 
                                   peopleData={mockPeople}
                                   planetData={mockPlanets} 
-                                  vehicleData={mockvehicles} 
+                                  vehicleData={mockVehicles} 
                                   favorites={mockFavorites}
                                   source={source}
                                 />);
@@ -49,7 +49,7 @@ describe('CardContainer', () => {
   it('should render expected number of cards for vehicles', () => {
     source = 'vehicles';
     renderedComponent = mount(<CardContainer 
-                                  vehicleData={mockvehicles} 
+                                  vehicleData={mockVehicles} 
                                   source={source}
                                 />);
 

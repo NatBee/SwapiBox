@@ -1,9 +1,5 @@
 import React from 'react';
 import './ButtonContainer.css';
-import { configure } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-
-configure({ adapter: new Adapter() });
 
 const ButtonContainer = ({handleClickPeople, handleClickPlanets, handleClickVehicles}) => {
 
