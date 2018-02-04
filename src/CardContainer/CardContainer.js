@@ -4,6 +4,7 @@ import './CardContainer.css';
 
 const CardContainer = ({peopleData, planetData, vehicleData, favorites, source, handleClick}) => {
   // put in condition for source value to set newCard for correct data set
+  let spliceData;
   let newCard;
   if(source === 'people') {
     newCard = peopleData.map(people => <Card data={ people } handleClick={handleClick}/>)
