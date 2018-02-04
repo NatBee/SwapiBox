@@ -9,6 +9,7 @@ ShallowWrapper {
         Array [
             Object {
               "climate": "temperate, arid",
+              "favorite": true,
               "name": "Geonosis",
               "population": "100000000000",
               "residents": Array [
@@ -59,10 +60,15 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <div
+          class="fade"
+/>,
         <section
           className="scroll-container"
 >
-          <section>
+          <section
+                    className="crawl"
+          >
                     <p
                               className="opening-crawl"
                     >
@@ -98,26 +104,8 @@ ShallowWrapper {
                     </p>
           </section>
 </section>,
-        <img
-          alt="logo"
-          className="App-logo"
-          src="Star-Wars-Logo.png"
-/>,
-        <h1
-          className="App-title"
->
-          Lego Star Wars
-</h1>,
-        <button
-          className="favorites"
-          onClick={[Function]}
->
-          View Favorites
-          <div>
-                    1
-          </div>
-</button>,
       ],
+      "className": "container",
     },
     "ref": null,
     "rendered": Array [
@@ -126,8 +114,21 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "class": "fade",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
           "children": Array [
-            <section>
+            <section
+              className="crawl"
+>
               <p
                             className="opening-crawl"
               >
@@ -207,6 +208,7 @@ ShallowWrapper {
                   2005-05-19
 </p>,
               ],
+              "className": "crawl",
             },
             "ref": null,
             "rendered": Array [
@@ -288,62 +290,6 @@ captive Chancellor....",
         ],
         "type": "section",
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "alt": "logo",
-          "className": "App-logo",
-          "src": "Star-Wars-Logo.png",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "img",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Lego Star Wars",
-          "className": "App-title",
-        },
-        "ref": null,
-        "rendered": "Lego Star Wars",
-        "type": "h1",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            "View Favorites",
-            <div>
-              1
-</div>,
-          ],
-          "className": "favorites",
-          "onClick": [Function],
-        },
-        "ref": null,
-        "rendered": Array [
-          "View Favorites",
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": 1,
-            },
-            "ref": null,
-            "rendered": 1,
-            "type": "div",
-          },
-        ],
-        "type": "button",
-      },
     ],
     "type": "section",
   },
@@ -354,10 +300,15 @@ captive Chancellor....",
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <div
+            class="fade"
+/>,
           <section
             className="scroll-container"
 >
-            <section>
+            <section
+                        className="crawl"
+            >
                         <p
                                     className="opening-crawl"
                         >
@@ -393,26 +344,8 @@ captive Chancellor....",
                         </p>
             </section>
 </section>,
-          <img
-            alt="logo"
-            className="App-logo"
-            src="Star-Wars-Logo.png"
-/>,
-          <h1
-            className="App-title"
->
-            Lego Star Wars
-</h1>,
-          <button
-            className="favorites"
-            onClick={[Function]}
->
-            View Favorites
-            <div>
-                        1
-            </div>
-</button>,
         ],
+        "className": "container",
       },
       "ref": null,
       "rendered": Array [
@@ -421,8 +354,21 @@ captive Chancellor....",
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "class": "fade",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
             "children": Array [
-              <section>
+              <section
+                className="crawl"
+>
                 <p
                                 className="opening-crawl"
                 >
@@ -502,6 +448,7 @@ captive Chancellor....",
                     2005-05-19
 </p>,
                 ],
+                "className": "crawl",
               },
               "ref": null,
               "rendered": Array [
@@ -582,62 +529,6 @@ captive Chancellor....",
             },
           ],
           "type": "section",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "alt": "logo",
-            "className": "App-logo",
-            "src": "Star-Wars-Logo.png",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "img",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Lego Star Wars",
-            "className": "App-title",
-          },
-          "ref": null,
-          "rendered": "Lego Star Wars",
-          "type": "h1",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              "View Favorites",
-              <div>
-                1
-</div>,
-            ],
-            "className": "favorites",
-            "onClick": [Function],
-          },
-          "ref": null,
-          "rendered": Array [
-            "View Favorites",
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": 1,
-              },
-              "ref": null,
-              "rendered": 1,
-              "type": "div",
-            },
-          ],
-          "type": "button",
         },
       ],
       "type": "section",
