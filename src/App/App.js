@@ -3,6 +3,7 @@ import ButtonContainer from '../ButtonContainer/ButtonContainer.js';
 import ScrollContainer from '../ScrollContainer/ScrollContainer.js';
 import CardContainer from '../CardContainer/CardContainer.js';
 import DataCleaner from '../helper.js'
+import logo from '../images/Star-Wars-Logo.png';
 import './App.css';
 
 class App extends Component {
@@ -113,17 +114,20 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <ScrollContainer 
-          className="scroll-container" 
-          handleClickFavorites={this.handleClickFavorites}
-          movieData={this.state.movieData}
-          favorites={this.state.favorites}
+        <img  src={logo} 
+              className="App-logo" 
+              alt="logo" 
         />
+        <h1 className="App-title">
+          SwapiBox
+        </h1>
         <ButtonContainer 
           className="Btn-container" 
           handleClickPeople={this.handleClickPeople}
           handleClickPlanets={this.handleClickPlanets}
           handleClickVehicles={this.handleClickVehicles}
+          handleClickFavorites={this.handleClickFavorites}
+          favorites={this.state.favorites}
         />
         <CardContainer 
           peopleData={this.state.peopleData}
@@ -132,6 +136,10 @@ class App extends Component {
           favorites={this.state.favorites}
           source={this.state.source}
           handleClick={this.handleClick}
+        />
+        <ScrollContainer 
+          className="scroll-container" 
+          movieData={this.state.movieData}
         />
       </div>
     );
