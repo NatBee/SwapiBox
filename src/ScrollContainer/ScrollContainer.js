@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './ScrollContainer.css';
 
 const ScrollContainer = ({handleClickFavorites, favorites, movieData}) => {
@@ -15,12 +16,16 @@ const ScrollContainer = ({handleClickFavorites, favorites, movieData}) => {
 
   return (
     <section className="container">
-      <div class="fade"></div>
+      <div className="fade"></div>
       <section className="scroll-container">
         {openingScroll}
       </section>
     </section>
   )
 } 
+
+ScrollContainer.propTypes = {
+  movieData: PropTypes.array
+}
 
 export default ScrollContainer;
