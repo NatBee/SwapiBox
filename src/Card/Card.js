@@ -10,7 +10,7 @@ const Card = ({data, handleClick}) => {
   return (
     <article className='card'>
       <p onClick={() => handleClick(data)}>
-        <i class="fas fa-sun"></i>
+        <i className="fas fa-sun"></i>
       </p>
       <section className='card-display'>
         <h3 className='title'>

@@ -4,9 +4,9 @@ import './ScrollContainer.css';
 
 const ScrollContainer = ({handleClickFavorites, favorites, movieData}) => {
   
-  const openingScroll = movieData.map( data => {
+  const openingScroll = movieData.map( (data, index) => {
     return (
-      <section className="crawl">
+      <section className="crawl" key={index} >
         <p className="opening-crawl">{data.openingCrawl}</p>
         <p className="title">{data.title}</p>
         <p className="release-date">{data.releaseDate}</p>

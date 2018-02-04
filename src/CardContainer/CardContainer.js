@@ -6,13 +6,13 @@ import './CardContainer.css';
 const CardContainer = ({peopleData, planetData, vehicleData, favorites, source, handleClick}) => {
   let newCard;
   if(source === 'people') {
-    newCard = peopleData.map(people => <Card data={ people } handleClick={handleClick}/>)
+    newCard = peopleData.map((people, index) => <Card data={ people } handleClick={handleClick} key={index} />)
   } else if(source === 'planets') {
-    newCard = planetData.map(planet => <Card data={ planet } handleClick={handleClick}/>)
+    newCard = planetData.map((planet, index) => <Card data={ planet } handleClick={handleClick} key={index} />)
   } else if(source === 'vehicles') {
-    newCard = vehicleData.map(vehicle => <Card data={ vehicle } handleClick={handleClick}/>)
+    newCard = vehicleData.map((vehicle, index) => <Card data={ vehicle } handleClick={handleClick} key={index} />)
   } else if(source === 'favorites' && favorites.length !== 0) {
-    newCard = favorites.map(favorite => <Card data={ favorite } handleClick={handleClick}/>)
+    newCard = favorites.map((favorite, index) => <Card data={ favorite } handleClick={handleClick} key={index} />)
   } else if(source === 'favorites' && favorites.length === 0) {
     return 'There are no favorites selected!'
   }
