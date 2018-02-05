@@ -4,6 +4,8 @@ import ScrollContainer from '../ScrollContainer/ScrollContainer.js';
 import CardContainer from '../CardContainer/CardContainer.js';
 import DataCleaner from '../helper.js'
 import logo from '../images/Star-Wars-Logo.png';
+import robot from '../images/Gold.png';
+import robot2 from '../images/white.png';
 import './App.css';
 
 class App extends Component {
@@ -84,10 +86,10 @@ class App extends Component {
   handleClick = async (data) => {
     const favoritesArray = await this.state.favorites;
     if(!favoritesArray.includes(data)) {
-      data.favorite = true;
+      this.isFavorite('gold');
       this.setState ({ favorites: [...favoritesArray, data] })
     } else {
-      data.favorite = false;
+      this.isFavorite('grey');
       const removeFavorite = favoritesArray.filter(favorite => {
         return favorite !== data
       })
@@ -96,6 +98,11 @@ class App extends Component {
 
     await this.storeFavorites();
   } 
+
+  isFavorite = (string) => {
+    const favClass = string;
+    return favClass;
+  }
 
   storeFavorites = () => {
     const favorites = this.state.favorites;
@@ -114,7 +121,15 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <img  src={robot2} 
+              className="App-logo" 
+              alt="logo" 
+        />
         <img  src={logo} 
+              className="App-logo" 
+              alt="logo" 
+        />
+        <img  src={robot} 
               className="App-logo" 
               alt="logo" 
         />
@@ -136,6 +151,7 @@ class App extends Component {
           favorites={this.state.favorites}
           source={this.state.source}
           handleClick={this.handleClick}
+          isFavorite={this.isFavorite}
         />
         <ScrollContainer 
           className="scroll-container" 
