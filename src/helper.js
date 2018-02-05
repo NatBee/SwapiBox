@@ -29,7 +29,7 @@ class CleanData {
       const species = cleanSpecies.name;
       const homeWorld = await fetch(person.homeworld);
       const homeWorldResponse = await homeWorld.json();
-      const homeWorldObj = await {  favorite: false,
+      const homeWorldObj = await {  favorite: 'no',
                                     name: name,
                                     homeworld: homeWorldResponse.name, 
                                     population: homeWorldResponse.population, 
@@ -64,7 +64,7 @@ class CleanData {
   cleanPlanets = async (info) => {
     const planetsData = await info.map(async (planet) => {
       const cleanResident = await this.cleanResidents(planet.residents);
-      const planetObj = await { favorite: false,
+      const planetObj = await { favorite: 'no',
                                 name: planet.name, 
                                 climate: planet.climate, 
                                 population: planet.population, 
@@ -94,7 +94,7 @@ class CleanData {
     const vehiclesData = await fetch(`https://swapi.co/api/vehicles/`);
     const response = await vehiclesData.json();
     const cleanVehicleData = await response.results.map( async (vehicle) => {
-      const vehicleObj = await {  favorite: false,
+      const vehicleObj = await {  favorite: 'no',
                                   name: vehicle.name,
                                   model: vehicle.model,
                                   class: vehicle.vehicle_class,

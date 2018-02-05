@@ -2,22 +2,25 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Card.css';
 
-const Card = ({data, handleClick}) => {
+const Card = ({data, handleClick, isFavorite}) => {
   
-  const cardDisplayKey = Object.keys(data).map((title, index) => <h3 className={`title ${title}`} key={index}>{title}</h3>);   
-  const cardDisplayValues = Object.values(data).map( (value, index) => <h3 className={`value ${value}`} key={index}>{value}</h3>);                          
+  const cardDisplayEntries = Object.entries(data).map((item, index) => {
+    return (
+      <p className={`${item[0]}`}>
+        <h3 key={`${item[0]}-${index}`}>{item[0].toUpperCase()}:</h3>  
+        <h3 key={`${item[1]}-${index}`}>{item[1]}</h3>  
+      </p>
+    )
+  })
 
   return (
     <article className='card'>
       <p onClick={() => handleClick(data)}>
-        <i className="fas fa-sun"></i>
+        <i className={`fas fa-sun ${isFavorite}`}></i>
       </p>
       <section className='card-display'>
         <h3 className='title'>
-          {cardDisplayKey}
-        </h3>
-        <h3 className='value'>
-          {cardDisplayValues}
+          {cardDisplayEntries}
         </h3>
       </section>
     </article>
