@@ -30,39 +30,37 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <p
+        <div
+          className="fav-icon"
           onClick={[Function]}
 >
           <i
-                    class="fas fa-sun"
+                    className="fas fa-sun undefined"
           />
-</p>,
+</div>,
         <section
           className="card-display"
 >
           <h3
                     className="title"
           >
-                    <h3
-                              className="title 0"
+                    <p
+                              className="0"
                     >
-                              0
-                    </h3>
-          </h3>
-          <h3
-                    className="value"
-          >
-                    <h3
-                              className="value [object Object]"
-                    >
-                              Object {
-                                        "favorite": false,
-                                        "homeworld": undefined,
-                                        "name": "Beru Whitesun lars",
-                                        "population": undefined,
-                                        "species": undefined,
-                                      }
-                    </h3>
+                              <h3>
+                                        0
+                                        :
+                              </h3>
+                              <h3>
+                                        Object {
+                                                  "favorite": false,
+                                                  "homeworld": undefined,
+                                                  "name": "Beru Whitesun lars",
+                                                  "population": undefined,
+                                                  "species": undefined,
+                                                }
+                              </h3>
+                    </p>
           </h3>
 </section>,
       ],
@@ -76,8 +74,9 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <i
-            class="fas fa-sun"
+            className="fas fa-sun undefined"
 />,
+          "className": "fav-icon",
           "onClick": [Function],
         },
         "ref": null,
@@ -86,130 +85,141 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "class": "fas fa-sun",
+            "className": "fas fa-sun undefined",
           },
           "ref": null,
           "rendered": null,
           "type": "i",
         },
-        "type": "p",
+        "type": "div",
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
-            <h3
-              className="title"
+          "children": <h3
+            className="title"
 >
-              <h3
-                            className="title 0"
-              >
-                            0
-              </h3>
+            <p
+                        className="0"
+            >
+                        <h3>
+                                    0
+                                    :
+                        </h3>
+                        <h3>
+                                    Object {
+                                                "favorite": false,
+                                                "homeworld": undefined,
+                                                "name": "Beru Whitesun lars",
+                                                "population": undefined,
+                                                "species": undefined,
+                                              }
+                        </h3>
+            </p>
 </h3>,
-            <h3
-              className="value"
->
-              <h3
-                            className="value [object Object]"
-              >
-                            Object {
-                                          "favorite": false,
-                                          "homeworld": undefined,
-                                          "name": "Beru Whitesun lars",
-                                          "population": undefined,
-                                          "species": undefined,
-                                        }
-              </h3>
-</h3>,
-          ],
           "className": "card-display",
         },
         "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <h3
-                  className="title 0"
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p
+                className="0"
 >
-                  0
-</h3>,
-              ],
-              "className": "title",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": "0",
-                "nodeType": "host",
-                "props": Object {
-                  "children": "0",
-                  "className": "title 0",
-                },
-                "ref": null,
-                "rendered": "0",
-                "type": "h3",
-              },
+                <h3>
+                                0
+                                :
+                </h3>
+                <h3>
+                                Object {
+                                                "favorite": false,
+                                                "homeworld": undefined,
+                                                "name": "Beru Whitesun lars",
+                                                "population": undefined,
+                                                "species": undefined,
+                                              }
+                </h3>
+</p>,
             ],
-            "type": "h3",
+            "className": "title",
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <h3
-                  className="value [object Object]"
->
-                  Object {
-                                    "favorite": false,
-                                    "homeworld": undefined,
-                                    "name": "Beru Whitesun lars",
-                                    "population": undefined,
-                                    "species": undefined,
-                                  }
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h3>
+                    0
+                    :
 </h3>,
-              ],
-              "className": "value",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": "0",
-                "nodeType": "host",
-                "props": Object {
-                  "children": Object {
+                  <h3>
+                    Object {
+                                        "favorite": false,
+                                        "homeworld": undefined,
+                                        "name": "Beru Whitesun lars",
+                                        "population": undefined,
+                                        "species": undefined,
+                                      }
+</h3>,
+                ],
+                "className": "0",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "0-0",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "0",
+                      ":",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "0",
+                    ":",
+                  ],
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": "[object Object]-0",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Object {
+                      "favorite": false,
+                      "homeworld": undefined,
+                      "name": "Beru Whitesun lars",
+                      "population": undefined,
+                      "species": undefined,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": Object {
                     "favorite": false,
                     "homeworld": undefined,
                     "name": "Beru Whitesun lars",
                     "population": undefined,
                     "species": undefined,
                   },
-                  "className": "value [object Object]",
+                  "type": "h3",
                 },
-                "ref": null,
-                "rendered": Object {
-                  "favorite": false,
-                  "homeworld": undefined,
-                  "name": "Beru Whitesun lars",
-                  "population": undefined,
-                  "species": undefined,
-                },
-                "type": "h3",
-              },
-            ],
-            "type": "h3",
-          },
-        ],
+              ],
+              "type": "p",
+            },
+          ],
+          "type": "h3",
+        },
         "type": "section",
       },
     ],
@@ -222,39 +232,37 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <p
+          <div
+            className="fav-icon"
             onClick={[Function]}
 >
             <i
-                        class="fas fa-sun"
+                        className="fas fa-sun undefined"
             />
-</p>,
+</div>,
           <section
             className="card-display"
 >
             <h3
                         className="title"
             >
-                        <h3
-                                    className="title 0"
+                        <p
+                                    className="0"
                         >
-                                    0
-                        </h3>
-            </h3>
-            <h3
-                        className="value"
-            >
-                        <h3
-                                    className="value [object Object]"
-                        >
-                                    Object {
-                                                "favorite": false,
-                                                "homeworld": undefined,
-                                                "name": "Beru Whitesun lars",
-                                                "population": undefined,
-                                                "species": undefined,
-                                              }
-                        </h3>
+                                    <h3>
+                                                0
+                                                :
+                                    </h3>
+                                    <h3>
+                                                Object {
+                                                            "favorite": false,
+                                                            "homeworld": undefined,
+                                                            "name": "Beru Whitesun lars",
+                                                            "population": undefined,
+                                                            "species": undefined,
+                                                          }
+                                    </h3>
+                        </p>
             </h3>
 </section>,
         ],
@@ -268,8 +276,9 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <i
-              class="fas fa-sun"
+              className="fas fa-sun undefined"
 />,
+            "className": "fav-icon",
             "onClick": [Function],
           },
           "ref": null,
@@ -278,130 +287,141 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "class": "fas fa-sun",
+              "className": "fas fa-sun undefined",
             },
             "ref": null,
             "rendered": null,
             "type": "i",
           },
-          "type": "p",
+          "type": "div",
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              <h3
-                className="title"
+            "children": <h3
+              className="title"
 >
-                <h3
-                                className="title 0"
-                >
-                                0
-                </h3>
+              <p
+                            className="0"
+              >
+                            <h3>
+                                          0
+                                          :
+                            </h3>
+                            <h3>
+                                          Object {
+                                                        "favorite": false,
+                                                        "homeworld": undefined,
+                                                        "name": "Beru Whitesun lars",
+                                                        "population": undefined,
+                                                        "species": undefined,
+                                                      }
+                            </h3>
+              </p>
 </h3>,
-              <h3
-                className="value"
->
-                <h3
-                                className="value [object Object]"
-                >
-                                Object {
-                                                "favorite": false,
-                                                "homeworld": undefined,
-                                                "name": "Beru Whitesun lars",
-                                                "population": undefined,
-                                                "species": undefined,
-                                              }
-                </h3>
-</h3>,
-            ],
             "className": "card-display",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <h3
-                    className="title 0"
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p
+                  className="0"
 >
-                    0
-</h3>,
-                ],
-                "className": "title",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": "0",
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "0",
-                    "className": "title 0",
-                  },
-                  "ref": null,
-                  "rendered": "0",
-                  "type": "h3",
-                },
+                  <h3>
+                                    0
+                                    :
+                  </h3>
+                  <h3>
+                                    Object {
+                                                      "favorite": false,
+                                                      "homeworld": undefined,
+                                                      "name": "Beru Whitesun lars",
+                                                      "population": undefined,
+                                                      "species": undefined,
+                                                    }
+                  </h3>
+</p>,
               ],
-              "type": "h3",
+              "className": "title",
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <h3
-                    className="value [object Object]"
->
-                    Object {
-                                        "favorite": false,
-                                        "homeworld": undefined,
-                                        "name": "Beru Whitesun lars",
-                                        "population": undefined,
-                                        "species": undefined,
-                                      }
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <h3>
+                      0
+                      :
 </h3>,
-                ],
-                "className": "value",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": "0",
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Object {
+                    <h3>
+                      Object {
+                                            "favorite": false,
+                                            "homeworld": undefined,
+                                            "name": "Beru Whitesun lars",
+                                            "population": undefined,
+                                            "species": undefined,
+                                          }
+</h3>,
+                  ],
+                  "className": "0",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": "0-0",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "0",
+                        ":",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "0",
+                      ":",
+                    ],
+                    "type": "h3",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "[object Object]-0",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Object {
+                        "favorite": false,
+                        "homeworld": undefined,
+                        "name": "Beru Whitesun lars",
+                        "population": undefined,
+                        "species": undefined,
+                      },
+                    },
+                    "ref": null,
+                    "rendered": Object {
                       "favorite": false,
                       "homeworld": undefined,
                       "name": "Beru Whitesun lars",
                       "population": undefined,
                       "species": undefined,
                     },
-                    "className": "value [object Object]",
+                    "type": "h3",
                   },
-                  "ref": null,
-                  "rendered": Object {
-                    "favorite": false,
-                    "homeworld": undefined,
-                    "name": "Beru Whitesun lars",
-                    "population": undefined,
-                    "species": undefined,
-                  },
-                  "type": "h3",
-                },
-              ],
-              "type": "h3",
-            },
-          ],
+                ],
+                "type": "p",
+              },
+            ],
+            "type": "h3",
+          },
           "type": "section",
         },
       ],

@@ -121,7 +121,8 @@ ReactWrapper {
         <h3
                 class="card-header"
         >
-                Card Container
+                PEOPLE
+                CARDS
         </h3>
         <section
                 class="card-wrap"
@@ -129,63 +130,66 @@ ReactWrapper {
                 <article
                         class="card"
                 >
-                        <p>
+                        <div
+                                class="fav-icon"
+                        >
                                 <i
-                                        class="fas fa-sun"
+                                        class="fas fa-sun undefined"
                                 />
-                        </p>
+                        </div>
                         <section
                                 class="card-display"
                         >
                                 <h3
                                         class="title"
                                 >
-                                        <h3
-                                                class="title favorite"
+                                        <p
+                                                class="favorite"
                                         >
-                                                favorite
-                                        </h3>
-                                        <h3
-                                                class="title name"
+                                                <h3>
+                                                        FAVORITE
+                                                        :
+                                                </h3>
+                                                <h3 />
+                                        </p>
+                                        <p
+                                                class="name"
                                         >
-                                                name
-                                        </h3>
-                                        <h3
-                                                class="title homeworld"
+                                                <h3>
+                                                        NAME
+                                                        :
+                                                </h3>
+                                                <h3>
+                                                        Beru Whitesun lars
+                                                </h3>
+                                        </p>
+                                        <p
+                                                class="homeworld"
                                         >
-                                                homeworld
-                                        </h3>
-                                        <h3
-                                                class="title population"
+                                                <h3>
+                                                        HOMEWORLD
+                                                        :
+                                                </h3>
+                                                <h3 />
+                                        </p>
+                                        <p
+                                                class="population"
                                         >
-                                                population
-                                        </h3>
-                                        <h3
-                                                class="title species"
+                                                <h3>
+                                                        POPULATION
+                                                        :
+                                                </h3>
+                                                <h3 />
+                                        </p>
+                                        <p
+                                                class="species"
                                         >
-                                                species
-                                        </h3>
-                                </h3>
-                                <h3
-                                        class="value"
-                                >
-                                        <h3
-                                                class="value false"
-                                        />
-                                        <h3
-                                                class="value Beru Whitesun lars"
-                                        >
-                                                Beru Whitesun lars
-                                        </h3>
-                                        <h3
-                                                class="value undefined"
-                                        />
-                                        <h3
-                                                class="value undefined"
-                                        />
-                                        <h3
-                                                class="value undefined"
-                                        />
+                                                <h3>
+                                                        SPECIES
+                                                        :
+                                                </h3>
+                                                <h3 />
+                                        </p>
                                 </h3>
                         </section>
                 </article>
@@ -198,7 +202,8 @@ ReactWrapper {
           <h3
             className="card-header"
 >
-            Card Container
+            PEOPLE
+             CARDS
 </h3>,
           <section
             className="card-wrap"
@@ -214,6 +219,7 @@ ReactWrapper {
                                               }
                         }
                         handleClick={undefined}
+                        isFavorite={undefined}
             />
 </section>,
         ],
@@ -225,17 +231,22 @@ ReactWrapper {
           "instance": <h3
             class="card-header"
 >
-            Card Container
+            PEOPLE
+            CARDS
 </h3>,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Card Container",
+            "children": Array [
+              "PEOPLE",
+              " CARDS",
+            ],
             "className": "card-header",
           },
           "ref": null,
           "rendered": Array [
-            "Card Container",
+            "PEOPLE",
+            " CARDS",
           ],
           "type": "h3",
         },
@@ -246,63 +257,66 @@ ReactWrapper {
             <article
                         class="card"
             >
-                        <p>
+                        <div
+                                    class="fav-icon"
+                        >
                                     <i
-                                                class="fas fa-sun"
+                                                class="fas fa-sun undefined"
                                     />
-                        </p>
+                        </div>
                         <section
                                     class="card-display"
                         >
                                     <h3
                                                 class="title"
                                     >
-                                                <h3
-                                                            class="title favorite"
+                                                <p
+                                                            class="favorite"
                                                 >
-                                                            favorite
-                                                </h3>
-                                                <h3
-                                                            class="title name"
+                                                            <h3>
+                                                                        FAVORITE
+                                                                        :
+                                                            </h3>
+                                                            <h3 />
+                                                </p>
+                                                <p
+                                                            class="name"
                                                 >
-                                                            name
-                                                </h3>
-                                                <h3
-                                                            class="title homeworld"
+                                                            <h3>
+                                                                        NAME
+                                                                        :
+                                                            </h3>
+                                                            <h3>
+                                                                        Beru Whitesun lars
+                                                            </h3>
+                                                </p>
+                                                <p
+                                                            class="homeworld"
                                                 >
-                                                            homeworld
-                                                </h3>
-                                                <h3
-                                                            class="title population"
+                                                            <h3>
+                                                                        HOMEWORLD
+                                                                        :
+                                                            </h3>
+                                                            <h3 />
+                                                </p>
+                                                <p
+                                                            class="population"
                                                 >
-                                                            population
-                                                </h3>
-                                                <h3
-                                                            class="title species"
+                                                            <h3>
+                                                                        POPULATION
+                                                                        :
+                                                            </h3>
+                                                            <h3 />
+                                                </p>
+                                                <p
+                                                            class="species"
                                                 >
-                                                            species
-                                                </h3>
-                                    </h3>
-                                    <h3
-                                                class="value"
-                                    >
-                                                <h3
-                                                            class="value false"
-                                                />
-                                                <h3
-                                                            class="value Beru Whitesun lars"
-                                                >
-                                                            Beru Whitesun lars
-                                                </h3>
-                                                <h3
-                                                            class="value undefined"
-                                                />
-                                                <h3
-                                                            class="value undefined"
-                                                />
-                                                <h3
-                                                            class="value undefined"
-                                                />
+                                                            <h3>
+                                                                        SPECIES
+                                                                        :
+                                                            </h3>
+                                                            <h3 />
+                                                </p>
                                     </h3>
                         </section>
             </article>
@@ -322,6 +336,7 @@ ReactWrapper {
                                               }
                 }
                 handleClick={undefined}
+                isFavorite={undefined}
 />,
             ],
             "className": "card-wrap",
@@ -330,7 +345,7 @@ ReactWrapper {
           "rendered": Array [
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "0",
               "nodeType": "function",
               "props": Object {
                 "data": Object {
@@ -341,69 +356,73 @@ ReactWrapper {
                   "species": undefined,
                 },
                 "handleClick": undefined,
+                "isFavorite": undefined,
               },
               "ref": null,
               "rendered": Object {
                 "instance": <article
                   class="card"
 >
-                  <p>
+                  <div
+                                    class="fav-icon"
+                  >
                                     <i
-                                                      class="fas fa-sun"
+                                                      class="fas fa-sun undefined"
                                     />
-                  </p>
+                  </div>
                   <section
                                     class="card-display"
                   >
                                     <h3
                                                       class="title"
                                     >
-                                                      <h3
-                                                                        class="title favorite"
+                                                      <p
+                                                                        class="favorite"
                                                       >
-                                                                        favorite
-                                                      </h3>
-                                                      <h3
-                                                                        class="title name"
+                                                                        <h3>
+                                                                                          FAVORITE
+                                                                                          :
+                                                                        </h3>
+                                                                        <h3 />
+                                                      </p>
+                                                      <p
+                                                                        class="name"
                                                       >
-                                                                        name
-                                                      </h3>
-                                                      <h3
-                                                                        class="title homeworld"
+                                                                        <h3>
+                                                                                          NAME
+                                                                                          :
+                                                                        </h3>
+                                                                        <h3>
+                                                                                          Beru Whitesun lars
+                                                                        </h3>
+                                                      </p>
+                                                      <p
+                                                                        class="homeworld"
                                                       >
-                                                                        homeworld
-                                                      </h3>
-                                                      <h3
-                                                                        class="title population"
+                                                                        <h3>
+                                                                                          HOMEWORLD
+                                                                                          :
+                                                                        </h3>
+                                                                        <h3 />
+                                                      </p>
+                                                      <p
+                                                                        class="population"
                                                       >
-                                                                        population
-                                                      </h3>
-                                                      <h3
-                                                                        class="title species"
+                                                                        <h3>
+                                                                                          POPULATION
+                                                                                          :
+                                                                        </h3>
+                                                                        <h3 />
+                                                      </p>
+                                                      <p
+                                                                        class="species"
                                                       >
-                                                                        species
-                                                      </h3>
-                                    </h3>
-                                    <h3
-                                                      class="value"
-                                    >
-                                                      <h3
-                                                                        class="value false"
-                                                      />
-                                                      <h3
-                                                                        class="value Beru Whitesun lars"
-                                                      >
-                                                                        Beru Whitesun lars
-                                                      </h3>
-                                                      <h3
-                                                                        class="value undefined"
-                                                      />
-                                                      <h3
-                                                                        class="value undefined"
-                                                      />
-                                                      <h3
-                                                                        class="value undefined"
-                                                      />
+                                                                        <h3>
+                                                                                          SPECIES
+                                                                                          :
+                                                                        </h3>
+                                                                        <h3 />
+                                                      </p>
                                     </h3>
                   </section>
 </article>,
@@ -411,65 +430,67 @@ ReactWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    <p
+                    <div
+                      className="fav-icon"
                       onClick={[Function]}
 >
                       <i
-                                            class="fas fa-sun"
+                                            className="fas fa-sun undefined"
                       />
-</p>,
+</div>,
                     <section
                       className="card-display"
 >
                       <h3
                                             className="title"
                       >
-                                            <h3
-                                                                  className="title favorite"
+                                            <p
+                                                                  className="favorite"
                                             >
-                                                                  favorite
-                                            </h3>
-                                            <h3
-                                                                  className="title name"
+                                                                  <h3>
+                                                                                        FAVORITE
+                                                                                        :
+                                                                  </h3>
+                                                                  <h3 />
+                                            </p>
+                                            <p
+                                                                  className="name"
                                             >
-                                                                  name
-                                            </h3>
-                                            <h3
-                                                                  className="title homeworld"
+                                                                  <h3>
+                                                                                        NAME
+                                                                                        :
+                                                                  </h3>
+                                                                  <h3>
+                                                                                        Beru Whitesun lars
+                                                                  </h3>
+                                            </p>
+                                            <p
+                                                                  className="homeworld"
                                             >
-                                                                  homeworld
-                                            </h3>
-                                            <h3
-                                                                  className="title population"
+                                                                  <h3>
+                                                                                        HOMEWORLD
+                                                                                        :
+                                                                  </h3>
+                                                                  <h3 />
+                                            </p>
+                                            <p
+                                                                  className="population"
                                             >
-                                                                  population
-                                            </h3>
-                                            <h3
-                                                                  className="title species"
+                                                                  <h3>
+                                                                                        POPULATION
+                                                                                        :
+                                                                  </h3>
+                                                                  <h3 />
+                                            </p>
+                                            <p
+                                                                  className="species"
                                             >
-                                                                  species
-                                            </h3>
-                      </h3>
-                      <h3
-                                            className="value"
-                      >
-                                            <h3
-                                                                  className="value false"
-                                            />
-                                            <h3
-                                                                  className="value Beru Whitesun lars"
-                                            >
-                                                                  Beru Whitesun lars
-                                            </h3>
-                                            <h3
-                                                                  className="value undefined"
-                                            />
-                                            <h3
-                                                                  className="value undefined"
-                                            />
-                                            <h3
-                                                                  className="value undefined"
-                                            />
+                                                                  <h3>
+                                                                                        SPECIES
+                                                                                        :
+                                                                  </h3>
+                                                                  <h3 />
+                                            </p>
                       </h3>
 </section>,
                   ],
@@ -478,29 +499,32 @@ ReactWrapper {
                 "ref": null,
                 "rendered": Array [
                   Object {
-                    "instance": <p>
+                    "instance": <div
+                      class="fav-icon"
+>
                       <i
-                                            class="fas fa-sun"
+                                            class="fas fa-sun undefined"
                       />
-</p>,
+</div>,
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
                       "children": <i
-                        class="fas fa-sun"
+                        className="fas fa-sun undefined"
 />,
+                      "className": "fav-icon",
                       "onClick": [Function],
                     },
                     "ref": null,
                     "rendered": Array [
                       Object {
                         "instance": <i
-                          class="fas fa-sun"
+                          class="fas fa-sun undefined"
 />,
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
-                          "class": "fas fa-sun",
+                          "className": "fas fa-sun undefined",
                         },
                         "ref": null,
                         "rendered": Array [
@@ -509,7 +533,7 @@ ReactWrapper {
                         "type": "i",
                       },
                     ],
-                    "type": "p",
+                    "type": "div",
                   },
                   Object {
                     "instance": <section
@@ -518,109 +542,109 @@ ReactWrapper {
                       <h3
                                             class="title"
                       >
-                                            <h3
-                                                                  class="title favorite"
+                                            <p
+                                                                  class="favorite"
                                             >
-                                                                  favorite
-                                            </h3>
-                                            <h3
-                                                                  class="title name"
+                                                                  <h3>
+                                                                                        FAVORITE
+                                                                                        :
+                                                                  </h3>
+                                                                  <h3 />
+                                            </p>
+                                            <p
+                                                                  class="name"
                                             >
-                                                                  name
-                                            </h3>
-                                            <h3
-                                                                  class="title homeworld"
+                                                                  <h3>
+                                                                                        NAME
+                                                                                        :
+                                                                  </h3>
+                                                                  <h3>
+                                                                                        Beru Whitesun lars
+                                                                  </h3>
+                                            </p>
+                                            <p
+                                                                  class="homeworld"
                                             >
-                                                                  homeworld
-                                            </h3>
-                                            <h3
-                                                                  class="title population"
+                                                                  <h3>
+                                                                                        HOMEWORLD
+                                                                                        :
+                                                                  </h3>
+                                                                  <h3 />
+                                            </p>
+                                            <p
+                                                                  class="population"
                                             >
-                                                                  population
-                                            </h3>
-                                            <h3
-                                                                  class="title species"
+                                                                  <h3>
+                                                                                        POPULATION
+                                                                                        :
+                                                                  </h3>
+                                                                  <h3 />
+                                            </p>
+                                            <p
+                                                                  class="species"
                                             >
-                                                                  species
-                                            </h3>
-                      </h3>
-                      <h3
-                                            class="value"
-                      >
-                                            <h3
-                                                                  class="value false"
-                                            />
-                                            <h3
-                                                                  class="value Beru Whitesun lars"
-                                            >
-                                                                  Beru Whitesun lars
-                                            </h3>
-                                            <h3
-                                                                  class="value undefined"
-                                            />
-                                            <h3
-                                                                  class="value undefined"
-                                            />
-                                            <h3
-                                                                  class="value undefined"
-                                            />
+                                                                  <h3>
+                                                                                        SPECIES
+                                                                                        :
+                                                                  </h3>
+                                                                  <h3 />
+                                            </p>
                       </h3>
 </section>,
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": Array [
-                        <h3
-                          className="title"
+                      "children": <h3
+                        className="title"
 >
-                          <h3
-                                                    className="title favorite"
-                          >
-                                                    favorite
-                          </h3>
-                          <h3
-                                                    className="title name"
-                          >
-                                                    name
-                          </h3>
-                          <h3
-                                                    className="title homeworld"
-                          >
-                                                    homeworld
-                          </h3>
-                          <h3
-                                                    className="title population"
-                          >
-                                                    population
-                          </h3>
-                          <h3
-                                                    className="title species"
-                          >
-                                                    species
-                          </h3>
+                        <p
+                                                className="favorite"
+                        >
+                                                <h3>
+                                                                        FAVORITE
+                                                                        :
+                                                </h3>
+                                                <h3 />
+                        </p>
+                        <p
+                                                className="name"
+                        >
+                                                <h3>
+                                                                        NAME
+                                                                        :
+                                                </h3>
+                                                <h3>
+                                                                        Beru Whitesun lars
+                                                </h3>
+                        </p>
+                        <p
+                                                className="homeworld"
+                        >
+                                                <h3>
+                                                                        HOMEWORLD
+                                                                        :
+                                                </h3>
+                                                <h3 />
+                        </p>
+                        <p
+                                                className="population"
+                        >
+                                                <h3>
+                                                                        POPULATION
+                                                                        :
+                                                </h3>
+                                                <h3 />
+                        </p>
+                        <p
+                                                className="species"
+                        >
+                                                <h3>
+                                                                        SPECIES
+                                                                        :
+                                                </h3>
+                                                <h3 />
+                        </p>
 </h3>,
-                        <h3
-                          className="value"
->
-                          <h3
-                                                    className="value false"
-                          />
-                          <h3
-                                                    className="value Beru Whitesun lars"
-                          >
-                                                    Beru Whitesun lars
-                          </h3>
-                          <h3
-                                                    className="value undefined"
-                          />
-                          <h3
-                                                    className="value undefined"
-                          />
-                          <h3
-                                                    className="value undefined"
-                          />
-</h3>,
-                      ],
                       "className": "card-display",
                     },
                     "ref": null,
@@ -629,288 +653,415 @@ ReactWrapper {
                         "instance": <h3
                           class="title"
 >
-                          <h3
-                                                    class="title favorite"
+                          <p
+                                                    class="favorite"
                           >
-                                                    favorite
-                          </h3>
-                          <h3
-                                                    class="title name"
+                                                    <h3>
+                                                                              FAVORITE
+                                                                              :
+                                                    </h3>
+                                                    <h3 />
+                          </p>
+                          <p
+                                                    class="name"
                           >
-                                                    name
-                          </h3>
-                          <h3
-                                                    class="title homeworld"
+                                                    <h3>
+                                                                              NAME
+                                                                              :
+                                                    </h3>
+                                                    <h3>
+                                                                              Beru Whitesun lars
+                                                    </h3>
+                          </p>
+                          <p
+                                                    class="homeworld"
                           >
-                                                    homeworld
-                          </h3>
-                          <h3
-                                                    class="title population"
+                                                    <h3>
+                                                                              HOMEWORLD
+                                                                              :
+                                                    </h3>
+                                                    <h3 />
+                          </p>
+                          <p
+                                                    class="population"
                           >
-                                                    population
-                          </h3>
-                          <h3
-                                                    class="title species"
+                                                    <h3>
+                                                                              POPULATION
+                                                                              :
+                                                    </h3>
+                                                    <h3 />
+                          </p>
+                          <p
+                                                    class="species"
                           >
-                                                    species
-                          </h3>
+                                                    <h3>
+                                                                              SPECIES
+                                                                              :
+                                                    </h3>
+                                                    <h3 />
+                          </p>
 </h3>,
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
                           "children": Array [
-                            <h3
-                              className="title favorite"
+                            <p
+                              className="favorite"
 >
-                              favorite
-</h3>,
-                            <h3
-                              className="title name"
+                              <h3>
+                                                            FAVORITE
+                                                            :
+                              </h3>
+                              <h3 />
+</p>,
+                            <p
+                              className="name"
 >
-                              name
-</h3>,
-                            <h3
-                              className="title homeworld"
+                              <h3>
+                                                            NAME
+                                                            :
+                              </h3>
+                              <h3>
+                                                            Beru Whitesun lars
+                              </h3>
+</p>,
+                            <p
+                              className="homeworld"
 >
-                              homeworld
-</h3>,
-                            <h3
-                              className="title population"
+                              <h3>
+                                                            HOMEWORLD
+                                                            :
+                              </h3>
+                              <h3 />
+</p>,
+                            <p
+                              className="population"
 >
-                              population
-</h3>,
-                            <h3
-                              className="title species"
+                              <h3>
+                                                            POPULATION
+                                                            :
+                              </h3>
+                              <h3 />
+</p>,
+                            <p
+                              className="species"
 >
-                              species
-</h3>,
+                              <h3>
+                                                            SPECIES
+                                                            :
+                              </h3>
+                              <h3 />
+</p>,
                           ],
                           "className": "title",
                         },
                         "ref": null,
                         "rendered": Array [
                           Object {
-                            "instance": <h3
-                              class="title favorite"
+                            "instance": <p
+                              class="favorite"
 >
-                              favorite
-</h3>,
-                            "key": "0",
+                              <h3>
+                                                            FAVORITE
+                                                            :
+                              </h3>
+                              <h3 />
+</p>,
+                            "key": undefined,
                             "nodeType": "host",
                             "props": Object {
-                              "children": "favorite",
-                              "className": "title favorite",
+                              "children": Array [
+                                <h3>
+                                  FAVORITE
+                                  :
+</h3>,
+                                <h3 />,
+                              ],
+                              "className": "favorite",
                             },
                             "ref": null,
                             "rendered": Array [
-                              "favorite",
+                              Object {
+                                "instance": <h3>
+                                  FAVORITE
+                                  :
+</h3>,
+                                "key": "favorite-0",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": Array [
+                                    "FAVORITE",
+                                    ":",
+                                  ],
+                                },
+                                "ref": null,
+                                "rendered": Array [
+                                  "FAVORITE",
+                                  ":",
+                                ],
+                                "type": "h3",
+                              },
+                              Object {
+                                "instance": <h3 />,
+                                "key": "false-0",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": false,
+                                },
+                                "ref": null,
+                                "rendered": Array [
+                                  false,
+                                ],
+                                "type": "h3",
+                              },
                             ],
-                            "type": "h3",
+                            "type": "p",
                           },
                           Object {
-                            "instance": <h3
-                              class="title name"
+                            "instance": <p
+                              class="name"
 >
-                              name
-</h3>,
-                            "key": "1",
+                              <h3>
+                                                            NAME
+                                                            :
+                              </h3>
+                              <h3>
+                                                            Beru Whitesun lars
+                              </h3>
+</p>,
+                            "key": undefined,
                             "nodeType": "host",
                             "props": Object {
-                              "children": "name",
-                              "className": "title name",
+                              "children": Array [
+                                <h3>
+                                  NAME
+                                  :
+</h3>,
+                                <h3>
+                                  Beru Whitesun lars
+</h3>,
+                              ],
+                              "className": "name",
                             },
                             "ref": null,
                             "rendered": Array [
-                              "name",
+                              Object {
+                                "instance": <h3>
+                                  NAME
+                                  :
+</h3>,
+                                "key": "name-1",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": Array [
+                                    "NAME",
+                                    ":",
+                                  ],
+                                },
+                                "ref": null,
+                                "rendered": Array [
+                                  "NAME",
+                                  ":",
+                                ],
+                                "type": "h3",
+                              },
+                              Object {
+                                "instance": <h3>
+                                  Beru Whitesun lars
+</h3>,
+                                "key": "Beru Whitesun lars-1",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": "Beru Whitesun lars",
+                                },
+                                "ref": null,
+                                "rendered": Array [
+                                  "Beru Whitesun lars",
+                                ],
+                                "type": "h3",
+                              },
                             ],
-                            "type": "h3",
+                            "type": "p",
                           },
                           Object {
-                            "instance": <h3
-                              class="title homeworld"
+                            "instance": <p
+                              class="homeworld"
 >
-                              homeworld
-</h3>,
-                            "key": "2",
+                              <h3>
+                                                            HOMEWORLD
+                                                            :
+                              </h3>
+                              <h3 />
+</p>,
+                            "key": undefined,
                             "nodeType": "host",
                             "props": Object {
-                              "children": "homeworld",
-                              "className": "title homeworld",
+                              "children": Array [
+                                <h3>
+                                  HOMEWORLD
+                                  :
+</h3>,
+                                <h3 />,
+                              ],
+                              "className": "homeworld",
                             },
                             "ref": null,
                             "rendered": Array [
-                              "homeworld",
+                              Object {
+                                "instance": <h3>
+                                  HOMEWORLD
+                                  :
+</h3>,
+                                "key": "homeworld-2",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": Array [
+                                    "HOMEWORLD",
+                                    ":",
+                                  ],
+                                },
+                                "ref": null,
+                                "rendered": Array [
+                                  "HOMEWORLD",
+                                  ":",
+                                ],
+                                "type": "h3",
+                              },
+                              Object {
+                                "instance": <h3 />,
+                                "key": "undefined-2",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": undefined,
+                                },
+                                "ref": null,
+                                "rendered": Array [
+                                  undefined,
+                                ],
+                                "type": "h3",
+                              },
                             ],
-                            "type": "h3",
+                            "type": "p",
                           },
                           Object {
-                            "instance": <h3
-                              class="title population"
+                            "instance": <p
+                              class="population"
 >
-                              population
-</h3>,
-                            "key": "3",
+                              <h3>
+                                                            POPULATION
+                                                            :
+                              </h3>
+                              <h3 />
+</p>,
+                            "key": undefined,
                             "nodeType": "host",
                             "props": Object {
-                              "children": "population",
-                              "className": "title population",
+                              "children": Array [
+                                <h3>
+                                  POPULATION
+                                  :
+</h3>,
+                                <h3 />,
+                              ],
+                              "className": "population",
                             },
                             "ref": null,
                             "rendered": Array [
-                              "population",
+                              Object {
+                                "instance": <h3>
+                                  POPULATION
+                                  :
+</h3>,
+                                "key": "population-3",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": Array [
+                                    "POPULATION",
+                                    ":",
+                                  ],
+                                },
+                                "ref": null,
+                                "rendered": Array [
+                                  "POPULATION",
+                                  ":",
+                                ],
+                                "type": "h3",
+                              },
+                              Object {
+                                "instance": <h3 />,
+                                "key": "undefined-3",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": undefined,
+                                },
+                                "ref": null,
+                                "rendered": Array [
+                                  undefined,
+                                ],
+                                "type": "h3",
+                              },
                             ],
-                            "type": "h3",
+                            "type": "p",
                           },
                           Object {
-                            "instance": <h3
-                              class="title species"
+                            "instance": <p
+                              class="species"
 >
-                              species
+                              <h3>
+                                                            SPECIES
+                                                            :
+                              </h3>
+                              <h3 />
+</p>,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": Array [
+                                <h3>
+                                  SPECIES
+                                  :
 </h3>,
-                            "key": "4",
-                            "nodeType": "host",
-                            "props": Object {
-                              "children": "species",
-                              "className": "title species",
+                                <h3 />,
+                              ],
+                              "className": "species",
                             },
                             "ref": null,
                             "rendered": Array [
-                              "species",
-                            ],
-                            "type": "h3",
-                          },
-                        ],
-                        "type": "h3",
-                      },
-                      Object {
-                        "instance": <h3
-                          class="value"
->
-                          <h3
-                                                    class="value false"
-                          />
-                          <h3
-                                                    class="value Beru Whitesun lars"
-                          >
-                                                    Beru Whitesun lars
-                          </h3>
-                          <h3
-                                                    class="value undefined"
-                          />
-                          <h3
-                                                    class="value undefined"
-                          />
-                          <h3
-                                                    class="value undefined"
-                          />
+                              Object {
+                                "instance": <h3>
+                                  SPECIES
+                                  :
 </h3>,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": Array [
-                            <h3
-                              className="value false"
-/>,
-                            <h3
-                              className="value Beru Whitesun lars"
->
-                              Beru Whitesun lars
-</h3>,
-                            <h3
-                              className="value undefined"
-/>,
-                            <h3
-                              className="value undefined"
-/>,
-                            <h3
-                              className="value undefined"
-/>,
-                          ],
-                          "className": "value",
-                        },
-                        "ref": null,
-                        "rendered": Array [
-                          Object {
-                            "instance": <h3
-                              class="value false"
-/>,
-                            "key": "0",
-                            "nodeType": "host",
-                            "props": Object {
-                              "children": false,
-                              "className": "value false",
-                            },
-                            "ref": null,
-                            "rendered": Array [
-                              false,
+                                "key": "species-4",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": Array [
+                                    "SPECIES",
+                                    ":",
+                                  ],
+                                },
+                                "ref": null,
+                                "rendered": Array [
+                                  "SPECIES",
+                                  ":",
+                                ],
+                                "type": "h3",
+                              },
+                              Object {
+                                "instance": <h3 />,
+                                "key": "undefined-4",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": undefined,
+                                },
+                                "ref": null,
+                                "rendered": Array [
+                                  undefined,
+                                ],
+                                "type": "h3",
+                              },
                             ],
-                            "type": "h3",
-                          },
-                          Object {
-                            "instance": <h3
-                              class="value Beru Whitesun lars"
->
-                              Beru Whitesun lars
-</h3>,
-                            "key": "1",
-                            "nodeType": "host",
-                            "props": Object {
-                              "children": "Beru Whitesun lars",
-                              "className": "value Beru Whitesun lars",
-                            },
-                            "ref": null,
-                            "rendered": Array [
-                              "Beru Whitesun lars",
-                            ],
-                            "type": "h3",
-                          },
-                          Object {
-                            "instance": <h3
-                              class="value undefined"
-/>,
-                            "key": "2",
-                            "nodeType": "host",
-                            "props": Object {
-                              "children": undefined,
-                              "className": "value undefined",
-                            },
-                            "ref": null,
-                            "rendered": Array [
-                              undefined,
-                            ],
-                            "type": "h3",
-                          },
-                          Object {
-                            "instance": <h3
-                              class="value undefined"
-/>,
-                            "key": "3",
-                            "nodeType": "host",
-                            "props": Object {
-                              "children": undefined,
-                              "className": "value undefined",
-                            },
-                            "ref": null,
-                            "rendered": Array [
-                              undefined,
-                            ],
-                            "type": "h3",
-                          },
-                          Object {
-                            "instance": <h3
-                              class="value undefined"
-/>,
-                            "key": "4",
-                            "nodeType": "host",
-                            "props": Object {
-                              "children": undefined,
-                              "className": "value undefined",
-                            },
-                            "ref": null,
-                            "rendered": Array [
-                              undefined,
-                            ],
-                            "type": "h3",
+                            "type": "p",
                           },
                         ],
                         "type": "h3",
@@ -989,7 +1140,8 @@ ReactWrapper {
           <h3
                     class="card-header"
           >
-                    Card Container
+                    PEOPLE
+                    CARDS
           </h3>
           <section
                     class="card-wrap"
@@ -997,63 +1149,66 @@ ReactWrapper {
                     <article
                               class="card"
                     >
-                              <p>
+                              <div
+                                        class="fav-icon"
+                              >
                                         <i
-                                                  class="fas fa-sun"
+                                                  class="fas fa-sun undefined"
                                         />
-                              </p>
+                              </div>
                               <section
                                         class="card-display"
                               >
                                         <h3
                                                   class="title"
                                         >
-                                                  <h3
-                                                            class="title favorite"
+                                                  <p
+                                                            class="favorite"
                                                   >
-                                                            favorite
-                                                  </h3>
-                                                  <h3
-                                                            class="title name"
+                                                            <h3>
+                                                                      FAVORITE
+                                                                      :
+                                                            </h3>
+                                                            <h3 />
+                                                  </p>
+                                                  <p
+                                                            class="name"
                                                   >
-                                                            name
-                                                  </h3>
-                                                  <h3
-                                                            class="title homeworld"
+                                                            <h3>
+                                                                      NAME
+                                                                      :
+                                                            </h3>
+                                                            <h3>
+                                                                      Beru Whitesun lars
+                                                            </h3>
+                                                  </p>
+                                                  <p
+                                                            class="homeworld"
                                                   >
-                                                            homeworld
-                                                  </h3>
-                                                  <h3
-                                                            class="title population"
+                                                            <h3>
+                                                                      HOMEWORLD
+                                                                      :
+                                                            </h3>
+                                                            <h3 />
+                                                  </p>
+                                                  <p
+                                                            class="population"
                                                   >
-                                                            population
-                                                  </h3>
-                                                  <h3
-                                                            class="title species"
+                                                            <h3>
+                                                                      POPULATION
+                                                                      :
+                                                            </h3>
+                                                            <h3 />
+                                                  </p>
+                                                  <p
+                                                            class="species"
                                                   >
-                                                            species
-                                                  </h3>
-                                        </h3>
-                                        <h3
-                                                  class="value"
-                                        >
-                                                  <h3
-                                                            class="value false"
-                                                  />
-                                                  <h3
-                                                            class="value Beru Whitesun lars"
-                                                  >
-                                                            Beru Whitesun lars
-                                                  </h3>
-                                                  <h3
-                                                            class="value undefined"
-                                                  />
-                                                  <h3
-                                                            class="value undefined"
-                                                  />
-                                                  <h3
-                                                            class="value undefined"
-                                                  />
+                                                            <h3>
+                                                                      SPECIES
+                                                                      :
+                                                            </h3>
+                                                            <h3 />
+                                                  </p>
                                         </h3>
                               </section>
                     </article>
@@ -1066,7 +1221,8 @@ ReactWrapper {
             <h3
               className="card-header"
 >
-              Card Container
+              PEOPLE
+               CARDS
 </h3>,
             <section
               className="card-wrap"
@@ -1082,6 +1238,7 @@ ReactWrapper {
                                                       }
                             }
                             handleClick={undefined}
+                            isFavorite={undefined}
               />
 </section>,
           ],
@@ -1093,17 +1250,22 @@ ReactWrapper {
             "instance": <h3
               class="card-header"
 >
-              Card Container
+              PEOPLE
+              CARDS
 </h3>,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Card Container",
+              "children": Array [
+                "PEOPLE",
+                " CARDS",
+              ],
               "className": "card-header",
             },
             "ref": null,
             "rendered": Array [
-              "Card Container",
+              "PEOPLE",
+              " CARDS",
             ],
             "type": "h3",
           },
@@ -1114,63 +1276,66 @@ ReactWrapper {
               <article
                             class="card"
               >
-                            <p>
+                            <div
+                                          class="fav-icon"
+                            >
                                           <i
-                                                        class="fas fa-sun"
+                                                        class="fas fa-sun undefined"
                                           />
-                            </p>
+                            </div>
                             <section
                                           class="card-display"
                             >
                                           <h3
                                                         class="title"
                                           >
-                                                        <h3
-                                                                      class="title favorite"
+                                                        <p
+                                                                      class="favorite"
                                                         >
-                                                                      favorite
-                                                        </h3>
-                                                        <h3
-                                                                      class="title name"
+                                                                      <h3>
+                                                                                    FAVORITE
+                                                                                    :
+                                                                      </h3>
+                                                                      <h3 />
+                                                        </p>
+                                                        <p
+                                                                      class="name"
                                                         >
-                                                                      name
-                                                        </h3>
-                                                        <h3
-                                                                      class="title homeworld"
+                                                                      <h3>
+                                                                                    NAME
+                                                                                    :
+                                                                      </h3>
+                                                                      <h3>
+                                                                                    Beru Whitesun lars
+                                                                      </h3>
+                                                        </p>
+                                                        <p
+                                                                      class="homeworld"
                                                         >
-                                                                      homeworld
-                                                        </h3>
-                                                        <h3
-                                                                      class="title population"
+                                                                      <h3>
+                                                                                    HOMEWORLD
+                                                                                    :
+                                                                      </h3>
+                                                                      <h3 />
+                                                        </p>
+                                                        <p
+                                                                      class="population"
                                                         >
-                                                                      population
-                                                        </h3>
-                                                        <h3
-                                                                      class="title species"
+                                                                      <h3>
+                                                                                    POPULATION
+                                                                                    :
+                                                                      </h3>
+                                                                      <h3 />
+                                                        </p>
+                                                        <p
+                                                                      class="species"
                                                         >
-                                                                      species
-                                                        </h3>
-                                          </h3>
-                                          <h3
-                                                        class="value"
-                                          >
-                                                        <h3
-                                                                      class="value false"
-                                                        />
-                                                        <h3
-                                                                      class="value Beru Whitesun lars"
-                                                        >
-                                                                      Beru Whitesun lars
-                                                        </h3>
-                                                        <h3
-                                                                      class="value undefined"
-                                                        />
-                                                        <h3
-                                                                      class="value undefined"
-                                                        />
-                                                        <h3
-                                                                      class="value undefined"
-                                                        />
+                                                                      <h3>
+                                                                                    SPECIES
+                                                                                    :
+                                                                      </h3>
+                                                                      <h3 />
+                                                        </p>
                                           </h3>
                             </section>
               </article>
@@ -1190,6 +1355,7 @@ ReactWrapper {
                                                     }
                   }
                   handleClick={undefined}
+                  isFavorite={undefined}
 />,
               ],
               "className": "card-wrap",
@@ -1198,7 +1364,7 @@ ReactWrapper {
             "rendered": Array [
               Object {
                 "instance": null,
-                "key": undefined,
+                "key": "0",
                 "nodeType": "function",
                 "props": Object {
                   "data": Object {
@@ -1209,69 +1375,73 @@ ReactWrapper {
                     "species": undefined,
                   },
                   "handleClick": undefined,
+                  "isFavorite": undefined,
                 },
                 "ref": null,
                 "rendered": Object {
                   "instance": <article
                     class="card"
 >
-                    <p>
+                    <div
+                                        class="fav-icon"
+                    >
                                         <i
-                                                            class="fas fa-sun"
+                                                            class="fas fa-sun undefined"
                                         />
-                    </p>
+                    </div>
                     <section
                                         class="card-display"
                     >
                                         <h3
                                                             class="title"
                                         >
-                                                            <h3
-                                                                                class="title favorite"
+                                                            <p
+                                                                                class="favorite"
                                                             >
-                                                                                favorite
-                                                            </h3>
-                                                            <h3
-                                                                                class="title name"
+                                                                                <h3>
+                                                                                                    FAVORITE
+                                                                                                    :
+                                                                                </h3>
+                                                                                <h3 />
+                                                            </p>
+                                                            <p
+                                                                                class="name"
                                                             >
-                                                                                name
-                                                            </h3>
-                                                            <h3
-                                                                                class="title homeworld"
+                                                                                <h3>
+                                                                                                    NAME
+                                                                                                    :
+                                                                                </h3>
+                                                                                <h3>
+                                                                                                    Beru Whitesun lars
+                                                                                </h3>
+                                                            </p>
+                                                            <p
+                                                                                class="homeworld"
                                                             >
-                                                                                homeworld
-                                                            </h3>
-                                                            <h3
-                                                                                class="title population"
+                                                                                <h3>
+                                                                                                    HOMEWORLD
+                                                                                                    :
+                                                                                </h3>
+                                                                                <h3 />
+                                                            </p>
+                                                            <p
+                                                                                class="population"
                                                             >
-                                                                                population
-                                                            </h3>
-                                                            <h3
-                                                                                class="title species"
+                                                                                <h3>
+                                                                                                    POPULATION
+                                                                                                    :
+                                                                                </h3>
+                                                                                <h3 />
+                                                            </p>
+                                                            <p
+                                                                                class="species"
                                                             >
-                                                                                species
-                                                            </h3>
-                                        </h3>
-                                        <h3
-                                                            class="value"
-                                        >
-                                                            <h3
-                                                                                class="value false"
-                                                            />
-                                                            <h3
-                                                                                class="value Beru Whitesun lars"
-                                                            >
-                                                                                Beru Whitesun lars
-                                                            </h3>
-                                                            <h3
-                                                                                class="value undefined"
-                                                            />
-                                                            <h3
-                                                                                class="value undefined"
-                                                            />
-                                                            <h3
-                                                                                class="value undefined"
-                                                            />
+                                                                                <h3>
+                                                                                                    SPECIES
+                                                                                                    :
+                                                                                </h3>
+                                                                                <h3 />
+                                                            </p>
                                         </h3>
                     </section>
 </article>,
@@ -1279,65 +1449,67 @@ ReactWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
-                      <p
+                      <div
+                        className="fav-icon"
                         onClick={[Function]}
 >
                         <i
-                                                class="fas fa-sun"
+                                                className="fas fa-sun undefined"
                         />
-</p>,
+</div>,
                       <section
                         className="card-display"
 >
                         <h3
                                                 className="title"
                         >
-                                                <h3
-                                                                        className="title favorite"
+                                                <p
+                                                                        className="favorite"
                                                 >
-                                                                        favorite
-                                                </h3>
-                                                <h3
-                                                                        className="title name"
+                                                                        <h3>
+                                                                                                FAVORITE
+                                                                                                :
+                                                                        </h3>
+                                                                        <h3 />
+                                                </p>
+                                                <p
+                                                                        className="name"
                                                 >
-                                                                        name
-                                                </h3>
-                                                <h3
-                                                                        className="title homeworld"
+                                                                        <h3>
+                                                                                                NAME
+                                                                                                :
+                                                                        </h3>
+                                                                        <h3>
+                                                                                                Beru Whitesun lars
+                                                                        </h3>
+                                                </p>
+                                                <p
+                                                                        className="homeworld"
                                                 >
-                                                                        homeworld
-                                                </h3>
-                                                <h3
-                                                                        className="title population"
+                                                                        <h3>
+                                                                                                HOMEWORLD
+                                                                                                :
+                                                                        </h3>
+                                                                        <h3 />
+                                                </p>
+                                                <p
+                                                                        className="population"
                                                 >
-                                                                        population
-                                                </h3>
-                                                <h3
-                                                                        className="title species"
+                                                                        <h3>
+                                                                                                POPULATION
+                                                                                                :
+                                                                        </h3>
+                                                                        <h3 />
+                                                </p>
+                                                <p
+                                                                        className="species"
                                                 >
-                                                                        species
-                                                </h3>
-                        </h3>
-                        <h3
-                                                className="value"
-                        >
-                                                <h3
-                                                                        className="value false"
-                                                />
-                                                <h3
-                                                                        className="value Beru Whitesun lars"
-                                                >
-                                                                        Beru Whitesun lars
-                                                </h3>
-                                                <h3
-                                                                        className="value undefined"
-                                                />
-                                                <h3
-                                                                        className="value undefined"
-                                                />
-                                                <h3
-                                                                        className="value undefined"
-                                                />
+                                                                        <h3>
+                                                                                                SPECIES
+                                                                                                :
+                                                                        </h3>
+                                                                        <h3 />
+                                                </p>
                         </h3>
 </section>,
                     ],
@@ -1346,29 +1518,32 @@ ReactWrapper {
                   "ref": null,
                   "rendered": Array [
                     Object {
-                      "instance": <p>
+                      "instance": <div
+                        class="fav-icon"
+>
                         <i
-                                                class="fas fa-sun"
+                                                class="fas fa-sun undefined"
                         />
-</p>,
+</div>,
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
                         "children": <i
-                          class="fas fa-sun"
+                          className="fas fa-sun undefined"
 />,
+                        "className": "fav-icon",
                         "onClick": [Function],
                       },
                       "ref": null,
                       "rendered": Array [
                         Object {
                           "instance": <i
-                            class="fas fa-sun"
+                            class="fas fa-sun undefined"
 />,
                           "key": undefined,
                           "nodeType": "host",
                           "props": Object {
-                            "class": "fas fa-sun",
+                            "className": "fas fa-sun undefined",
                           },
                           "ref": null,
                           "rendered": Array [
@@ -1377,7 +1552,7 @@ ReactWrapper {
                           "type": "i",
                         },
                       ],
-                      "type": "p",
+                      "type": "div",
                     },
                     Object {
                       "instance": <section
@@ -1386,109 +1561,109 @@ ReactWrapper {
                         <h3
                                                 class="title"
                         >
-                                                <h3
-                                                                        class="title favorite"
+                                                <p
+                                                                        class="favorite"
                                                 >
-                                                                        favorite
-                                                </h3>
-                                                <h3
-                                                                        class="title name"
+                                                                        <h3>
+                                                                                                FAVORITE
+                                                                                                :
+                                                                        </h3>
+                                                                        <h3 />
+                                                </p>
+                                                <p
+                                                                        class="name"
                                                 >
-                                                                        name
-                                                </h3>
-                                                <h3
-                                                                        class="title homeworld"
+                                                                        <h3>
+                                                                                                NAME
+                                                                                                :
+                                                                        </h3>
+                                                                        <h3>
+                                                                                                Beru Whitesun lars
+                                                                        </h3>
+                                                </p>
+                                                <p
+                                                                        class="homeworld"
                                                 >
-                                                                        homeworld
-                                                </h3>
-                                                <h3
-                                                                        class="title population"
+                                                                        <h3>
+                                                                                                HOMEWORLD
+                                                                                                :
+                                                                        </h3>
+                                                                        <h3 />
+                                                </p>
+                                                <p
+                                                                        class="population"
                                                 >
-                                                                        population
-                                                </h3>
-                                                <h3
-                                                                        class="title species"
+                                                                        <h3>
+                                                                                                POPULATION
+                                                                                                :
+                                                                        </h3>
+                                                                        <h3 />
+                                                </p>
+                                                <p
+                                                                        class="species"
                                                 >
-                                                                        species
-                                                </h3>
-                        </h3>
-                        <h3
-                                                class="value"
-                        >
-                                                <h3
-                                                                        class="value false"
-                                                />
-                                                <h3
-                                                                        class="value Beru Whitesun lars"
-                                                >
-                                                                        Beru Whitesun lars
-                                                </h3>
-                                                <h3
-                                                                        class="value undefined"
-                                                />
-                                                <h3
-                                                                        class="value undefined"
-                                                />
-                                                <h3
-                                                                        class="value undefined"
-                                                />
+                                                                        <h3>
+                                                                                                SPECIES
+                                                                                                :
+                                                                        </h3>
+                                                                        <h3 />
+                                                </p>
                         </h3>
 </section>,
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "children": Array [
-                          <h3
-                            className="title"
+                        "children": <h3
+                          className="title"
 >
-                            <h3
-                                                        className="title favorite"
-                            >
-                                                        favorite
-                            </h3>
-                            <h3
-                                                        className="title name"
-                            >
-                                                        name
-                            </h3>
-                            <h3
-                                                        className="title homeworld"
-                            >
-                                                        homeworld
-                            </h3>
-                            <h3
-                                                        className="title population"
-                            >
-                                                        population
-                            </h3>
-                            <h3
-                                                        className="title species"
-                            >
-                                                        species
-                            </h3>
+                          <p
+                                                    className="favorite"
+                          >
+                                                    <h3>
+                                                                              FAVORITE
+                                                                              :
+                                                    </h3>
+                                                    <h3 />
+                          </p>
+                          <p
+                                                    className="name"
+                          >
+                                                    <h3>
+                                                                              NAME
+                                                                              :
+                                                    </h3>
+                                                    <h3>
+                                                                              Beru Whitesun lars
+                                                    </h3>
+                          </p>
+                          <p
+                                                    className="homeworld"
+                          >
+                                                    <h3>
+                                                                              HOMEWORLD
+                                                                              :
+                                                    </h3>
+                                                    <h3 />
+                          </p>
+                          <p
+                                                    className="population"
+                          >
+                                                    <h3>
+                                                                              POPULATION
+                                                                              :
+                                                    </h3>
+                                                    <h3 />
+                          </p>
+                          <p
+                                                    className="species"
+                          >
+                                                    <h3>
+                                                                              SPECIES
+                                                                              :
+                                                    </h3>
+                                                    <h3 />
+                          </p>
 </h3>,
-                          <h3
-                            className="value"
->
-                            <h3
-                                                        className="value false"
-                            />
-                            <h3
-                                                        className="value Beru Whitesun lars"
-                            >
-                                                        Beru Whitesun lars
-                            </h3>
-                            <h3
-                                                        className="value undefined"
-                            />
-                            <h3
-                                                        className="value undefined"
-                            />
-                            <h3
-                                                        className="value undefined"
-                            />
-</h3>,
-                        ],
                         "className": "card-display",
                       },
                       "ref": null,
@@ -1497,288 +1672,415 @@ ReactWrapper {
                           "instance": <h3
                             class="title"
 >
-                            <h3
-                                                        class="title favorite"
+                            <p
+                                                        class="favorite"
                             >
-                                                        favorite
-                            </h3>
-                            <h3
-                                                        class="title name"
+                                                        <h3>
+                                                                                    FAVORITE
+                                                                                    :
+                                                        </h3>
+                                                        <h3 />
+                            </p>
+                            <p
+                                                        class="name"
                             >
-                                                        name
-                            </h3>
-                            <h3
-                                                        class="title homeworld"
+                                                        <h3>
+                                                                                    NAME
+                                                                                    :
+                                                        </h3>
+                                                        <h3>
+                                                                                    Beru Whitesun lars
+                                                        </h3>
+                            </p>
+                            <p
+                                                        class="homeworld"
                             >
-                                                        homeworld
-                            </h3>
-                            <h3
-                                                        class="title population"
+                                                        <h3>
+                                                                                    HOMEWORLD
+                                                                                    :
+                                                        </h3>
+                                                        <h3 />
+                            </p>
+                            <p
+                                                        class="population"
                             >
-                                                        population
-                            </h3>
-                            <h3
-                                                        class="title species"
+                                                        <h3>
+                                                                                    POPULATION
+                                                                                    :
+                                                        </h3>
+                                                        <h3 />
+                            </p>
+                            <p
+                                                        class="species"
                             >
-                                                        species
-                            </h3>
+                                                        <h3>
+                                                                                    SPECIES
+                                                                                    :
+                                                        </h3>
+                                                        <h3 />
+                            </p>
 </h3>,
                           "key": undefined,
                           "nodeType": "host",
                           "props": Object {
                             "children": Array [
-                              <h3
-                                className="title favorite"
+                              <p
+                                className="favorite"
 >
-                                favorite
-</h3>,
-                              <h3
-                                className="title name"
+                                <h3>
+                                                                FAVORITE
+                                                                :
+                                </h3>
+                                <h3 />
+</p>,
+                              <p
+                                className="name"
 >
-                                name
-</h3>,
-                              <h3
-                                className="title homeworld"
+                                <h3>
+                                                                NAME
+                                                                :
+                                </h3>
+                                <h3>
+                                                                Beru Whitesun lars
+                                </h3>
+</p>,
+                              <p
+                                className="homeworld"
 >
-                                homeworld
-</h3>,
-                              <h3
-                                className="title population"
+                                <h3>
+                                                                HOMEWORLD
+                                                                :
+                                </h3>
+                                <h3 />
+</p>,
+                              <p
+                                className="population"
 >
-                                population
-</h3>,
-                              <h3
-                                className="title species"
+                                <h3>
+                                                                POPULATION
+                                                                :
+                                </h3>
+                                <h3 />
+</p>,
+                              <p
+                                className="species"
 >
-                                species
-</h3>,
+                                <h3>
+                                                                SPECIES
+                                                                :
+                                </h3>
+                                <h3 />
+</p>,
                             ],
                             "className": "title",
                           },
                           "ref": null,
                           "rendered": Array [
                             Object {
-                              "instance": <h3
-                                class="title favorite"
+                              "instance": <p
+                                class="favorite"
 >
-                                favorite
-</h3>,
-                              "key": "0",
+                                <h3>
+                                                                FAVORITE
+                                                                :
+                                </h3>
+                                <h3 />
+</p>,
+                              "key": undefined,
                               "nodeType": "host",
                               "props": Object {
-                                "children": "favorite",
-                                "className": "title favorite",
+                                "children": Array [
+                                  <h3>
+                                    FAVORITE
+                                    :
+</h3>,
+                                  <h3 />,
+                                ],
+                                "className": "favorite",
                               },
                               "ref": null,
                               "rendered": Array [
-                                "favorite",
+                                Object {
+                                  "instance": <h3>
+                                    FAVORITE
+                                    :
+</h3>,
+                                  "key": "favorite-0",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": Array [
+                                      "FAVORITE",
+                                      ":",
+                                    ],
+                                  },
+                                  "ref": null,
+                                  "rendered": Array [
+                                    "FAVORITE",
+                                    ":",
+                                  ],
+                                  "type": "h3",
+                                },
+                                Object {
+                                  "instance": <h3 />,
+                                  "key": "false-0",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": false,
+                                  },
+                                  "ref": null,
+                                  "rendered": Array [
+                                    false,
+                                  ],
+                                  "type": "h3",
+                                },
                               ],
-                              "type": "h3",
+                              "type": "p",
                             },
                             Object {
-                              "instance": <h3
-                                class="title name"
+                              "instance": <p
+                                class="name"
 >
-                                name
-</h3>,
-                              "key": "1",
+                                <h3>
+                                                                NAME
+                                                                :
+                                </h3>
+                                <h3>
+                                                                Beru Whitesun lars
+                                </h3>
+</p>,
+                              "key": undefined,
                               "nodeType": "host",
                               "props": Object {
-                                "children": "name",
-                                "className": "title name",
+                                "children": Array [
+                                  <h3>
+                                    NAME
+                                    :
+</h3>,
+                                  <h3>
+                                    Beru Whitesun lars
+</h3>,
+                                ],
+                                "className": "name",
                               },
                               "ref": null,
                               "rendered": Array [
-                                "name",
+                                Object {
+                                  "instance": <h3>
+                                    NAME
+                                    :
+</h3>,
+                                  "key": "name-1",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": Array [
+                                      "NAME",
+                                      ":",
+                                    ],
+                                  },
+                                  "ref": null,
+                                  "rendered": Array [
+                                    "NAME",
+                                    ":",
+                                  ],
+                                  "type": "h3",
+                                },
+                                Object {
+                                  "instance": <h3>
+                                    Beru Whitesun lars
+</h3>,
+                                  "key": "Beru Whitesun lars-1",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": "Beru Whitesun lars",
+                                  },
+                                  "ref": null,
+                                  "rendered": Array [
+                                    "Beru Whitesun lars",
+                                  ],
+                                  "type": "h3",
+                                },
                               ],
-                              "type": "h3",
+                              "type": "p",
                             },
                             Object {
-                              "instance": <h3
-                                class="title homeworld"
+                              "instance": <p
+                                class="homeworld"
 >
-                                homeworld
-</h3>,
-                              "key": "2",
+                                <h3>
+                                                                HOMEWORLD
+                                                                :
+                                </h3>
+                                <h3 />
+</p>,
+                              "key": undefined,
                               "nodeType": "host",
                               "props": Object {
-                                "children": "homeworld",
-                                "className": "title homeworld",
+                                "children": Array [
+                                  <h3>
+                                    HOMEWORLD
+                                    :
+</h3>,
+                                  <h3 />,
+                                ],
+                                "className": "homeworld",
                               },
                               "ref": null,
                               "rendered": Array [
-                                "homeworld",
+                                Object {
+                                  "instance": <h3>
+                                    HOMEWORLD
+                                    :
+</h3>,
+                                  "key": "homeworld-2",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": Array [
+                                      "HOMEWORLD",
+                                      ":",
+                                    ],
+                                  },
+                                  "ref": null,
+                                  "rendered": Array [
+                                    "HOMEWORLD",
+                                    ":",
+                                  ],
+                                  "type": "h3",
+                                },
+                                Object {
+                                  "instance": <h3 />,
+                                  "key": "undefined-2",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": undefined,
+                                  },
+                                  "ref": null,
+                                  "rendered": Array [
+                                    undefined,
+                                  ],
+                                  "type": "h3",
+                                },
                               ],
-                              "type": "h3",
+                              "type": "p",
                             },
                             Object {
-                              "instance": <h3
-                                class="title population"
+                              "instance": <p
+                                class="population"
 >
-                                population
-</h3>,
-                              "key": "3",
+                                <h3>
+                                                                POPULATION
+                                                                :
+                                </h3>
+                                <h3 />
+</p>,
+                              "key": undefined,
                               "nodeType": "host",
                               "props": Object {
-                                "children": "population",
-                                "className": "title population",
+                                "children": Array [
+                                  <h3>
+                                    POPULATION
+                                    :
+</h3>,
+                                  <h3 />,
+                                ],
+                                "className": "population",
                               },
                               "ref": null,
                               "rendered": Array [
-                                "population",
+                                Object {
+                                  "instance": <h3>
+                                    POPULATION
+                                    :
+</h3>,
+                                  "key": "population-3",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": Array [
+                                      "POPULATION",
+                                      ":",
+                                    ],
+                                  },
+                                  "ref": null,
+                                  "rendered": Array [
+                                    "POPULATION",
+                                    ":",
+                                  ],
+                                  "type": "h3",
+                                },
+                                Object {
+                                  "instance": <h3 />,
+                                  "key": "undefined-3",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": undefined,
+                                  },
+                                  "ref": null,
+                                  "rendered": Array [
+                                    undefined,
+                                  ],
+                                  "type": "h3",
+                                },
                               ],
-                              "type": "h3",
+                              "type": "p",
                             },
                             Object {
-                              "instance": <h3
-                                class="title species"
+                              "instance": <p
+                                class="species"
 >
-                                species
+                                <h3>
+                                                                SPECIES
+                                                                :
+                                </h3>
+                                <h3 />
+</p>,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": Array [
+                                  <h3>
+                                    SPECIES
+                                    :
 </h3>,
-                              "key": "4",
-                              "nodeType": "host",
-                              "props": Object {
-                                "children": "species",
-                                "className": "title species",
+                                  <h3 />,
+                                ],
+                                "className": "species",
                               },
                               "ref": null,
                               "rendered": Array [
-                                "species",
-                              ],
-                              "type": "h3",
-                            },
-                          ],
-                          "type": "h3",
-                        },
-                        Object {
-                          "instance": <h3
-                            class="value"
->
-                            <h3
-                                                        class="value false"
-                            />
-                            <h3
-                                                        class="value Beru Whitesun lars"
-                            >
-                                                        Beru Whitesun lars
-                            </h3>
-                            <h3
-                                                        class="value undefined"
-                            />
-                            <h3
-                                                        class="value undefined"
-                            />
-                            <h3
-                                                        class="value undefined"
-                            />
+                                Object {
+                                  "instance": <h3>
+                                    SPECIES
+                                    :
 </h3>,
-                          "key": undefined,
-                          "nodeType": "host",
-                          "props": Object {
-                            "children": Array [
-                              <h3
-                                className="value false"
-/>,
-                              <h3
-                                className="value Beru Whitesun lars"
->
-                                Beru Whitesun lars
-</h3>,
-                              <h3
-                                className="value undefined"
-/>,
-                              <h3
-                                className="value undefined"
-/>,
-                              <h3
-                                className="value undefined"
-/>,
-                            ],
-                            "className": "value",
-                          },
-                          "ref": null,
-                          "rendered": Array [
-                            Object {
-                              "instance": <h3
-                                class="value false"
-/>,
-                              "key": "0",
-                              "nodeType": "host",
-                              "props": Object {
-                                "children": false,
-                                "className": "value false",
-                              },
-                              "ref": null,
-                              "rendered": Array [
-                                false,
+                                  "key": "species-4",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": Array [
+                                      "SPECIES",
+                                      ":",
+                                    ],
+                                  },
+                                  "ref": null,
+                                  "rendered": Array [
+                                    "SPECIES",
+                                    ":",
+                                  ],
+                                  "type": "h3",
+                                },
+                                Object {
+                                  "instance": <h3 />,
+                                  "key": "undefined-4",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": undefined,
+                                  },
+                                  "ref": null,
+                                  "rendered": Array [
+                                    undefined,
+                                  ],
+                                  "type": "h3",
+                                },
                               ],
-                              "type": "h3",
-                            },
-                            Object {
-                              "instance": <h3
-                                class="value Beru Whitesun lars"
->
-                                Beru Whitesun lars
-</h3>,
-                              "key": "1",
-                              "nodeType": "host",
-                              "props": Object {
-                                "children": "Beru Whitesun lars",
-                                "className": "value Beru Whitesun lars",
-                              },
-                              "ref": null,
-                              "rendered": Array [
-                                "Beru Whitesun lars",
-                              ],
-                              "type": "h3",
-                            },
-                            Object {
-                              "instance": <h3
-                                class="value undefined"
-/>,
-                              "key": "2",
-                              "nodeType": "host",
-                              "props": Object {
-                                "children": undefined,
-                                "className": "value undefined",
-                              },
-                              "ref": null,
-                              "rendered": Array [
-                                undefined,
-                              ],
-                              "type": "h3",
-                            },
-                            Object {
-                              "instance": <h3
-                                class="value undefined"
-/>,
-                              "key": "3",
-                              "nodeType": "host",
-                              "props": Object {
-                                "children": undefined,
-                                "className": "value undefined",
-                              },
-                              "ref": null,
-                              "rendered": Array [
-                                undefined,
-                              ],
-                              "type": "h3",
-                            },
-                            Object {
-                              "instance": <h3
-                                class="value undefined"
-/>,
-                              "key": "4",
-                              "nodeType": "host",
-                              "props": Object {
-                                "children": undefined,
-                                "className": "value undefined",
-                              },
-                              "ref": null,
-                              "rendered": Array [
-                                undefined,
-                              ],
-                              "type": "h3",
+                              "type": "p",
                             },
                           ],
                           "type": "h3",

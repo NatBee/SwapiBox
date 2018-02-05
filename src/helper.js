@@ -5,8 +5,8 @@ class CleanData {
       const response = await fetch(`https://swapi.co/api/films/`);
     
       return await response.json(); 
-    } catch(err) {
-      return 'Error! Fetching films failed!'
+    } catch (error) {
+      return 'Error! Fetching films failed!';
     }
   }
 
@@ -17,8 +17,8 @@ class CleanData {
       const homeWorld = await this.peopleHomeWorldData(response.results);
    
       return homeWorld;
-    } catch(err) {
-      return 'Error! Fetching people failed!'
+    } catch (error) {
+      return 'Error! Fetching people failed!';
     }
   }
 
@@ -30,14 +30,14 @@ class CleanData {
       const homeWorld = await fetch(person.homeworld);
       const homeWorldResponse = await homeWorld.json();
       const homeWorldObj = await {  favorite: false,
-                                    name: name,
-                                    homeworld: homeWorldResponse.name, 
-                                    population: homeWorldResponse.population, 
-                                    species: species
-                                  };
+        name: name,
+        homeworld: homeWorldResponse.name, 
+        population: homeWorldResponse.population, 
+        species: species
+      };
 
       return homeWorldObj; 
-    }) 
+    }); 
 
     return Promise.all(homeWorldData);
   }
@@ -56,8 +56,8 @@ class CleanData {
       const cleanedPlanets = await this.cleanPlanets(response.results);
 
       return Promise.all(cleanedPlanets);      
-    } catch(err) {
-      return 'Error! Fetching planets failed!'
+    } catch (error) {
+      return 'Error! Fetching planets failed!';
     }
   }
 
@@ -65,14 +65,14 @@ class CleanData {
     const planetsData = await info.map(async (planet) => {
       const cleanResident = await this.cleanResidents(planet.residents);
       const planetObj = await { favorite: false,
-                                name: planet.name, 
-                                climate: planet.climate, 
-                                population: planet.population, 
-                                terrain: planet.terrain, 
-                                residents: cleanResident
-                              };
+        name: planet.name, 
+        climate: planet.climate, 
+        population: planet.population, 
+        terrain: planet.terrain, 
+        residents: cleanResident
+      };
       return planetObj;
-    })
+    });
 
     return Promise.all(planetsData);
   }
@@ -84,29 +84,29 @@ class CleanData {
       const residentName = await residentResponse.name;
 
       return residentName;
-    })  
+    });  
 
     return Promise.all(resident);
   } 
 
   getVehiclesData = async () => {
     try {
-    const vehiclesData = await fetch(`https://swapi.co/api/vehicles/`);
-    const response = await vehiclesData.json();
-    const cleanVehicleData = await response.results.map( async (vehicle) => {
-      const vehicleObj = await {  favorite: false,
-                                  name: vehicle.name,
-                                  model: vehicle.model,
-                                  class: vehicle.vehicle_class,
-                                  passengers: vehicle.passengers
-                                };
+      const vehiclesData = await fetch(`https://swapi.co/api/vehicles/`);
+      const response = await vehiclesData.json();
+      const cleanVehicleData = await response.results.map( async (vehicle) => {
+        const vehicleObj = await {  favorite: false,
+          name: vehicle.name,
+          model: vehicle.model,
+          class: vehicle.vehicle_class,
+          passengers: vehicle.passengers
+        };
 
-      return vehicleObj;
-    } )
+        return vehicleObj;
+      });
   
-    return Promise.all(cleanVehicleData); 
-    } catch(err) {
-      return 'Error! Fetching vehicles failed!'
+      return Promise.all(cleanVehicleData); 
+    } catch (error) {
+      return 'Error! Fetching vehicles failed!';
     }
   }
 

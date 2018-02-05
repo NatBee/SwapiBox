@@ -18,16 +18,25 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <img
-          alt="logo"
-          className="App-logo"
-          src="Star-Wars-Logo.png"
-/>,
-        <h1
-          className="App-title"
+        <div
+          className="img"
 >
-          SwapiBox
-</h1>,
+          <img
+                    alt="logo"
+                    className="App-logo"
+                    src="white.png"
+          />
+          <img
+                    alt="logo"
+                    className="App-logo"
+                    src="Star-Wars-Logo.png"
+          />
+          <img
+                    alt="logo"
+                    className="App-logo"
+                    src="Gold.png"
+          />
+</div>,
         <ButtonContainer
           className="Btn-container"
           favorites={Array []}
@@ -39,6 +48,7 @@ ShallowWrapper {
         <CardContainer
           favorites={Array []}
           handleClick={[Function]}
+          isFavorite={[Function]}
           peopleData={Array []}
           planetData={Array []}
           source=""
@@ -58,25 +68,68 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "alt": "logo",
-          "className": "App-logo",
-          "src": "Star-Wars-Logo.png",
+          "children": Array [
+            <img
+              alt="logo"
+              className="App-logo"
+              src="white.png"
+/>,
+            <img
+              alt="logo"
+              className="App-logo"
+              src="Star-Wars-Logo.png"
+/>,
+            <img
+              alt="logo"
+              className="App-logo"
+              src="Gold.png"
+/>,
+          ],
+          "className": "img",
         },
         "ref": null,
-        "rendered": null,
-        "type": "img",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "SwapiBox",
-          "className": "App-title",
-        },
-        "ref": null,
-        "rendered": "SwapiBox",
-        "type": "h1",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "logo",
+              "className": "App-logo",
+              "src": "white.png",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "logo",
+              "className": "App-logo",
+              "src": "Star-Wars-Logo.png",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "logo",
+              "className": "App-logo",
+              "src": "Gold.png",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+        ],
+        "type": "div",
       },
       Object {
         "instance": null,
@@ -101,6 +154,7 @@ ShallowWrapper {
         "props": Object {
           "favorites": Array [],
           "handleClick": [Function],
+          "isFavorite": [Function],
           "peopleData": Array [],
           "planetData": Array [],
           "source": "",
@@ -132,16 +186,25 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <img
-            alt="logo"
-            className="App-logo"
-            src="Star-Wars-Logo.png"
-/>,
-          <h1
-            className="App-title"
+          <div
+            className="img"
 >
-            SwapiBox
-</h1>,
+            <img
+                        alt="logo"
+                        className="App-logo"
+                        src="white.png"
+            />
+            <img
+                        alt="logo"
+                        className="App-logo"
+                        src="Star-Wars-Logo.png"
+            />
+            <img
+                        alt="logo"
+                        className="App-logo"
+                        src="Gold.png"
+            />
+</div>,
           <ButtonContainer
             className="Btn-container"
             favorites={Array []}
@@ -153,6 +216,7 @@ ShallowWrapper {
           <CardContainer
             favorites={Array []}
             handleClick={[Function]}
+            isFavorite={[Function]}
             peopleData={Array []}
             planetData={Array []}
             source=""
@@ -172,25 +236,68 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "alt": "logo",
-            "className": "App-logo",
-            "src": "Star-Wars-Logo.png",
+            "children": Array [
+              <img
+                alt="logo"
+                className="App-logo"
+                src="white.png"
+/>,
+              <img
+                alt="logo"
+                className="App-logo"
+                src="Star-Wars-Logo.png"
+/>,
+              <img
+                alt="logo"
+                className="App-logo"
+                src="Gold.png"
+/>,
+            ],
+            "className": "img",
           },
           "ref": null,
-          "rendered": null,
-          "type": "img",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "SwapiBox",
-            "className": "App-title",
-          },
-          "ref": null,
-          "rendered": "SwapiBox",
-          "type": "h1",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "logo",
+                "className": "App-logo",
+                "src": "white.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "logo",
+                "className": "App-logo",
+                "src": "Star-Wars-Logo.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "logo",
+                "className": "App-logo",
+                "src": "Gold.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+          ],
+          "type": "div",
         },
         Object {
           "instance": null,
@@ -215,6 +322,7 @@ ShallowWrapper {
           "props": Object {
             "favorites": Array [],
             "handleClick": [Function],
+            "isFavorite": [Function],
             "peopleData": Array [],
             "planetData": Array [],
             "source": "",

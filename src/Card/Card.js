@@ -6,10 +6,10 @@ const Card = ({data, handleClick, isFavorite}) => {
   
   const cardDisplayEntries = Object.entries(data).map((item, index) => {
     return (
-      <p className={`${item[0]}`}>
+      <div className={`${item[0]}`} key={`${index}`}>
         <h3 key={`${item[0]}-${index}`}>{item[0].toUpperCase()}:</h3>  
         <h3 key={`${item[1]}-${index}`}>{item[1]}</h3>  
-      </p>
+      </div>
     )
   })
 
@@ -28,7 +28,7 @@ const Card = ({data, handleClick, isFavorite}) => {
 }
 
 Card.propTypes = {
-  data: PropTypes.array
+  data: PropTypes.object
 }
 
 export default Card;

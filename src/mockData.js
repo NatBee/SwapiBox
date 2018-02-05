@@ -1,11 +1,12 @@
+/* eslint-disable max-len */
 const mockData = {
   "peopleData": [
     {
-    "favorite": false,  
-    "name": "Beru Whitesun lars",
-    "homeworld": undefined,
-    "population": undefined,
-    "species": undefined
+      "favorite": false,  
+      "name": "Beru Whitesun lars",
+      "homeworld": undefined,
+      "population": undefined,
+      "species": undefined
     }
   ],
   "planetData": [
@@ -28,8 +29,8 @@ const mockData = {
       "class": undefined,
       "passengers": "500"
     }
-   ],
-   "movieData": [ 
+  ],
+  "movieData": [ 
     {
       "title": "Revenge of the Sith",
       "releaseDate": "2005-05-19",
@@ -86,6 +87,6 @@ const mockData = {
     }
   ]
 
-}
+};
 
 export default mockData;

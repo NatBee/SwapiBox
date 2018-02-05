@@ -1,8 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
 import helper from './helper';
 import mockData from './mockData';
-/* eslint-disable */ 
+/* eslint-disable */  
 /* eslint-disable max-len */
 const Helper = new helper;
 
