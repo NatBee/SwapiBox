@@ -143,7 +143,7 @@ ReactWrapper {
                                 <h3
                                         class="title"
                                 >
-                                        <p
+                                        <div
                                                 class="favorite"
                                         >
                                                 <h3>
@@ -151,8 +151,8 @@ ReactWrapper {
                                                         :
                                                 </h3>
                                                 <h3 />
-                                        </p>
-                                        <p
+                                        </div>
+                                        <div
                                                 class="name"
                                         >
                                                 <h3>
@@ -162,8 +162,8 @@ ReactWrapper {
                                                 <h3>
                                                         Beru Whitesun lars
                                                 </h3>
-                                        </p>
-                                        <p
+                                        </div>
+                                        <div
                                                 class="homeworld"
                                         >
                                                 <h3>
@@ -171,8 +171,8 @@ ReactWrapper {
                                                         :
                                                 </h3>
                                                 <h3 />
-                                        </p>
-                                        <p
+                                        </div>
+                                        <div
                                                 class="population"
                                         >
                                                 <h3>
@@ -180,8 +180,8 @@ ReactWrapper {
                                                         :
                                                 </h3>
                                                 <h3 />
-                                        </p>
-                                        <p
+                                        </div>
+                                        <div
                                                 class="species"
                                         >
                                                 <h3>
@@ -189,7 +189,7 @@ ReactWrapper {
                                                         :
                                                 </h3>
                                                 <h3 />
-                                        </p>
+                                        </div>
                                 </h3>
                         </section>
                 </article>
@@ -270,7 +270,7 @@ ReactWrapper {
                                     <h3
                                                 class="title"
                                     >
-                                                <p
+                                                <div
                                                             class="favorite"
                                                 >
                                                             <h3>
@@ -278,8 +278,8 @@ ReactWrapper {
                                                                         :
                                                             </h3>
                                                             <h3 />
-                                                </p>
-                                                <p
+                                                </div>
+                                                <div
                                                             class="name"
                                                 >
                                                             <h3>
@@ -289,8 +289,8 @@ ReactWrapper {
                                                             <h3>
                                                                         Beru Whitesun lars
                                                             </h3>
-                                                </p>
-                                                <p
+                                                </div>
+                                                <div
                                                             class="homeworld"
                                                 >
                                                             <h3>
@@ -298,8 +298,8 @@ ReactWrapper {
                                                                         :
                                                             </h3>
                                                             <h3 />
-                                                </p>
-                                                <p
+                                                </div>
+                                                <div
                                                             class="population"
                                                 >
                                                             <h3>
@@ -307,8 +307,8 @@ ReactWrapper {
                                                                         :
                                                             </h3>
                                                             <h3 />
-                                                </p>
-                                                <p
+                                                </div>
+                                                <div
                                                             class="species"
                                                 >
                                                             <h3>
@@ -316,7 +316,7 @@ ReactWrapper {
                                                                         :
                                                             </h3>
                                                             <h3 />
-                                                </p>
+                                                </div>
                                     </h3>
                         </section>
             </article>
@@ -376,7 +376,7 @@ ReactWrapper {
                                     <h3
                                                       class="title"
                                     >
-                                                      <p
+                                                      <div
                                                                         class="favorite"
                                                       >
                                                                         <h3>
@@ -384,8 +384,8 @@ ReactWrapper {
                                                                                           :
                                                                         </h3>
                                                                         <h3 />
-                                                      </p>
-                                                      <p
+                                                      </div>
+                                                      <div
                                                                         class="name"
                                                       >
                                                                         <h3>
@@ -395,8 +395,8 @@ ReactWrapper {
                                                                         <h3>
                                                                                           Beru Whitesun lars
                                                                         </h3>
-                                                      </p>
-                                                      <p
+                                                      </div>
+                                                      <div
                                                                         class="homeworld"
                                                       >
                                                                         <h3>
@@ -404,8 +404,8 @@ ReactWrapper {
                                                                                           :
                                                                         </h3>
                                                                         <h3 />
-                                                      </p>
-                                                      <p
+                                                      </div>
+                                                      <div
                                                                         class="population"
                                                       >
                                                                         <h3>
@@ -413,8 +413,8 @@ ReactWrapper {
                                                                                           :
                                                                         </h3>
                                                                         <h3 />
-                                                      </p>
-                                                      <p
+                                                      </div>
+                                                      <div
                                                                         class="species"
                                                       >
                                                                         <h3>
@@ -422,7 +422,7 @@ ReactWrapper {
                                                                                           :
                                                                         </h3>
                                                                         <h3 />
-                                                      </p>
+                                                      </div>
                                     </h3>
                   </section>
 </article>,
@@ -444,7 +444,7 @@ ReactWrapper {
                       <h3
                                             className="title"
                       >
-                                            <p
+                                            <div
                                                                   className="favorite"
                                             >
                                                                   <h3>
@@ -452,8 +452,8 @@ ReactWrapper {
                                                                                         :
                                                                   </h3>
                                                                   <h3 />
-                                            </p>
-                                            <p
+                                            </div>
+                                            <div
                                                                   className="name"
                                             >
                                                                   <h3>
@@ -463,8 +463,8 @@ ReactWrapper {
                                                                   <h3>
                                                                                         Beru Whitesun lars
                                                                   </h3>
-                                            </p>
-                                            <p
+                                            </div>
+                                            <div
                                                                   className="homeworld"
                                             >
                                                                   <h3>
@@ -472,8 +472,8 @@ ReactWrapper {
                                                                                         :
                                                                   </h3>
                                                                   <h3 />
-                                            </p>
-                                            <p
+                                            </div>
+                                            <div
                                                                   className="population"
                                             >
                                                                   <h3>
@@ -481,8 +481,8 @@ ReactWrapper {
                                                                                         :
                                                                   </h3>
                                                                   <h3 />
-                                            </p>
-                                            <p
+                                            </div>
+                                            <div
                                                                   className="species"
                                             >
                                                                   <h3>
@@ -490,7 +490,7 @@ ReactWrapper {
                                                                                         :
                                                                   </h3>
                                                                   <h3 />
-                                            </p>
+                                            </div>
                       </h3>
 </section>,
                   ],
@@ -542,7 +542,7 @@ ReactWrapper {
                       <h3
                                             class="title"
                       >
-                                            <p
+                                            <div
                                                                   class="favorite"
                                             >
                                                                   <h3>
@@ -550,8 +550,8 @@ ReactWrapper {
                                                                                         :
                                                                   </h3>
                                                                   <h3 />
-                                            </p>
-                                            <p
+                                            </div>
+                                            <div
                                                                   class="name"
                                             >
                                                                   <h3>
@@ -561,8 +561,8 @@ ReactWrapper {
                                                                   <h3>
                                                                                         Beru Whitesun lars
                                                                   </h3>
-                                            </p>
-                                            <p
+                                            </div>
+                                            <div
                                                                   class="homeworld"
                                             >
                                                                   <h3>
@@ -570,8 +570,8 @@ ReactWrapper {
                                                                                         :
                                                                   </h3>
                                                                   <h3 />
-                                            </p>
-                                            <p
+                                            </div>
+                                            <div
                                                                   class="population"
                                             >
                                                                   <h3>
@@ -579,8 +579,8 @@ ReactWrapper {
                                                                                         :
                                                                   </h3>
                                                                   <h3 />
-                                            </p>
-                                            <p
+                                            </div>
+                                            <div
                                                                   class="species"
                                             >
                                                                   <h3>
@@ -588,7 +588,7 @@ ReactWrapper {
                                                                                         :
                                                                   </h3>
                                                                   <h3 />
-                                            </p>
+                                            </div>
                       </h3>
 </section>,
                     "key": undefined,
@@ -597,7 +597,7 @@ ReactWrapper {
                       "children": <h3
                         className="title"
 >
-                        <p
+                        <div
                                                 className="favorite"
                         >
                                                 <h3>
@@ -605,8 +605,8 @@ ReactWrapper {
                                                                         :
                                                 </h3>
                                                 <h3 />
-                        </p>
-                        <p
+                        </div>
+                        <div
                                                 className="name"
                         >
                                                 <h3>
@@ -616,8 +616,8 @@ ReactWrapper {
                                                 <h3>
                                                                         Beru Whitesun lars
                                                 </h3>
-                        </p>
-                        <p
+                        </div>
+                        <div
                                                 className="homeworld"
                         >
                                                 <h3>
@@ -625,8 +625,8 @@ ReactWrapper {
                                                                         :
                                                 </h3>
                                                 <h3 />
-                        </p>
-                        <p
+                        </div>
+                        <div
                                                 className="population"
                         >
                                                 <h3>
@@ -634,8 +634,8 @@ ReactWrapper {
                                                                         :
                                                 </h3>
                                                 <h3 />
-                        </p>
-                        <p
+                        </div>
+                        <div
                                                 className="species"
                         >
                                                 <h3>
@@ -643,7 +643,7 @@ ReactWrapper {
                                                                         :
                                                 </h3>
                                                 <h3 />
-                        </p>
+                        </div>
 </h3>,
                       "className": "card-display",
                     },
@@ -653,7 +653,7 @@ ReactWrapper {
                         "instance": <h3
                           class="title"
 >
-                          <p
+                          <div
                                                     class="favorite"
                           >
                                                     <h3>
@@ -661,8 +661,8 @@ ReactWrapper {
                                                                               :
                                                     </h3>
                                                     <h3 />
-                          </p>
-                          <p
+                          </div>
+                          <div
                                                     class="name"
                           >
                                                     <h3>
@@ -672,8 +672,8 @@ ReactWrapper {
                                                     <h3>
                                                                               Beru Whitesun lars
                                                     </h3>
-                          </p>
-                          <p
+                          </div>
+                          <div
                                                     class="homeworld"
                           >
                                                     <h3>
@@ -681,8 +681,8 @@ ReactWrapper {
                                                                               :
                                                     </h3>
                                                     <h3 />
-                          </p>
-                          <p
+                          </div>
+                          <div
                                                     class="population"
                           >
                                                     <h3>
@@ -690,8 +690,8 @@ ReactWrapper {
                                                                               :
                                                     </h3>
                                                     <h3 />
-                          </p>
-                          <p
+                          </div>
+                          <div
                                                     class="species"
                           >
                                                     <h3>
@@ -699,13 +699,13 @@ ReactWrapper {
                                                                               :
                                                     </h3>
                                                     <h3 />
-                          </p>
+                          </div>
 </h3>,
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
                           "children": Array [
-                            <p
+                            <div
                               className="favorite"
 >
                               <h3>
@@ -713,8 +713,8 @@ ReactWrapper {
                                                             :
                               </h3>
                               <h3 />
-</p>,
-                            <p
+</div>,
+                            <div
                               className="name"
 >
                               <h3>
@@ -724,8 +724,8 @@ ReactWrapper {
                               <h3>
                                                             Beru Whitesun lars
                               </h3>
-</p>,
-                            <p
+</div>,
+                            <div
                               className="homeworld"
 >
                               <h3>
@@ -733,8 +733,8 @@ ReactWrapper {
                                                             :
                               </h3>
                               <h3 />
-</p>,
-                            <p
+</div>,
+                            <div
                               className="population"
 >
                               <h3>
@@ -742,8 +742,8 @@ ReactWrapper {
                                                             :
                               </h3>
                               <h3 />
-</p>,
-                            <p
+</div>,
+                            <div
                               className="species"
 >
                               <h3>
@@ -751,14 +751,14 @@ ReactWrapper {
                                                             :
                               </h3>
                               <h3 />
-</p>,
+</div>,
                           ],
                           "className": "title",
                         },
                         "ref": null,
                         "rendered": Array [
                           Object {
-                            "instance": <p
+                            "instance": <div
                               class="favorite"
 >
                               <h3>
@@ -766,8 +766,8 @@ ReactWrapper {
                                                             :
                               </h3>
                               <h3 />
-</p>,
-                            "key": undefined,
+</div>,
+                            "key": "0",
                             "nodeType": "host",
                             "props": Object {
                               "children": Array [
@@ -815,10 +815,10 @@ ReactWrapper {
                                 "type": "h3",
                               },
                             ],
-                            "type": "p",
+                            "type": "div",
                           },
                           Object {
-                            "instance": <p
+                            "instance": <div
                               class="name"
 >
                               <h3>
@@ -828,8 +828,8 @@ ReactWrapper {
                               <h3>
                                                             Beru Whitesun lars
                               </h3>
-</p>,
-                            "key": undefined,
+</div>,
+                            "key": "1",
                             "nodeType": "host",
                             "props": Object {
                               "children": Array [
@@ -881,10 +881,10 @@ ReactWrapper {
                                 "type": "h3",
                               },
                             ],
-                            "type": "p",
+                            "type": "div",
                           },
                           Object {
-                            "instance": <p
+                            "instance": <div
                               class="homeworld"
 >
                               <h3>
@@ -892,8 +892,8 @@ ReactWrapper {
                                                             :
                               </h3>
                               <h3 />
-</p>,
-                            "key": undefined,
+</div>,
+                            "key": "2",
                             "nodeType": "host",
                             "props": Object {
                               "children": Array [
@@ -941,10 +941,10 @@ ReactWrapper {
                                 "type": "h3",
                               },
                             ],
-                            "type": "p",
+                            "type": "div",
                           },
                           Object {
-                            "instance": <p
+                            "instance": <div
                               class="population"
 >
                               <h3>
@@ -952,8 +952,8 @@ ReactWrapper {
                                                             :
                               </h3>
                               <h3 />
-</p>,
-                            "key": undefined,
+</div>,
+                            "key": "3",
                             "nodeType": "host",
                             "props": Object {
                               "children": Array [
@@ -1001,10 +1001,10 @@ ReactWrapper {
                                 "type": "h3",
                               },
                             ],
-                            "type": "p",
+                            "type": "div",
                           },
                           Object {
-                            "instance": <p
+                            "instance": <div
                               class="species"
 >
                               <h3>
@@ -1012,8 +1012,8 @@ ReactWrapper {
                                                             :
                               </h3>
                               <h3 />
-</p>,
-                            "key": undefined,
+</div>,
+                            "key": "4",
                             "nodeType": "host",
                             "props": Object {
                               "children": Array [
@@ -1061,7 +1061,7 @@ ReactWrapper {
                                 "type": "h3",
                               },
                             ],
-                            "type": "p",
+                            "type": "div",
                           },
                         ],
                         "type": "h3",
@@ -1162,7 +1162,7 @@ ReactWrapper {
                                         <h3
                                                   class="title"
                                         >
-                                                  <p
+                                                  <div
                                                             class="favorite"
                                                   >
                                                             <h3>
@@ -1170,8 +1170,8 @@ ReactWrapper {
                                                                       :
                                                             </h3>
                                                             <h3 />
-                                                  </p>
-                                                  <p
+                                                  </div>
+                                                  <div
                                                             class="name"
                                                   >
                                                             <h3>
@@ -1181,8 +1181,8 @@ ReactWrapper {
                                                             <h3>
                                                                       Beru Whitesun lars
                                                             </h3>
-                                                  </p>
-                                                  <p
+                                                  </div>
+                                                  <div
                                                             class="homeworld"
                                                   >
                                                             <h3>
@@ -1190,8 +1190,8 @@ ReactWrapper {
                                                                       :
                                                             </h3>
                                                             <h3 />
-                                                  </p>
-                                                  <p
+                                                  </div>
+                                                  <div
                                                             class="population"
                                                   >
                                                             <h3>
@@ -1199,8 +1199,8 @@ ReactWrapper {
                                                                       :
                                                             </h3>
                                                             <h3 />
-                                                  </p>
-                                                  <p
+                                                  </div>
+                                                  <div
                                                             class="species"
                                                   >
                                                             <h3>
@@ -1208,7 +1208,7 @@ ReactWrapper {
                                                                       :
                                                             </h3>
                                                             <h3 />
-                                                  </p>
+                                                  </div>
                                         </h3>
                               </section>
                     </article>
@@ -1289,7 +1289,7 @@ ReactWrapper {
                                           <h3
                                                         class="title"
                                           >
-                                                        <p
+                                                        <div
                                                                       class="favorite"
                                                         >
                                                                       <h3>
@@ -1297,8 +1297,8 @@ ReactWrapper {
                                                                                     :
                                                                       </h3>
                                                                       <h3 />
-                                                        </p>
-                                                        <p
+                                                        </div>
+                                                        <div
                                                                       class="name"
                                                         >
                                                                       <h3>
@@ -1308,8 +1308,8 @@ ReactWrapper {
                                                                       <h3>
                                                                                     Beru Whitesun lars
                                                                       </h3>
-                                                        </p>
-                                                        <p
+                                                        </div>
+                                                        <div
                                                                       class="homeworld"
                                                         >
                                                                       <h3>
@@ -1317,8 +1317,8 @@ ReactWrapper {
                                                                                     :
                                                                       </h3>
                                                                       <h3 />
-                                                        </p>
-                                                        <p
+                                                        </div>
+                                                        <div
                                                                       class="population"
                                                         >
                                                                       <h3>
@@ -1326,8 +1326,8 @@ ReactWrapper {
                                                                                     :
                                                                       </h3>
                                                                       <h3 />
-                                                        </p>
-                                                        <p
+                                                        </div>
+                                                        <div
                                                                       class="species"
                                                         >
                                                                       <h3>
@@ -1335,7 +1335,7 @@ ReactWrapper {
                                                                                     :
                                                                       </h3>
                                                                       <h3 />
-                                                        </p>
+                                                        </div>
                                           </h3>
                             </section>
               </article>
@@ -1395,7 +1395,7 @@ ReactWrapper {
                                         <h3
                                                             class="title"
                                         >
-                                                            <p
+                                                            <div
                                                                                 class="favorite"
                                                             >
                                                                                 <h3>
@@ -1403,8 +1403,8 @@ ReactWrapper {
                                                                                                     :
                                                                                 </h3>
                                                                                 <h3 />
-                                                            </p>
-                                                            <p
+                                                            </div>
+                                                            <div
                                                                                 class="name"
                                                             >
                                                                                 <h3>
@@ -1414,8 +1414,8 @@ ReactWrapper {
                                                                                 <h3>
                                                                                                     Beru Whitesun lars
                                                                                 </h3>
-                                                            </p>
-                                                            <p
+                                                            </div>
+                                                            <div
                                                                                 class="homeworld"
                                                             >
                                                                                 <h3>
@@ -1423,8 +1423,8 @@ ReactWrapper {
                                                                                                     :
                                                                                 </h3>
                                                                                 <h3 />
-                                                            </p>
-                                                            <p
+                                                            </div>
+                                                            <div
                                                                                 class="population"
                                                             >
                                                                                 <h3>
@@ -1432,8 +1432,8 @@ ReactWrapper {
                                                                                                     :
                                                                                 </h3>
                                                                                 <h3 />
-                                                            </p>
-                                                            <p
+                                                            </div>
+                                                            <div
                                                                                 class="species"
                                                             >
                                                                                 <h3>
@@ -1441,7 +1441,7 @@ ReactWrapper {
                                                                                                     :
                                                                                 </h3>
                                                                                 <h3 />
-                                                            </p>
+                                                            </div>
                                         </h3>
                     </section>
 </article>,
@@ -1463,7 +1463,7 @@ ReactWrapper {
                         <h3
                                                 className="title"
                         >
-                                                <p
+                                                <div
                                                                         className="favorite"
                                                 >
                                                                         <h3>
@@ -1471,8 +1471,8 @@ ReactWrapper {
                                                                                                 :
                                                                         </h3>
                                                                         <h3 />
-                                                </p>
-                                                <p
+                                                </div>
+                                                <div
                                                                         className="name"
                                                 >
                                                                         <h3>
@@ -1482,8 +1482,8 @@ ReactWrapper {
                                                                         <h3>
                                                                                                 Beru Whitesun lars
                                                                         </h3>
-                                                </p>
-                                                <p
+                                                </div>
+                                                <div
                                                                         className="homeworld"
                                                 >
                                                                         <h3>
@@ -1491,8 +1491,8 @@ ReactWrapper {
                                                                                                 :
                                                                         </h3>
                                                                         <h3 />
-                                                </p>
-                                                <p
+                                                </div>
+                                                <div
                                                                         className="population"
                                                 >
                                                                         <h3>
@@ -1500,8 +1500,8 @@ ReactWrapper {
                                                                                                 :
                                                                         </h3>
                                                                         <h3 />
-                                                </p>
-                                                <p
+                                                </div>
+                                                <div
                                                                         className="species"
                                                 >
                                                                         <h3>
@@ -1509,7 +1509,7 @@ ReactWrapper {
                                                                                                 :
                                                                         </h3>
                                                                         <h3 />
-                                                </p>
+                                                </div>
                         </h3>
 </section>,
                     ],
@@ -1561,7 +1561,7 @@ ReactWrapper {
                         <h3
                                                 class="title"
                         >
-                                                <p
+                                                <div
                                                                         class="favorite"
                                                 >
                                                                         <h3>
@@ -1569,8 +1569,8 @@ ReactWrapper {
                                                                                                 :
                                                                         </h3>
                                                                         <h3 />
-                                                </p>
-                                                <p
+                                                </div>
+                                                <div
                                                                         class="name"
                                                 >
                                                                         <h3>
@@ -1580,8 +1580,8 @@ ReactWrapper {
                                                                         <h3>
                                                                                                 Beru Whitesun lars
                                                                         </h3>
-                                                </p>
-                                                <p
+                                                </div>
+                                                <div
                                                                         class="homeworld"
                                                 >
                                                                         <h3>
@@ -1589,8 +1589,8 @@ ReactWrapper {
                                                                                                 :
                                                                         </h3>
                                                                         <h3 />
-                                                </p>
-                                                <p
+                                                </div>
+                                                <div
                                                                         class="population"
                                                 >
                                                                         <h3>
@@ -1598,8 +1598,8 @@ ReactWrapper {
                                                                                                 :
                                                                         </h3>
                                                                         <h3 />
-                                                </p>
-                                                <p
+                                                </div>
+                                                <div
                                                                         class="species"
                                                 >
                                                                         <h3>
@@ -1607,7 +1607,7 @@ ReactWrapper {
                                                                                                 :
                                                                         </h3>
                                                                         <h3 />
-                                                </p>
+                                                </div>
                         </h3>
 </section>,
                       "key": undefined,
@@ -1616,7 +1616,7 @@ ReactWrapper {
                         "children": <h3
                           className="title"
 >
-                          <p
+                          <div
                                                     className="favorite"
                           >
                                                     <h3>
@@ -1624,8 +1624,8 @@ ReactWrapper {
                                                                               :
                                                     </h3>
                                                     <h3 />
-                          </p>
-                          <p
+                          </div>
+                          <div
                                                     className="name"
                           >
                                                     <h3>
@@ -1635,8 +1635,8 @@ ReactWrapper {
                                                     <h3>
                                                                               Beru Whitesun lars
                                                     </h3>
-                          </p>
-                          <p
+                          </div>
+                          <div
                                                     className="homeworld"
                           >
                                                     <h3>
@@ -1644,8 +1644,8 @@ ReactWrapper {
                                                                               :
                                                     </h3>
                                                     <h3 />
-                          </p>
-                          <p
+                          </div>
+                          <div
                                                     className="population"
                           >
                                                     <h3>
@@ -1653,8 +1653,8 @@ ReactWrapper {
                                                                               :
                                                     </h3>
                                                     <h3 />
-                          </p>
-                          <p
+                          </div>
+                          <div
                                                     className="species"
                           >
                                                     <h3>
@@ -1662,7 +1662,7 @@ ReactWrapper {
                                                                               :
                                                     </h3>
                                                     <h3 />
-                          </p>
+                          </div>
 </h3>,
                         "className": "card-display",
                       },
@@ -1672,7 +1672,7 @@ ReactWrapper {
                           "instance": <h3
                             class="title"
 >
-                            <p
+                            <div
                                                         class="favorite"
                             >
                                                         <h3>
@@ -1680,8 +1680,8 @@ ReactWrapper {
                                                                                     :
                                                         </h3>
                                                         <h3 />
-                            </p>
-                            <p
+                            </div>
+                            <div
                                                         class="name"
                             >
                                                         <h3>
@@ -1691,8 +1691,8 @@ ReactWrapper {
                                                         <h3>
                                                                                     Beru Whitesun lars
                                                         </h3>
-                            </p>
-                            <p
+                            </div>
+                            <div
                                                         class="homeworld"
                             >
                                                         <h3>
@@ -1700,8 +1700,8 @@ ReactWrapper {
                                                                                     :
                                                         </h3>
                                                         <h3 />
-                            </p>
-                            <p
+                            </div>
+                            <div
                                                         class="population"
                             >
                                                         <h3>
@@ -1709,8 +1709,8 @@ ReactWrapper {
                                                                                     :
                                                         </h3>
                                                         <h3 />
-                            </p>
-                            <p
+                            </div>
+                            <div
                                                         class="species"
                             >
                                                         <h3>
@@ -1718,13 +1718,13 @@ ReactWrapper {
                                                                                     :
                                                         </h3>
                                                         <h3 />
-                            </p>
+                            </div>
 </h3>,
                           "key": undefined,
                           "nodeType": "host",
                           "props": Object {
                             "children": Array [
-                              <p
+                              <div
                                 className="favorite"
 >
                                 <h3>
@@ -1732,8 +1732,8 @@ ReactWrapper {
                                                                 :
                                 </h3>
                                 <h3 />
-</p>,
-                              <p
+</div>,
+                              <div
                                 className="name"
 >
                                 <h3>
@@ -1743,8 +1743,8 @@ ReactWrapper {
                                 <h3>
                                                                 Beru Whitesun lars
                                 </h3>
-</p>,
-                              <p
+</div>,
+                              <div
                                 className="homeworld"
 >
                                 <h3>
@@ -1752,8 +1752,8 @@ ReactWrapper {
                                                                 :
                                 </h3>
                                 <h3 />
-</p>,
-                              <p
+</div>,
+                              <div
                                 className="population"
 >
                                 <h3>
@@ -1761,8 +1761,8 @@ ReactWrapper {
                                                                 :
                                 </h3>
                                 <h3 />
-</p>,
-                              <p
+</div>,
+                              <div
                                 className="species"
 >
                                 <h3>
@@ -1770,14 +1770,14 @@ ReactWrapper {
                                                                 :
                                 </h3>
                                 <h3 />
-</p>,
+</div>,
                             ],
                             "className": "title",
                           },
                           "ref": null,
                           "rendered": Array [
                             Object {
-                              "instance": <p
+                              "instance": <div
                                 class="favorite"
 >
                                 <h3>
@@ -1785,8 +1785,8 @@ ReactWrapper {
                                                                 :
                                 </h3>
                                 <h3 />
-</p>,
-                              "key": undefined,
+</div>,
+                              "key": "0",
                               "nodeType": "host",
                               "props": Object {
                                 "children": Array [
@@ -1834,10 +1834,10 @@ ReactWrapper {
                                   "type": "h3",
                                 },
                               ],
-                              "type": "p",
+                              "type": "div",
                             },
                             Object {
-                              "instance": <p
+                              "instance": <div
                                 class="name"
 >
                                 <h3>
@@ -1847,8 +1847,8 @@ ReactWrapper {
                                 <h3>
                                                                 Beru Whitesun lars
                                 </h3>
-</p>,
-                              "key": undefined,
+</div>,
+                              "key": "1",
                               "nodeType": "host",
                               "props": Object {
                                 "children": Array [
@@ -1900,10 +1900,10 @@ ReactWrapper {
                                   "type": "h3",
                                 },
                               ],
-                              "type": "p",
+                              "type": "div",
                             },
                             Object {
-                              "instance": <p
+                              "instance": <div
                                 class="homeworld"
 >
                                 <h3>
@@ -1911,8 +1911,8 @@ ReactWrapper {
                                                                 :
                                 </h3>
                                 <h3 />
-</p>,
-                              "key": undefined,
+</div>,
+                              "key": "2",
                               "nodeType": "host",
                               "props": Object {
                                 "children": Array [
@@ -1960,10 +1960,10 @@ ReactWrapper {
                                   "type": "h3",
                                 },
                               ],
-                              "type": "p",
+                              "type": "div",
                             },
                             Object {
-                              "instance": <p
+                              "instance": <div
                                 class="population"
 >
                                 <h3>
@@ -1971,8 +1971,8 @@ ReactWrapper {
                                                                 :
                                 </h3>
                                 <h3 />
-</p>,
-                              "key": undefined,
+</div>,
+                              "key": "3",
                               "nodeType": "host",
                               "props": Object {
                                 "children": Array [
@@ -2020,10 +2020,10 @@ ReactWrapper {
                                   "type": "h3",
                                 },
                               ],
-                              "type": "p",
+                              "type": "div",
                             },
                             Object {
-                              "instance": <p
+                              "instance": <div
                                 class="species"
 >
                                 <h3>
@@ -2031,8 +2031,8 @@ ReactWrapper {
                                                                 :
                                 </h3>
                                 <h3 />
-</p>,
-                              "key": undefined,
+</div>,
+                              "key": "4",
                               "nodeType": "host",
                               "props": Object {
                                 "children": Array [
@@ -2080,7 +2080,7 @@ ReactWrapper {
                                   "type": "h3",
                                 },
                               ],
-                              "type": "p",
+                              "type": "div",
                             },
                           ],
                           "type": "h3",

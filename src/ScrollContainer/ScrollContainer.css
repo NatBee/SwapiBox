@@ -19,7 +19,8 @@
   width: 100%;
   min-height: 60vh;
   background-image: linear-gradient(0deg, transparent, black 90%);
-  z-index: 1; }
+  z-index: 1;
+  overflow: hidden; }
 
 .crawl {
   position: relative;
