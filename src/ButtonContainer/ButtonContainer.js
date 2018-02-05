@@ -18,10 +18,7 @@ const ButtonContainer = ({handleClickPeople, handleClickPlanets, handleClickVehi
         Vehicle
       </button>
        <button className="favorites" onClick={ () => handleClickFavorites()}>
-        View Favorites 
-        <div>
-          {numberOfFavorites}
-        </div>
+        View Favorites {numberOfFavorites}
       </button>
     </section>
   )

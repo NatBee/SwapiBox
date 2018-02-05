@@ -9,10 +9,16 @@
   font-family: 'Acme', sans-serif;
 }
 
-.card p {
-  background-color: #E6D7B2;
-  border-top-right-radius: 15px;
+.fav-icon {
+  background-color: #E6D7B2;  
   border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 40px;
+}
+
+.card p {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
 }
 
@@ -27,6 +33,7 @@
   background-color: #E6D7B2;
   color: #9A946A;
   font-size: xx-large;
+  margin: 6px 0px 0px 262px;
 }
 
 .fa-sun:hover {
@@ -35,6 +42,7 @@
 
 .title {
   text-align: left;
+  width: 100%;
 }
 
 .value {

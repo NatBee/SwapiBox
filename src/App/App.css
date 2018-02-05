@@ -5,8 +5,13 @@
   height: 100%;
   position: absolute; }
 
+.img {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 30px 0px; }
+
 .App-logo {
-  height: 80px; }
+  height: 140px; }
 
 .App-title {
   font-size: 1.5em; }

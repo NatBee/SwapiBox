@@ -8,10 +8,15 @@
   margin: 10px;
   font-family: 'Acme', sans-serif; }
 
-.card p {
+.fav-icon {
   background-color: #E6D7B2;
-  border-top-right-radius: 15px;
   border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 40px; }
+
+.card p {
+  display: flex;
+  justify-content: space-between;
   margin: 0; }
 
 .card-display {
@@ -23,13 +28,15 @@
 .fa-sun {
   background-color: #E6D7B2;
   color: #9A946A;
-  font-size: xx-large; }
+  font-size: xx-large;
+  margin: 6px 0px 0px 262px; }
 
 .fa-sun:hover {
   color: #856B27; }
 
 .title {
-  text-align: left; }
+  text-align: left;
+  width: 100%; }
 
 .value {
   padding: 0px 0px 0px 7px;

@@ -15,7 +15,7 @@ const Card = ({data, handleClick, isFavorite}) => {
 
   return (
     <article className='card'>
-      <p onClick={() => handleClick(data)}>
+      <p className="fav-icon" onClick={() => handleClick(data)}>
         <i className={`fas fa-sun ${isFavorite}`}></i>
       </p>
       <section className='card-display'>

@@ -121,21 +121,20 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <img  src={robot2} 
-              className="App-logo" 
-              alt="logo" 
-        />
-        <img  src={logo} 
-              className="App-logo" 
-              alt="logo" 
-        />
-        <img  src={robot} 
-              className="App-logo" 
-              alt="logo" 
-        />
-        <h1 className="App-title">
-          SwapiBox
-        </h1>
+        <div className="img">
+          <img  src={robot2} 
+                className="App-logo" 
+                alt="logo" 
+          />
+          <img  src={logo} 
+                className="App-logo" 
+                alt="logo" 
+          />
+          <img  src={robot} 
+                className="App-logo" 
+                alt="logo" 
+          />
+        </div>
         <ButtonContainer 
           className="Btn-container" 
           handleClickPeople={this.handleClickPeople}
