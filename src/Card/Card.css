@@ -3,37 +3,42 @@
   background-color: #CDB578;
   width: 300px;
   justify-content: space-evenly;
-  border-radius: 15px;
   text-align: center;
   margin: 10px;
   font-family: 'Acme', sans-serif; }
 
-.card p {
+.fav-icon {
   background-color: #E6D7B2;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
-  margin: 0; }
+  height: 40px; }
+
+.card .favorite {
+  display: none; }
+
+.card p {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  flex-wrap: wrap; }
 
 .card-display {
   display: flex;
   font-size: .7em;
   margin: 0;
-  padding: 0px 50px; }
+  padding: 0px 30px; }
 
 .fa-sun {
   background-color: #E6D7B2;
   color: #9A946A;
-  font-size: xx-large; }
+  font-size: xx-large;
+  margin: 6px 0px 0px 262px; }
 
 .fa-sun:hover {
   color: #856B27; }
 
 .title {
-  text-align: left; }
+  text-align: left;
+  width: 100%; }
 
 .value {
   padding: 0px 0px 0px 7px;
   text-align: right; }
-
-.favorite {
-  display: none; }

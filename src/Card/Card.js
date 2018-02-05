@@ -15,9 +15,9 @@ const Card = ({data, handleClick, isFavorite}) => {
 
   return (
     <article className='card'>
-      <p onClick={() => handleClick(data)}>
+      <div className="fav-icon" onClick={() => handleClick(data)}>
         <i className={`fas fa-sun ${isFavorite}`}></i>
-      </p>
+      </div>
       <section className='card-display'>
         <h3 className='title'>
           {cardDisplayEntries}
